@@ -81,6 +81,10 @@ void SpecificWorker::initialize()
 void SpecificWorker::compute()
 {
     std::cout << "Compute worker" << std::endl;
+
+	RoboCompLidar3D::TPoints data = filtro_datos();
+
+
 	//computeCODE
 	//try
 	//{
@@ -124,6 +128,31 @@ int SpecificWorker::startup_check()
 	std::cout << "Startup check" << std::endl;
 	QTimer::singleShot(200, QCoreApplication::instance(), SLOT(quit()));
 	return 0;
+}
+
+RoboCompLidar3D::TPoints SpecificWorker::filtro_datos()
+{
+	std::optional<RoboCompLidar3D::TPoints> filter_data;
+	RoboCompLidar3D::TPoints  p_filter;
+	try
+	{
+		auto data =  lidar3d_proxy->getLidarData("bpearl", 0, 2*M_PI, 1); //para mayor precision (puedo comparar ejemplos de ejecucion entre este y 0.1f round en la docu)
+		//qInfo() << "Size: "<<data.points.size();
+		if (data.points.empty()){qDebug()<<"No points"; return p_filter;}
+
+		/*
+		std::ranges::copy_if(data.points, std::back_inserter(p_filter),
+												   [](auto  &a){ return a.z < 500 and a.distance2d > 200;});
+		*/
+
+		//Esto siguiente es opcional
+		//p_filter = filter_isolated_points(data.points, 200); //TODO: Código del anterior proyecto, comprobar si es necesario
+		if (p_filter.empty())
+			return {};
+
+		return p_filter;
+	}
+	catch (const Ice::Exception &e){ std::cout<<e.what()<<std::endl; return p_filter;}
 }
 
 

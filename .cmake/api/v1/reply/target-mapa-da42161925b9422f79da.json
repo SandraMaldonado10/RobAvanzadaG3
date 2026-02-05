@@ -328,7 +328,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -462,25 +463,26 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				13
+				14
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				14,
 				15,
 				16,
 				17,
-				18
+				18,
+				19
 			]
 		}
 	],
@@ -503,6 +505,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/specificworker.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "/home/robocomp/robocomp/classes/grid2d/grid.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -545,13 +553,6 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "generated/Lidar3D.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"isGenerated" : true,
 			"path" : "generated/OmniRobot.cpp",
 			"sourceGroupIndex" : 0
 		},
@@ -559,7 +560,7 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "generated/GenericBase.cpp",
+			"path" : "generated/Lidar3D.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -567,6 +568,13 @@
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
 			"path" : "generated/Camera360RGB.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "generated/GenericBase.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -578,25 +586,25 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "generated/Lidar3D.cpp.rule",
-			"sourceGroupIndex" : 2
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
 			"path" : "generated/OmniRobot.cpp.rule",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "generated/GenericBase.cpp.rule",
+			"path" : "generated/Lidar3D.cpp.rule",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "generated/Camera360RGB.cpp.rule",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "generated/GenericBase.cpp.rule",
 			"sourceGroupIndex" : 2
 		},
 		{

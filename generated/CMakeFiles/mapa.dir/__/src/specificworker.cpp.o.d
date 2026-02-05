@@ -927,9 +927,17 @@ generated/CMakeFiles/mapa.dir/__/src/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMainWindow \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmainwindow.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtabwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QStatusBar \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qstatusbar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.h \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/QState \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
@@ -1041,4 +1049,278 @@ generated/CMakeFiles/mapa.dir/__/src/specificworker.cpp.o: \
  /usr/include/Ice/DefaultValueFactory.h \
  /home/xeihtt/robotica_avanzada/mapa/generated/GenericBase.h \
  /home/xeihtt/robotica_avanzada/mapa/generated/Lidar3D.h \
- /home/xeihtt/robotica_avanzada/mapa/generated/OmniRobot.h
+ /home/xeihtt/robotica_avanzada/mapa/generated/OmniRobot.h \
+ /home/xeihtt/robocomp/classes/grid2d/grid.h \
+ /usr/include/boost/functional/hash.hpp \
+ /usr/include/boost/container_hash/hash.hpp \
+ /usr/include/boost/container_hash/hash_fwd.hpp \
+ /usr/include/boost/container_hash/detail/requires_cxx11.hpp \
+ /usr/include/boost/config.hpp /usr/include/boost/config/user.hpp \
+ /usr/include/boost/config/detail/select_compiler_config.hpp \
+ /usr/include/boost/config/compiler/gcc.hpp \
+ /usr/include/boost/config/detail/select_stdlib_config.hpp \
+ /usr/include/boost/config/stdlib/libstdcpp3.hpp \
+ /usr/include/boost/config/detail/select_platform_config.hpp \
+ /usr/include/boost/config/platform/linux.hpp \
+ /usr/include/boost/config/detail/posix_features.hpp \
+ /usr/include/boost/config/detail/suffix.hpp \
+ /usr/include/boost/config/helper_macros.hpp \
+ /usr/include/boost/config/detail/cxx_composite.hpp \
+ /usr/include/boost/config/pragma_message.hpp \
+ /usr/include/boost/container_hash/is_range.hpp \
+ /usr/include/boost/type_traits/integral_constant.hpp \
+ /usr/include/boost/detail/workaround.hpp \
+ /usr/include/boost/config/workaround.hpp \
+ /usr/include/boost/type_traits/is_integral.hpp \
+ /usr/include/boost/type_traits/declval.hpp \
+ /usr/include/boost/type_traits/add_rvalue_reference.hpp \
+ /usr/include/boost/type_traits/is_void.hpp \
+ /usr/include/boost/type_traits/is_reference.hpp \
+ /usr/include/boost/type_traits/is_lvalue_reference.hpp \
+ /usr/include/boost/type_traits/is_rvalue_reference.hpp \
+ /usr/include/boost/type_traits/is_same.hpp \
+ /usr/include/boost/type_traits/remove_cv.hpp \
+ /usr/include/boost/container_hash/is_contiguous_range.hpp \
+ /usr/include/boost/container_hash/is_unordered_range.hpp \
+ /usr/include/boost/container_hash/is_described_class.hpp \
+ /usr/include/boost/type_traits/is_union.hpp \
+ /usr/include/boost/type_traits/intrinsics.hpp \
+ /usr/include/boost/type_traits/detail/config.hpp \
+ /usr/include/boost/version.hpp /usr/include/boost/describe/bases.hpp \
+ /usr/include/boost/describe/modifiers.hpp \
+ /usr/include/boost/describe/detail/config.hpp \
+ /usr/include/boost/describe/detail/void_t.hpp \
+ /usr/include/boost/mp11/algorithm.hpp /usr/include/boost/mp11/list.hpp \
+ /usr/include/boost/mp11/integral.hpp /usr/include/boost/mp11/version.hpp \
+ /usr/include/boost/mp11/detail/mp_value.hpp \
+ /usr/include/boost/mp11/detail/config.hpp \
+ /usr/include/boost/mp11/detail/mp_list.hpp \
+ /usr/include/boost/mp11/detail/mp_list_v.hpp \
+ /usr/include/boost/mp11/detail/mp_is_list.hpp \
+ /usr/include/boost/mp11/detail/mp_is_value_list.hpp \
+ /usr/include/boost/mp11/detail/mp_front.hpp \
+ /usr/include/boost/mp11/detail/mp_rename.hpp \
+ /usr/include/boost/mp11/detail/mp_defer.hpp \
+ /usr/include/boost/mp11/detail/mp_append.hpp \
+ /usr/include/boost/mp11/detail/mp_count.hpp \
+ /usr/include/boost/mp11/detail/mp_plus.hpp \
+ /usr/include/boost/mp11/utility.hpp \
+ /usr/include/boost/mp11/detail/mp_fold.hpp \
+ /usr/include/boost/mp11/set.hpp /usr/include/boost/mp11/function.hpp \
+ /usr/include/boost/mp11/detail/mp_min_element.hpp \
+ /usr/include/boost/mp11/detail/mp_void.hpp \
+ /usr/include/boost/mp11/detail/mp_copy_if.hpp \
+ /usr/include/boost/mp11/detail/mp_remove_if.hpp \
+ /usr/include/boost/mp11/detail/mp_map_find.hpp \
+ /usr/include/boost/mp11/detail/mp_with_index.hpp \
+ /usr/include/boost/mp11/integer_sequence.hpp \
+ /usr/include/boost/describe/members.hpp \
+ /usr/include/boost/describe/detail/cx_streq.hpp \
+ /usr/include/boost/mp11/bind.hpp \
+ /usr/include/boost/container_hash/detail/hash_tuple_like.hpp \
+ /usr/include/boost/container_hash/is_tuple_like.hpp \
+ /usr/include/boost/type_traits/enable_if.hpp \
+ /usr/include/boost/container_hash/detail/hash_mix.hpp \
+ /usr/include/boost/cstdint.hpp \
+ /usr/include/boost/container_hash/detail/hash_range.hpp \
+ /usr/include/boost/container_hash/detail/mulx.hpp \
+ /usr/include/boost/type_traits/is_enum.hpp \
+ /usr/include/boost/type_traits/is_floating_point.hpp \
+ /usr/include/boost/type_traits/is_signed.hpp \
+ /usr/include/boost/type_traits/is_unsigned.hpp \
+ /usr/include/boost/type_traits/make_unsigned.hpp \
+ /usr/include/boost/type_traits/conditional.hpp \
+ /usr/include/boost/type_traits/is_const.hpp \
+ /usr/include/boost/type_traits/is_volatile.hpp \
+ /usr/include/boost/type_traits/add_const.hpp \
+ /usr/include/boost/type_traits/add_volatile.hpp \
+ /usr/include/boost/static_assert.hpp \
+ /usr/include/boost/type_traits/conjunction.hpp \
+ /usr/include/c++/13/complex /usr/include/c++/13/typeindex \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsRectItem \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
+ /usr/include/Eigen/Dense /usr/include/Eigen/Core \
+ /usr/include/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /usr/include/Eigen/src/Core/util/Macros.h \
+ /usr/include/Eigen/src/Core/util/ConfigureVectorization.h \
+ /usr/include/Eigen/src/Core/util/MKL_support.h \
+ /usr/include/Eigen/src/Core/util/Constants.h \
+ /usr/include/Eigen/src/Core/util/Meta.h \
+ /usr/include/Eigen/src/Core/util/ForwardDeclarations.h \
+ /usr/include/Eigen/src/Core/util/StaticAssert.h \
+ /usr/include/Eigen/src/Core/util/XprHelper.h \
+ /usr/include/Eigen/src/Core/util/Memory.h \
+ /usr/include/Eigen/src/Core/util/IntegralConstant.h \
+ /usr/include/Eigen/src/Core/util/SymbolicIndex.h \
+ /usr/include/Eigen/src/Core/NumTraits.h \
+ /usr/include/Eigen/src/Core/MathFunctions.h \
+ /usr/include/Eigen/src/Core/GenericPacketMath.h \
+ /usr/include/Eigen/src/Core/MathFunctionsImpl.h \
+ /usr/include/Eigen/src/Core/arch/Default/ConjHelper.h \
+ /usr/include/Eigen/src/Core/arch/Default/Half.h \
+ /usr/include/Eigen/src/Core/arch/Default/BFloat16.h \
+ /usr/include/Eigen/src/Core/arch/Default/TypeCasting.h \
+ /usr/include/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+ /usr/include/Eigen/src/Core/arch/SSE/PacketMath.h \
+ /usr/include/Eigen/src/Core/arch/SSE/TypeCasting.h \
+ /usr/include/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /usr/include/Eigen/src/Core/arch/SSE/Complex.h \
+ /usr/include/Eigen/src/Core/arch/Default/Settings.h \
+ /usr/include/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+ /usr/include/Eigen/src/Core/functors/TernaryFunctors.h \
+ /usr/include/Eigen/src/Core/functors/BinaryFunctors.h \
+ /usr/include/Eigen/src/Core/functors/UnaryFunctors.h \
+ /usr/include/Eigen/src/Core/functors/NullaryFunctors.h \
+ /usr/include/Eigen/src/Core/functors/StlFunctors.h \
+ /usr/include/Eigen/src/Core/functors/AssignmentFunctors.h \
+ /usr/include/Eigen/src/Core/util/IndexedViewHelper.h \
+ /usr/include/Eigen/src/Core/util/ReshapedHelper.h \
+ /usr/include/Eigen/src/Core/ArithmeticSequence.h \
+ /usr/include/Eigen/src/Core/IO.h \
+ /usr/include/Eigen/src/Core/DenseCoeffsBase.h \
+ /usr/include/Eigen/src/Core/DenseBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/BlockMethods.h \
+ /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+ /usr/include/eigen3/Eigen/src/plugins/IndexedViewMethods.h \
+ /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
+ /usr/include/eigen3/Eigen/src/plugins/ReshapedMethods.h \
+ /usr/include/Eigen/src/Core/MatrixBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/CommonCwiseBinaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/MatrixCwiseBinaryOps.h \
+ /usr/include/Eigen/src/Core/EigenBase.h \
+ /usr/include/Eigen/src/Core/Product.h \
+ /usr/include/Eigen/src/Core/CoreEvaluators.h \
+ /usr/include/Eigen/src/Core/AssignEvaluator.h \
+ /usr/include/Eigen/src/Core/Assign.h \
+ /usr/include/Eigen/src/Core/ArrayBase.h \
+ /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseUnaryOps.h \
+ /usr/include/eigen3/Eigen/src/plugins/ArrayCwiseBinaryOps.h \
+ /usr/include/Eigen/src/Core/util/BlasUtil.h \
+ /usr/include/Eigen/src/Core/DenseStorage.h \
+ /usr/include/Eigen/src/Core/NestByValue.h \
+ /usr/include/Eigen/src/Core/ReturnByValue.h \
+ /usr/include/Eigen/src/Core/NoAlias.h \
+ /usr/include/Eigen/src/Core/PlainObjectBase.h \
+ /usr/include/Eigen/src/Core/Matrix.h /usr/include/Eigen/src/Core/Array.h \
+ /usr/include/Eigen/src/Core/CwiseTernaryOp.h \
+ /usr/include/Eigen/src/Core/CwiseBinaryOp.h \
+ /usr/include/Eigen/src/Core/CwiseUnaryOp.h \
+ /usr/include/Eigen/src/Core/CwiseNullaryOp.h \
+ /usr/include/Eigen/src/Core/CwiseUnaryView.h \
+ /usr/include/Eigen/src/Core/SelfCwiseBinaryOp.h \
+ /usr/include/Eigen/src/Core/Dot.h \
+ /usr/include/Eigen/src/Core/StableNorm.h \
+ /usr/include/Eigen/src/Core/Stride.h \
+ /usr/include/Eigen/src/Core/MapBase.h /usr/include/Eigen/src/Core/Map.h \
+ /usr/include/Eigen/src/Core/Ref.h /usr/include/Eigen/src/Core/Block.h \
+ /usr/include/Eigen/src/Core/VectorBlock.h \
+ /usr/include/Eigen/src/Core/IndexedView.h \
+ /usr/include/Eigen/src/Core/Reshaped.h \
+ /usr/include/Eigen/src/Core/Transpose.h \
+ /usr/include/Eigen/src/Core/DiagonalMatrix.h \
+ /usr/include/Eigen/src/Core/Diagonal.h \
+ /usr/include/Eigen/src/Core/DiagonalProduct.h \
+ /usr/include/Eigen/src/Core/Redux.h \
+ /usr/include/Eigen/src/Core/Visitor.h \
+ /usr/include/Eigen/src/Core/Fuzzy.h /usr/include/Eigen/src/Core/Swap.h \
+ /usr/include/Eigen/src/Core/CommaInitializer.h \
+ /usr/include/Eigen/src/Core/GeneralProduct.h \
+ /usr/include/Eigen/src/Core/Solve.h \
+ /usr/include/Eigen/src/Core/Inverse.h \
+ /usr/include/Eigen/src/Core/SolverBase.h \
+ /usr/include/Eigen/src/Core/PermutationMatrix.h \
+ /usr/include/Eigen/src/Core/Transpositions.h \
+ /usr/include/Eigen/src/Core/TriangularMatrix.h \
+ /usr/include/Eigen/src/Core/SelfAdjointView.h \
+ /usr/include/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+ /usr/include/Eigen/src/Core/products/Parallelizer.h \
+ /usr/include/Eigen/src/Core/ProductEvaluators.h \
+ /usr/include/Eigen/src/Core/products/GeneralMatrixVector.h \
+ /usr/include/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+ /usr/include/Eigen/src/Core/SolveTriangular.h \
+ /usr/include/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+ /usr/include/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+ /usr/include/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+ /usr/include/Eigen/src/Core/products/SelfadjointProduct.h \
+ /usr/include/Eigen/src/Core/products/SelfadjointRank2Update.h \
+ /usr/include/Eigen/src/Core/products/TriangularMatrixVector.h \
+ /usr/include/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+ /usr/include/Eigen/src/Core/products/TriangularSolverMatrix.h \
+ /usr/include/Eigen/src/Core/products/TriangularSolverVector.h \
+ /usr/include/Eigen/src/Core/BandMatrix.h \
+ /usr/include/Eigen/src/Core/CoreIterators.h \
+ /usr/include/Eigen/src/Core/ConditionEstimator.h \
+ /usr/include/Eigen/src/Core/BooleanRedux.h \
+ /usr/include/Eigen/src/Core/Select.h \
+ /usr/include/Eigen/src/Core/VectorwiseOp.h \
+ /usr/include/Eigen/src/Core/PartialReduxEvaluator.h \
+ /usr/include/Eigen/src/Core/Random.h \
+ /usr/include/Eigen/src/Core/Replicate.h \
+ /usr/include/Eigen/src/Core/Reverse.h \
+ /usr/include/Eigen/src/Core/ArrayWrapper.h \
+ /usr/include/Eigen/src/Core/StlIterators.h \
+ /usr/include/Eigen/src/Core/GlobalFunctions.h \
+ /usr/include/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /usr/include/Eigen/LU /usr/include/Eigen/src/misc/Kernel.h \
+ /usr/include/Eigen/src/misc/Image.h \
+ /usr/include/Eigen/src/LU/FullPivLU.h \
+ /usr/include/Eigen/src/LU/PartialPivLU.h \
+ /usr/include/Eigen/src/LU/Determinant.h \
+ /usr/include/Eigen/src/LU/InverseImpl.h \
+ /usr/include/Eigen/src/LU/arch/InverseSize4.h \
+ /usr/include/Eigen/Cholesky /usr/include/Eigen/Jacobi \
+ /usr/include/Eigen/src/Jacobi/Jacobi.h \
+ /usr/include/Eigen/src/Cholesky/LLT.h \
+ /usr/include/Eigen/src/Cholesky/LDLT.h /usr/include/Eigen/QR \
+ /usr/include/Eigen/Householder \
+ /usr/include/Eigen/src/Householder/Householder.h \
+ /usr/include/Eigen/src/Householder/HouseholderSequence.h \
+ /usr/include/Eigen/src/Householder/BlockHouseholder.h \
+ /usr/include/Eigen/src/QR/HouseholderQR.h \
+ /usr/include/Eigen/src/QR/FullPivHouseholderQR.h \
+ /usr/include/Eigen/src/QR/ColPivHouseholderQR.h \
+ /usr/include/Eigen/src/QR/CompleteOrthogonalDecomposition.h \
+ /usr/include/Eigen/SVD /usr/include/Eigen/src/misc/RealSvd2x2.h \
+ /usr/include/Eigen/src/SVD/UpperBidiagonalization.h \
+ /usr/include/Eigen/src/SVD/SVDBase.h \
+ /usr/include/Eigen/src/SVD/JacobiSVD.h \
+ /usr/include/Eigen/src/SVD/BDCSVD.h /usr/include/Eigen/Geometry \
+ /usr/include/Eigen/src/Geometry/OrthoMethods.h \
+ /usr/include/Eigen/src/Geometry/EulerAngles.h \
+ /usr/include/Eigen/src/Geometry/Homogeneous.h \
+ /usr/include/Eigen/src/Geometry/RotationBase.h \
+ /usr/include/Eigen/src/Geometry/Rotation2D.h \
+ /usr/include/Eigen/src/Geometry/Quaternion.h \
+ /usr/include/Eigen/src/Geometry/AngleAxis.h \
+ /usr/include/Eigen/src/Geometry/Transform.h \
+ /usr/include/Eigen/src/Geometry/Translation.h \
+ /usr/include/Eigen/src/Geometry/Scaling.h \
+ /usr/include/Eigen/src/Geometry/Hyperplane.h \
+ /usr/include/Eigen/src/Geometry/ParametrizedLine.h \
+ /usr/include/Eigen/src/Geometry/AlignedBox.h \
+ /usr/include/Eigen/src/Geometry/Umeyama.h \
+ /usr/include/Eigen/src/Geometry/arch/Geometry_SIMD.h \
+ /usr/include/Eigen/Eigenvalues \
+ /usr/include/Eigen/src/Eigenvalues/Tridiagonalization.h \
+ /usr/include/Eigen/src/Eigenvalues/RealSchur.h \
+ /usr/include/Eigen/src/Eigenvalues/./HessenbergDecomposition.h \
+ /usr/include/Eigen/src/Eigenvalues/EigenSolver.h \
+ /usr/include/Eigen/src/Eigenvalues/./RealSchur.h \
+ /usr/include/Eigen/src/Eigenvalues/SelfAdjointEigenSolver.h \
+ /usr/include/Eigen/src/Eigenvalues/./Tridiagonalization.h \
+ /usr/include/Eigen/src/Eigenvalues/GeneralizedSelfAdjointEigenSolver.h \
+ /usr/include/Eigen/src/Eigenvalues/HessenbergDecomposition.h \
+ /usr/include/Eigen/src/Eigenvalues/ComplexSchur.h \
+ /usr/include/Eigen/src/Eigenvalues/ComplexEigenSolver.h \
+ /usr/include/Eigen/src/Eigenvalues/./ComplexSchur.h \
+ /usr/include/Eigen/src/Eigenvalues/RealQZ.h \
+ /usr/include/Eigen/src/Eigenvalues/GeneralizedEigenSolver.h \
+ /usr/include/Eigen/src/Eigenvalues/./RealQZ.h \
+ /usr/include/Eigen/src/Eigenvalues/MatrixBaseEigenvalues.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QVector2D \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QColor

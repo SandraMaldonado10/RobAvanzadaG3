@@ -22,6 +22,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/mapa.dir/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o.d"
   "CMakeFiles/mapa.dir/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o"
   "CMakeFiles/mapa.dir/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o.d"
+  "CMakeFiles/mapa.dir/home/robocomp/robocomp/classes/grid2d/grid.cpp.o"
+  "CMakeFiles/mapa.dir/home/robocomp/robocomp/classes/grid2d/grid.cpp.o.d"
   "CMakeFiles/mapa.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o"
   "CMakeFiles/mapa.dir/home/robocomp/robocomp/classes/rapplication/rapplication.cpp.o.d"
   "CMakeFiles/mapa.dir/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp.o"

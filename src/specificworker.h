@@ -32,7 +32,7 @@
 //#define HIBERNATION_ENABLED
 
 #include <genericworker.h>
-
+#include <grid2d/grid.h>
 
 /**
  * \brief Class SpecificWorker implements the core functionality of the component.
@@ -48,6 +48,9 @@ public:
      * \param startup_check Indicates whether to perform startup checks.
      */
 	SpecificWorker(const ConfigLoader& configLoader, TuplePrx tprx, bool startup_check);
+
+	//Obtener los datos del LiDAR
+	RoboCompLidar3D::TPoints filtro_datos();
 
 	/**
      * \brief Destructor for SpecificWorker.

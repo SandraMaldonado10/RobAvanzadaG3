@@ -11,34 +11,51 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QMainWindow>
+#include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_guiDlg
+class Ui_MainWindow
 {
 public:
+    QWidget *centralwidget;
+    QFrame *frame;
+    QStatusBar *statusbar;
 
-    void setupUi(QWidget *guiDlg)
+    void setupUi(QMainWindow *MainWindow)
     {
-        if (guiDlg->objectName().isEmpty())
-            guiDlg->setObjectName("guiDlg");
-        guiDlg->resize(800, 600);
+        if (MainWindow->objectName().isEmpty())
+            MainWindow->setObjectName("MainWindow");
+        MainWindow->resize(1122, 887);
+        centralwidget = new QWidget(MainWindow);
+        centralwidget->setObjectName("centralwidget");
+        frame = new QFrame(centralwidget);
+        frame->setObjectName("frame");
+        frame->setGeometry(QRect(0, 0, 1101, 881));
+        frame->setFrameShape(QFrame::StyledPanel);
+        frame->setFrameShadow(QFrame::Raised);
+        MainWindow->setCentralWidget(centralwidget);
+        statusbar = new QStatusBar(MainWindow);
+        statusbar->setObjectName("statusbar");
+        MainWindow->setStatusBar(statusbar);
 
-        retranslateUi(guiDlg);
+        retranslateUi(MainWindow);
 
-        QMetaObject::connectSlotsByName(guiDlg);
+        QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
 
-    void retranslateUi(QWidget *guiDlg)
+    void retranslateUi(QMainWindow *MainWindow)
     {
-        guiDlg->setWindowTitle(QCoreApplication::translate("guiDlg", "mapa", nullptr));
+        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class guiDlg: public Ui_guiDlg {};
+    class MainWindow: public Ui_MainWindow {};
 } // namespace Ui
 
 QT_END_NAMESPACE
