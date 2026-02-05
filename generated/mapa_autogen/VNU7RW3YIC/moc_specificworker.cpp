@@ -28,14 +28,19 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_SpecificWorker_t {
-    uint offsetsAndSizes[14];
+    uint offsetsAndSizes[24];
     char stringdata0[15];
     char stringdata1[11];
     char stringdata2[1];
     char stringdata3[8];
-    char stringdata4[10];
-    char stringdata5[8];
-    char stringdata6[14];
+    char stringdata4[11];
+    char stringdata5[25];
+    char stringdata6[16];
+    char stringdata7[16];
+    char stringdata8[6];
+    char stringdata9[10];
+    char stringdata10[8];
+    char stringdata11[14];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_SpecificWorker_t::offsetsAndSizes) + ofs), len 
@@ -45,14 +50,24 @@ Q_CONSTINIT static const qt_meta_stringdata_SpecificWorker_t qt_meta_stringdata_
         QT_MOC_LITERAL(15, 10),  // "initialize"
         QT_MOC_LITERAL(26, 0),  // ""
         QT_MOC_LITERAL(27, 7),  // "compute"
-        QT_MOC_LITERAL(35, 9),  // "emergency"
-        QT_MOC_LITERAL(45, 7),  // "restore"
-        QT_MOC_LITERAL(53, 13)   // "startup_check"
+        QT_MOC_LITERAL(35, 10),  // "draw_lidar"
+        QT_MOC_LITERAL(46, 24),  // "RoboCompLidar3D::TPoints"
+        QT_MOC_LITERAL(71, 15),  // "filtered_points"
+        QT_MOC_LITERAL(87, 15),  // "QGraphicsScene*"
+        QT_MOC_LITERAL(103, 5),  // "scene"
+        QT_MOC_LITERAL(109, 9),  // "emergency"
+        QT_MOC_LITERAL(119, 7),  // "restore"
+        QT_MOC_LITERAL(127, 13)   // "startup_check"
     },
     "SpecificWorker",
     "initialize",
     "",
     "compute",
+    "draw_lidar",
+    "RoboCompLidar3D::TPoints",
+    "filtered_points",
+    "QGraphicsScene*",
+    "scene",
     "emergency",
     "restore",
     "startup_check"
@@ -66,7 +81,7 @@ Q_CONSTINIT static const uint qt_meta_data_SpecificWorker[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       5,   14, // methods
+       6,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -74,15 +89,17 @@ Q_CONSTINIT static const uint qt_meta_data_SpecificWorker[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   44,    2, 0x0a,    1 /* Public */,
-       3,    0,   45,    2, 0x0a,    2 /* Public */,
-       4,    0,   46,    2, 0x0a,    3 /* Public */,
-       5,    0,   47,    2, 0x0a,    4 /* Public */,
-       6,    0,   48,    2, 0x0a,    5 /* Public */,
+       1,    0,   50,    2, 0x0a,    1 /* Public */,
+       3,    0,   51,    2, 0x0a,    2 /* Public */,
+       4,    2,   52,    2, 0x0a,    3 /* Public */,
+       9,    0,   57,    2, 0x0a,    6 /* Public */,
+      10,    0,   58,    2, 0x0a,    7 /* Public */,
+      11,    0,   59,    2, 0x0a,    8 /* Public */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void, 0x80000000 | 5, 0x80000000 | 7,    6,    8,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Int,
@@ -103,6 +120,10 @@ Q_CONSTINIT const QMetaObject SpecificWorker::staticMetaObject = { {
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'compute'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        // method 'draw_lidar'
+        QtPrivate::TypeAndForceComplete<void, std::false_type>,
+        QtPrivate::TypeAndForceComplete<const RoboCompLidar3D::TPoints &, std::false_type>,
+        QtPrivate::TypeAndForceComplete<QGraphicsScene *, std::false_type>,
         // method 'emergency'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'restore'
@@ -121,11 +142,23 @@ void SpecificWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         switch (_id) {
         case 0: _t->initialize(); break;
         case 1: _t->compute(); break;
-        case 2: _t->emergency(); break;
-        case 3: _t->restore(); break;
-        case 4: { int _r = _t->startup_check();
+        case 2: _t->draw_lidar((*reinterpret_cast< std::add_pointer_t<RoboCompLidar3D::TPoints>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QGraphicsScene*>>(_a[2]))); break;
+        case 3: _t->emergency(); break;
+        case 4: _t->restore(); break;
+        case 5: { int _r = _t->startup_check();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         default: ;
+        }
+    } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
+        switch (_id) {
+        default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+        case 2:
+            switch (*reinterpret_cast<int*>(_a[1])) {
+            default: *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType(); break;
+            case 1:
+                *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType::fromType< QGraphicsScene* >(); break;
+            }
+            break;
         }
     }
 }
@@ -149,13 +182,13 @@ int SpecificWorker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 5)
+        if (_id < 6)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 5;
+        _id -= 6;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 5)
-            *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 5;
+        if (_id < 6)
+            qt_static_metacall(this, _c, _id, _a);
+        _id -= 6;
     }
     return _id;
 }

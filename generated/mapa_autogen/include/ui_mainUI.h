@@ -12,50 +12,47 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QFrame>
-#include <QtWidgets/QMainWindow>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
 
-class Ui_MainWindow
+class Ui_guiDlg
 {
 public:
     QWidget *centralwidget;
     QFrame *frame;
     QStatusBar *statusbar;
 
-    void setupUi(QMainWindow *MainWindow)
+    void setupUi(QWidget *guiDlg)
     {
-        if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName("MainWindow");
-        MainWindow->resize(1122, 887);
-        centralwidget = new QWidget(MainWindow);
+        if (guiDlg->objectName().isEmpty())
+            guiDlg->setObjectName("guiDlg");
+        guiDlg->resize(1122, 887);
+        centralwidget = new QWidget(guiDlg);
         centralwidget->setObjectName("centralwidget");
         frame = new QFrame(centralwidget);
         frame->setObjectName("frame");
         frame->setGeometry(QRect(0, 0, 1101, 881));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
-        MainWindow->setCentralWidget(centralwidget);
-        statusbar = new QStatusBar(MainWindow);
+        statusbar = new QStatusBar(guiDlg);
         statusbar->setObjectName("statusbar");
-        MainWindow->setStatusBar(statusbar);
 
-        retranslateUi(MainWindow);
+        retranslateUi(guiDlg);
 
-        QMetaObject::connectSlotsByName(MainWindow);
+        QMetaObject::connectSlotsByName(guiDlg);
     } // setupUi
 
-    void retranslateUi(QMainWindow *MainWindow)
+    void retranslateUi(QWidget *guiDlg)
     {
-        MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        guiDlg->setWindowTitle(QCoreApplication::translate("guiDlg", "mapa", nullptr));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class MainWindow: public Ui_MainWindow {};
+    class guiDlg: public Ui_guiDlg {};
 } // namespace Ui
 
 QT_END_NAMESPACE

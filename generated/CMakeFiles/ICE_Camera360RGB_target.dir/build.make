@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xeihtt/robotica_avanzada/mapa
+CMAKE_SOURCE_DIR = /home/usuario/RobAvanzadaG3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xeihtt/robotica_avanzada/mapa
+CMAKE_BINARY_DIR = /home/usuario/RobAvanzadaG3
 
 # Utility rule file for ICE_Camera360RGB_target.
 
@@ -68,9 +68,9 @@ include generated/CMakeFiles/ICE_Camera360RGB_target.dir/progress.make
 
 generated/CMakeFiles/ICE_Camera360RGB_target: generated/Camera360RGB.ice
 
-generated/Camera360RGB.ice: /home/robocomp/robocomp/interfaces/IDSLs/Camera360RGB.idsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/robotica_avanzada/mapa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/xeihtt/robotica_avanzada/mapa/generated/Camera360RGB.ice from /home/robocomp/robocomp//interfaces/IDSLs/Camera360RGB.idsl"
-	cd /home/xeihtt/robotica_avanzada/mapa/generated && robocompdsl /home/robocomp/robocomp//interfaces/IDSLs/Camera360RGB.idsl /home/xeihtt/robotica_avanzada/mapa/generated/Camera360RGB.ice
+generated/Camera360RGB.ice: /home/usuario/robocomp/interfaces/IDSLs/Camera360RGB.idsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/usuario/RobAvanzadaG3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/usuario/RobAvanzadaG3/generated/Camera360RGB.ice from /home/usuario/robocomp/interfaces/IDSLs/Camera360RGB.idsl"
+	cd /home/usuario/RobAvanzadaG3/generated && robocompdsl /home/usuario/robocomp/interfaces/IDSLs/Camera360RGB.idsl /home/usuario/RobAvanzadaG3/generated/Camera360RGB.ice
 
 ICE_Camera360RGB_target: generated/CMakeFiles/ICE_Camera360RGB_target
 ICE_Camera360RGB_target: generated/Camera360RGB.ice
@@ -82,10 +82,10 @@ generated/CMakeFiles/ICE_Camera360RGB_target.dir/build: ICE_Camera360RGB_target
 .PHONY : generated/CMakeFiles/ICE_Camera360RGB_target.dir/build
 
 generated/CMakeFiles/ICE_Camera360RGB_target.dir/clean:
-	cd /home/xeihtt/robotica_avanzada/mapa/generated && $(CMAKE_COMMAND) -P CMakeFiles/ICE_Camera360RGB_target.dir/cmake_clean.cmake
+	cd /home/usuario/RobAvanzadaG3/generated && $(CMAKE_COMMAND) -P CMakeFiles/ICE_Camera360RGB_target.dir/cmake_clean.cmake
 .PHONY : generated/CMakeFiles/ICE_Camera360RGB_target.dir/clean
 
 generated/CMakeFiles/ICE_Camera360RGB_target.dir/depend:
-	cd /home/xeihtt/robotica_avanzada/mapa && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xeihtt/robotica_avanzada/mapa /home/xeihtt/robotica_avanzada/mapa/generated /home/xeihtt/robotica_avanzada/mapa /home/xeihtt/robotica_avanzada/mapa/generated /home/xeihtt/robotica_avanzada/mapa/generated/CMakeFiles/ICE_Camera360RGB_target.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/usuario/RobAvanzadaG3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/RobAvanzadaG3 /home/usuario/RobAvanzadaG3/generated /home/usuario/RobAvanzadaG3 /home/usuario/RobAvanzadaG3/generated /home/usuario/RobAvanzadaG3/generated/CMakeFiles/ICE_Camera360RGB_target.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : generated/CMakeFiles/ICE_Camera360RGB_target.dir/depend
 

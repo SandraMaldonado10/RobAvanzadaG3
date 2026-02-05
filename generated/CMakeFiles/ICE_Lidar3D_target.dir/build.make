@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xeihtt/robotica_avanzada/mapa
+CMAKE_SOURCE_DIR = /home/usuario/RobAvanzadaG3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xeihtt/robotica_avanzada/mapa
+CMAKE_BINARY_DIR = /home/usuario/RobAvanzadaG3
 
 # Utility rule file for ICE_Lidar3D_target.
 
@@ -68,9 +68,9 @@ include generated/CMakeFiles/ICE_Lidar3D_target.dir/progress.make
 
 generated/CMakeFiles/ICE_Lidar3D_target: generated/Lidar3D.ice
 
-generated/Lidar3D.ice: /home/robocomp/robocomp/interfaces/IDSLs/Lidar3D.idsl
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/robotica_avanzada/mapa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/xeihtt/robotica_avanzada/mapa/generated/Lidar3D.ice from /home/robocomp/robocomp//interfaces/IDSLs/Lidar3D.idsl"
-	cd /home/xeihtt/robotica_avanzada/mapa/generated && robocompdsl /home/robocomp/robocomp//interfaces/IDSLs/Lidar3D.idsl /home/xeihtt/robotica_avanzada/mapa/generated/Lidar3D.ice
+generated/Lidar3D.ice: /home/usuario/robocomp/interfaces/IDSLs/Lidar3D.idsl
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/usuario/RobAvanzadaG3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /home/usuario/RobAvanzadaG3/generated/Lidar3D.ice from /home/usuario/robocomp/interfaces/IDSLs/Lidar3D.idsl"
+	cd /home/usuario/RobAvanzadaG3/generated && robocompdsl /home/usuario/robocomp/interfaces/IDSLs/Lidar3D.idsl /home/usuario/RobAvanzadaG3/generated/Lidar3D.ice
 
 ICE_Lidar3D_target: generated/CMakeFiles/ICE_Lidar3D_target
 ICE_Lidar3D_target: generated/Lidar3D.ice
@@ -82,10 +82,10 @@ generated/CMakeFiles/ICE_Lidar3D_target.dir/build: ICE_Lidar3D_target
 .PHONY : generated/CMakeFiles/ICE_Lidar3D_target.dir/build
 
 generated/CMakeFiles/ICE_Lidar3D_target.dir/clean:
-	cd /home/xeihtt/robotica_avanzada/mapa/generated && $(CMAKE_COMMAND) -P CMakeFiles/ICE_Lidar3D_target.dir/cmake_clean.cmake
+	cd /home/usuario/RobAvanzadaG3/generated && $(CMAKE_COMMAND) -P CMakeFiles/ICE_Lidar3D_target.dir/cmake_clean.cmake
 .PHONY : generated/CMakeFiles/ICE_Lidar3D_target.dir/clean
 
 generated/CMakeFiles/ICE_Lidar3D_target.dir/depend:
-	cd /home/xeihtt/robotica_avanzada/mapa && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xeihtt/robotica_avanzada/mapa /home/xeihtt/robotica_avanzada/mapa/generated /home/xeihtt/robotica_avanzada/mapa /home/xeihtt/robotica_avanzada/mapa/generated /home/xeihtt/robotica_avanzada/mapa/generated/CMakeFiles/ICE_Lidar3D_target.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/usuario/RobAvanzadaG3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/RobAvanzadaG3 /home/usuario/RobAvanzadaG3/generated /home/usuario/RobAvanzadaG3 /home/usuario/RobAvanzadaG3/generated /home/usuario/RobAvanzadaG3/generated/CMakeFiles/ICE_Lidar3D_target.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : generated/CMakeFiles/ICE_Lidar3D_target.dir/depend
 

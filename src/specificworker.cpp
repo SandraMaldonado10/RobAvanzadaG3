@@ -68,6 +68,13 @@ void SpecificWorker::initialize()
 {
     std::cout << "initialize worker" << std::endl;
 
+	// Viewer
+	viewer = new AbstractGraphicViewer(this->frame, params.GRID_MAX_DIM);
+	auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
+	robot_draw = r;
+
+	show ();
+
     //initializeCODE
 
     /////////GET PARAMS, OPEND DEVICES....////////
@@ -84,20 +91,38 @@ void SpecificWorker::compute()
 
 	RoboCompLidar3D::TPoints data = filtro_datos();
 
+	draw_lidar(data, &viewer->scene);
 
-	//computeCODE
-	//try
-	//{
-	//  camera_proxy->getYImage(0,img, cState, bState);
-    //    if (img.empty())
-    //        emit goToEmergency()
-	//  memcpy(image_gray.data, &img[0], m_width*m_height*sizeof(uchar));
-	//  searchTags(image_gray);
-	//}
-	//catch(const Ice::Exception &e)
-	//{
-	//  std::cout << "Error reading from Camera" << e << std::endl;
-	//}
+	try
+	{
+		auto a = webots2robocomp_proxy->getObjectPose("shadow");
+		// Coordenadas:
+		//qDebug << a.
+	}
+	catch (const Ice::Exception &e){}
+}
+
+
+void SpecificWorker::draw_lidar(const RoboCompLidar3D::TPoints &filtered_points, QGraphicsScene *scene)
+{
+	static std::vector<QGraphicsItem*> draw_points;
+	for (const auto &p : draw_points)
+	{
+		scene->removeItem(p);
+		delete p;
+	}
+	draw_points.clear();
+
+	const QColor color("LightGreen");
+	const QPen pen(color, 10);
+	//const QBrush brush(color, Qt::SolidPattern);
+	for (const auto &p : filtered_points)
+	{
+		const auto dp = scene->addRect(-25, -25, 50, 50, pen);
+		qInfo() << p.x << p.y;;
+		dp->setPos(p.x, p.y);
+		draw_points.push_back(dp);   // add to the list of points to be deleted next time
+	}
 }
 
 
@@ -132,27 +157,16 @@ int SpecificWorker::startup_check()
 
 RoboCompLidar3D::TPoints SpecificWorker::filtro_datos()
 {
-	std::optional<RoboCompLidar3D::TPoints> filter_data;
-	RoboCompLidar3D::TPoints  p_filter;
+	RoboCompLidar3D::TData  data;
 	try
 	{
-		auto data =  lidar3d_proxy->getLidarData("bpearl", 0, 2*M_PI, 1); //para mayor precision (puedo comparar ejemplos de ejecucion entre este y 0.1f round en la docu)
-		//qInfo() << "Size: "<<data.points.size();
-		if (data.points.empty()){qDebug()<<"No points"; return p_filter;}
+		data =  lidar3d_proxy->getLidarData("bpearl", 0, 2*M_PI, 1); //para mayor precision (puedo comparar ejemplos de ejecucion entre este y 0.1f round en la docu)
+		qInfo() << "Size: "<<data.points.size();
 
-		/*
-		std::ranges::copy_if(data.points, std::back_inserter(p_filter),
-												   [](auto  &a){ return a.z < 500 and a.distance2d > 200;});
-		*/
-
-		//Esto siguiente es opcional
-		//p_filter = filter_isolated_points(data.points, 200); //TODO: Código del anterior proyecto, comprobar si es necesario
-		if (p_filter.empty())
-			return {};
-
-		return p_filter;
 	}
-	catch (const Ice::Exception &e){ std::cout<<e.what()<<std::endl; return p_filter;}
+	catch (const Ice::Exception &e){ std::cout<<e.what()<<std::endl; return {};}
+	return data.points;
+
 }
 
 

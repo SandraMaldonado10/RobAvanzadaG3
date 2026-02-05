@@ -57,18 +57,18 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/xeihtt/robotica_avanzada/mapa
+CMAKE_SOURCE_DIR = /home/usuario/RobAvanzadaG3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/xeihtt/robotica_avanzada/mapa
+CMAKE_BINARY_DIR = /home/usuario/RobAvanzadaG3
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/snap/cmake/1515/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xeihtt/robotica_avanzada/mapa/CMakeFiles /home/xeihtt/robotica_avanzada/mapa//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/RobAvanzadaG3/CMakeFiles /home/usuario/RobAvanzadaG3//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/xeihtt/robotica_avanzada/mapa/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/RobAvanzadaG3/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ICES__home_xeihtt_robotica_avanzada_mapa_generated
+# Target rules for targets named ICES__home_usuario_RobAvanzadaG3_generated
 
 # Build rule for target.
-ICES__home_xeihtt_robotica_avanzada_mapa_generated: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICES__home_xeihtt_robotica_avanzada_mapa_generated
-.PHONY : ICES__home_xeihtt_robotica_avanzada_mapa_generated
+ICES__home_usuario_RobAvanzadaG3_generated: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICES__home_usuario_RobAvanzadaG3_generated
+.PHONY : ICES__home_usuario_RobAvanzadaG3_generated
 
 # fast build rule for target.
-ICES__home_xeihtt_robotica_avanzada_mapa_generated/fast:
-	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICES__home_xeihtt_robotica_avanzada_mapa_generated.dir/build.make generated/CMakeFiles/ICES__home_xeihtt_robotica_avanzada_mapa_generated.dir/build
-.PHONY : ICES__home_xeihtt_robotica_avanzada_mapa_generated/fast
+ICES__home_usuario_RobAvanzadaG3_generated/fast:
+	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICES__home_usuario_RobAvanzadaG3_generated.dir/build.make generated/CMakeFiles/ICES__home_usuario_RobAvanzadaG3_generated.dir/build
+.PHONY : ICES__home_usuario_RobAvanzadaG3_generated/fast
 
 #=============================================================================
 # Target rules for targets named ICE_OmniRobot_target
@@ -186,6 +186,32 @@ ICE_OmniRobot_target: cmake_check_build_system
 ICE_OmniRobot_target/fast:
 	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_OmniRobot_target.dir/build.make generated/CMakeFiles/ICE_OmniRobot_target.dir/build
 .PHONY : ICE_OmniRobot_target/fast
+
+#=============================================================================
+# Target rules for targets named ICE_Gridder_target
+
+# Build rule for target.
+ICE_Gridder_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICE_Gridder_target
+.PHONY : ICE_Gridder_target
+
+# fast build rule for target.
+ICE_Gridder_target/fast:
+	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_Gridder_target.dir/build.make generated/CMakeFiles/ICE_Gridder_target.dir/build
+.PHONY : ICE_Gridder_target/fast
+
+#=============================================================================
+# Target rules for targets named ICE_GenericBase_target
+
+# Build rule for target.
+ICE_GenericBase_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICE_GenericBase_target
+.PHONY : ICE_GenericBase_target
+
+# fast build rule for target.
+ICE_GenericBase_target/fast:
+	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_GenericBase_target.dir/build.make generated/CMakeFiles/ICE_GenericBase_target.dir/build
+.PHONY : ICE_GenericBase_target/fast
 
 #=============================================================================
 # Target rules for targets named ICE_Lidar3D_target
@@ -214,17 +240,17 @@ ICE_Camera360RGB_target/fast:
 .PHONY : ICE_Camera360RGB_target/fast
 
 #=============================================================================
-# Target rules for targets named ICE_GenericBase_target
+# Target rules for targets named ICE_Webots2Robocomp_target
 
 # Build rule for target.
-ICE_GenericBase_target: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICE_GenericBase_target
-.PHONY : ICE_GenericBase_target
+ICE_Webots2Robocomp_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICE_Webots2Robocomp_target
+.PHONY : ICE_Webots2Robocomp_target
 
 # fast build rule for target.
-ICE_GenericBase_target/fast:
-	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_GenericBase_target.dir/build.make generated/CMakeFiles/ICE_GenericBase_target.dir/build
-.PHONY : ICE_GenericBase_target/fast
+ICE_Webots2Robocomp_target/fast:
+	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_Webots2Robocomp_target.dir/build.make generated/CMakeFiles/ICE_Webots2Robocomp_target.dir/build
+.PHONY : ICE_Webots2Robocomp_target/fast
 
 #=============================================================================
 # Target rules for targets named mapa
@@ -277,11 +303,13 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... ICES__home_xeihtt_robotica_avanzada_mapa_generated"
+	@echo "... ICES__home_usuario_RobAvanzadaG3_generated"
 	@echo "... ICE_Camera360RGB_target"
 	@echo "... ICE_GenericBase_target"
+	@echo "... ICE_Gridder_target"
 	@echo "... ICE_Lidar3D_target"
 	@echo "... ICE_OmniRobot_target"
+	@echo "... ICE_Webots2Robocomp_target"
 	@echo "... mapa_autogen"
 	@echo "... mapa_autogen_timestamp_deps"
 	@echo "... mapa"

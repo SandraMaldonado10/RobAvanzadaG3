@@ -1,56 +1,35 @@
 mapa_autogen/timestamp: \
-	/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp \
-	/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.h \
-	/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp \
-	/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-	/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp \
-	/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.h \
-	/home/xeihtt/robocomp/classes/grid2d/grid.cpp \
-	/home/xeihtt/robocomp/classes/grid2d/grid.h \
-	/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp \
-	/home/xeihtt/robocomp/classes/rapplication/rapplication.h \
-	/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp \
-	/home/xeihtt/robocomp/classes/sigwatch/sigwatch.h \
-	/home/xeihtt/robocomp/classes/sigwatch/sigwatch_p.h \
-	/home/xeihtt/robocomp/cmake/modules/qt.cmake \
-	/home/xeihtt/robocomp/cmake/robocomp.cmake \
-	/home/xeihtt/robocomp/core/classes/ConfigLoader/ConfigLoader.h \
-	/home/xeihtt/robocomp/core/classes/ConfigLoader/ConfigLoader.tpp \
-	/home/xeihtt/robocomp/core/classes/grafcetStep/GRAFCETStep.h \
-	/home/xeihtt/robocomp/core/classes/grid2d/grid.h \
-	/home/xeihtt/robotica_avanzada/mapa/generated/CMakeLists.txt \
-	/home/xeihtt/robotica_avanzada/mapa/generated/Camera360RGB.h \
-	/home/xeihtt/robotica_avanzada/mapa/generated/GenericBase.h \
-	/home/xeihtt/robotica_avanzada/mapa/generated/Lidar3D.h \
-	/home/xeihtt/robotica_avanzada/mapa/generated/OmniRobot.h \
-	/home/xeihtt/robotica_avanzada/mapa/generated/genericworker.cpp \
-	/home/xeihtt/robotica_avanzada/mapa/generated/genericworker.h \
-	/home/xeihtt/robotica_avanzada/mapa/generated/main.cpp \
-	/home/xeihtt/robotica_avanzada/mapa/generated/mapa_autogen/moc_predefs.h \
-	/home/xeihtt/robotica_avanzada/mapa/src/CMakeLists.txt \
-	/home/xeihtt/robotica_avanzada/mapa/src/specificworker.cpp \
-	/home/xeihtt/robotica_avanzada/mapa/src/specificworker.h \
-	/snap/cmake/1515/share/cmake-4.2/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/CMakeFindDependencyMacro.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/CheckCSourceCompiles.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/CheckCXXCompilerFlag.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/CheckCXXSourceCompiles.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/CheckIncludeFile.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/CheckLibraryExists.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/FeatureSummary.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/FindIce.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/FindOpenGL.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/FindPackageHandleStandardArgs.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/FindPackageMessage.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/FindPkgConfig.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/FindThreads.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/FindVulkan.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/GNUInstallDirs.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/Internal/CheckCompilerFlag.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/Internal/CheckFlagCommonConfig.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/Internal/CheckSourceCompiles.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/MacroAddFileDependencies.cmake \
-	/snap/cmake/1515/share/cmake-4.2/Modules/SelectLibraryConfigurations.cmake \
+	/home/usuario/RobAvanzadaG3/generated/CMakeLists.txt \
+	/home/usuario/RobAvanzadaG3/generated/Camera360RGB.h \
+	/home/usuario/RobAvanzadaG3/generated/GenericBase.h \
+	/home/usuario/RobAvanzadaG3/generated/Lidar3D.h \
+	/home/usuario/RobAvanzadaG3/generated/OmniRobot.h \
+	/home/usuario/RobAvanzadaG3/generated/genericworker.cpp \
+	/home/usuario/RobAvanzadaG3/generated/genericworker.h \
+	/home/usuario/RobAvanzadaG3/generated/main.cpp \
+	/home/usuario/RobAvanzadaG3/generated/mapa_autogen/moc_predefs.h \
+	/home/usuario/RobAvanzadaG3/src/CMakeLists.txt \
+	/home/usuario/RobAvanzadaG3/src/specificworker.cpp \
+	/home/usuario/RobAvanzadaG3/src/specificworker.h \
+	/home/usuario/robocomp/classes/ConfigLoader/ConfigLoader.cpp \
+	/home/usuario/robocomp/classes/ConfigLoader/ConfigLoader.h \
+	/home/usuario/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp \
+	/home/usuario/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+	/home/usuario/robocomp/classes/grafcetStep/GRAFCETStep.cpp \
+	/home/usuario/robocomp/classes/grafcetStep/GRAFCETStep.h \
+	/home/usuario/robocomp/classes/grid2d/grid.cpp \
+	/home/usuario/robocomp/classes/grid2d/grid.h \
+	/home/usuario/robocomp/classes/rapplication/rapplication.cpp \
+	/home/usuario/robocomp/classes/rapplication/rapplication.h \
+	/home/usuario/robocomp/classes/sigwatch/sigwatch.cpp \
+	/home/usuario/robocomp/classes/sigwatch/sigwatch.h \
+	/home/usuario/robocomp/cmake/modules/qt.cmake \
+	/home/usuario/robocomp/cmake/robocomp.cmake \
+	/home/usuario/robocomp/core/classes/ConfigLoader/ConfigLoader.h \
+	/home/usuario/robocomp/core/classes/ConfigLoader/ConfigLoader.tpp \
+	/home/usuario/robocomp/core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+	/home/usuario/robocomp/core/classes/grafcetStep/GRAFCETStep.h \
+	/home/usuario/robocomp/core/classes/grid2d/grid.h \
 	/usr/include/GL/gl.h \
 	/usr/include/Ice/AsyncResult.h \
 	/usr/include/Ice/BatchRequestQueueF.h \
@@ -627,56 +606,6 @@ mapa_autogen/timestamp: \
 	/usr/include/strings.h \
 	/usr/include/syscall.h \
 	/usr/include/time.h \
-	/usr/include/toml++/impl/array.hpp \
-	/usr/include/toml++/impl/array.inl \
-	/usr/include/toml++/impl/at_path.hpp \
-	/usr/include/toml++/impl/at_path.inl \
-	/usr/include/toml++/impl/date_time.hpp \
-	/usr/include/toml++/impl/formatter.hpp \
-	/usr/include/toml++/impl/formatter.inl \
-	/usr/include/toml++/impl/forward_declarations.hpp \
-	/usr/include/toml++/impl/header_end.hpp \
-	/usr/include/toml++/impl/header_start.hpp \
-	/usr/include/toml++/impl/json_formatter.hpp \
-	/usr/include/toml++/impl/json_formatter.inl \
-	/usr/include/toml++/impl/key.hpp \
-	/usr/include/toml++/impl/make_node.hpp \
-	/usr/include/toml++/impl/node.hpp \
-	/usr/include/toml++/impl/node.inl \
-	/usr/include/toml++/impl/node_view.hpp \
-	/usr/include/toml++/impl/parse_error.hpp \
-	/usr/include/toml++/impl/parse_result.hpp \
-	/usr/include/toml++/impl/parser.hpp \
-	/usr/include/toml++/impl/parser.inl \
-	/usr/include/toml++/impl/path.hpp \
-	/usr/include/toml++/impl/path.inl \
-	/usr/include/toml++/impl/preprocessor.hpp \
-	/usr/include/toml++/impl/print_to_stream.hpp \
-	/usr/include/toml++/impl/print_to_stream.inl \
-	/usr/include/toml++/impl/simd.hpp \
-	/usr/include/toml++/impl/source_region.hpp \
-	/usr/include/toml++/impl/std_except.hpp \
-	/usr/include/toml++/impl/std_initializer_list.hpp \
-	/usr/include/toml++/impl/std_map.hpp \
-	/usr/include/toml++/impl/std_new.hpp \
-	/usr/include/toml++/impl/std_optional.hpp \
-	/usr/include/toml++/impl/std_string.hpp \
-	/usr/include/toml++/impl/std_string.inl \
-	/usr/include/toml++/impl/std_utility.hpp \
-	/usr/include/toml++/impl/std_vector.hpp \
-	/usr/include/toml++/impl/table.hpp \
-	/usr/include/toml++/impl/table.inl \
-	/usr/include/toml++/impl/toml_formatter.hpp \
-	/usr/include/toml++/impl/toml_formatter.inl \
-	/usr/include/toml++/impl/unicode.hpp \
-	/usr/include/toml++/impl/unicode.inl \
-	/usr/include/toml++/impl/unicode_autogenerated.hpp \
-	/usr/include/toml++/impl/value.hpp \
-	/usr/include/toml++/impl/version.hpp \
-	/usr/include/toml++/impl/yaml_formatter.hpp \
-	/usr/include/toml++/impl/yaml_formatter.inl \
-	/usr/include/toml++/toml.h \
-	/usr/include/toml++/toml.hpp \
 	/usr/include/unistd.h \
 	/usr/include/wchar.h \
 	/usr/include/wctype.h \
@@ -804,7 +733,6 @@ mapa_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QScopedPointer \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
-	/usr/include/x86_64-linux-gnu/qt6/QtCore/QSocketNotifier \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
 	/usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
@@ -1408,5 +1336,76 @@ mapa_autogen/timestamp: \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Xml/Qt6XmlTargets-none.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Xml/Qt6XmlTargets.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Xml/Qt6XmlVersionlessTargets.cmake \
-	/home/xeihtt/robotica_avanzada/mapa/src/mainUI.ui \
-	/snap/cmake/1515/bin/cmake
+	/usr/local/include/toml++/impl/array.hpp \
+	/usr/local/include/toml++/impl/array.inl \
+	/usr/local/include/toml++/impl/at_path.hpp \
+	/usr/local/include/toml++/impl/at_path.inl \
+	/usr/local/include/toml++/impl/date_time.hpp \
+	/usr/local/include/toml++/impl/formatter.hpp \
+	/usr/local/include/toml++/impl/formatter.inl \
+	/usr/local/include/toml++/impl/forward_declarations.hpp \
+	/usr/local/include/toml++/impl/header_end.hpp \
+	/usr/local/include/toml++/impl/header_start.hpp \
+	/usr/local/include/toml++/impl/json_formatter.hpp \
+	/usr/local/include/toml++/impl/json_formatter.inl \
+	/usr/local/include/toml++/impl/key.hpp \
+	/usr/local/include/toml++/impl/make_node.hpp \
+	/usr/local/include/toml++/impl/node.hpp \
+	/usr/local/include/toml++/impl/node.inl \
+	/usr/local/include/toml++/impl/node_view.hpp \
+	/usr/local/include/toml++/impl/parse_error.hpp \
+	/usr/local/include/toml++/impl/parse_result.hpp \
+	/usr/local/include/toml++/impl/parser.hpp \
+	/usr/local/include/toml++/impl/parser.inl \
+	/usr/local/include/toml++/impl/path.hpp \
+	/usr/local/include/toml++/impl/path.inl \
+	/usr/local/include/toml++/impl/preprocessor.hpp \
+	/usr/local/include/toml++/impl/print_to_stream.hpp \
+	/usr/local/include/toml++/impl/print_to_stream.inl \
+	/usr/local/include/toml++/impl/simd.hpp \
+	/usr/local/include/toml++/impl/source_region.hpp \
+	/usr/local/include/toml++/impl/std_except.hpp \
+	/usr/local/include/toml++/impl/std_initializer_list.hpp \
+	/usr/local/include/toml++/impl/std_map.hpp \
+	/usr/local/include/toml++/impl/std_new.hpp \
+	/usr/local/include/toml++/impl/std_optional.hpp \
+	/usr/local/include/toml++/impl/std_string.hpp \
+	/usr/local/include/toml++/impl/std_string.inl \
+	/usr/local/include/toml++/impl/std_utility.hpp \
+	/usr/local/include/toml++/impl/std_vector.hpp \
+	/usr/local/include/toml++/impl/table.hpp \
+	/usr/local/include/toml++/impl/table.inl \
+	/usr/local/include/toml++/impl/toml_formatter.hpp \
+	/usr/local/include/toml++/impl/toml_formatter.inl \
+	/usr/local/include/toml++/impl/unicode.hpp \
+	/usr/local/include/toml++/impl/unicode.inl \
+	/usr/local/include/toml++/impl/unicode_autogenerated.hpp \
+	/usr/local/include/toml++/impl/value.hpp \
+	/usr/local/include/toml++/impl/version.hpp \
+	/usr/local/include/toml++/impl/yaml_formatter.hpp \
+	/usr/local/include/toml++/impl/yaml_formatter.inl \
+	/usr/local/include/toml++/toml.h \
+	/usr/local/include/toml++/toml.hpp \
+	/usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+	/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
+	/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
+	/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
+	/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
+	/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
+	/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
+	/usr/share/cmake-3.28/Modules/FeatureSummary.cmake \
+	/usr/share/cmake-3.28/Modules/FindIce.cmake \
+	/usr/share/cmake-3.28/Modules/FindOpenGL.cmake \
+	/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
+	/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
+	/usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
+	/usr/share/cmake-3.28/Modules/FindThreads.cmake \
+	/usr/share/cmake-3.28/Modules/FindVulkan.cmake \
+	/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake \
+	/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
+	/usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
+	/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
+	/usr/share/cmake-3.28/Modules/MacroAddFileDependencies.cmake \
+	/usr/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake \
+	/home/usuario/RobAvanzadaG3/src/mainUI.ui \
+	/usr/bin/cmake
