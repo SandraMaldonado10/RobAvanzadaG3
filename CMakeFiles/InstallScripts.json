@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/xeihtt/robotica_avanzada/mapa/cmake_install.cmake",
+		"/home/xeihtt/robotica_avanzada/mapa/generated/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
