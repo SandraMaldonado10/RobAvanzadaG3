@@ -81,7 +81,10 @@ public slots:
 	void update_pose(RoboCompWebots2Robocomp::ObjectPose pose, double yaw);
 
 	//Transforms param local_point to the room's coordinate system by multiplying with robot_pose (which already is at the room's coordinate system)
-	Eigen::Vector2f transform_to_world(const RoboCompLidar3D::TPoint &local_point, const Eigen::Affine2f &robot_pose);
+	Eigen::Vector2f transform_to_world(const RoboCompLidar3D::TPoint &local_point);
+
+	//Obtains the robot's rotation from the linear part of robot_pose_display
+	float obtain_rotation();
 
 	/**
 	 * \brief Handles the emergency state loop.

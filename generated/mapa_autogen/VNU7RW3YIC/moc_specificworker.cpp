@@ -28,7 +28,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
 struct qt_meta_stringdata_SpecificWorker_t {
-    uint offsetsAndSizes[44];
+    uint offsetsAndSizes[42];
     char stringdata0[15];
     char stringdata1[11];
     char stringdata2[1];
@@ -47,10 +47,9 @@ struct qt_meta_stringdata_SpecificWorker_t {
     char stringdata15[24];
     char stringdata16[12];
     char stringdata17[16];
-    char stringdata18[11];
-    char stringdata19[10];
-    char stringdata20[8];
-    char stringdata21[14];
+    char stringdata18[10];
+    char stringdata19[8];
+    char stringdata20[14];
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(sizeof(qt_meta_stringdata_SpecificWorker_t::offsetsAndSizes) + ofs), len 
@@ -73,11 +72,10 @@ Q_CONSTINIT static const qt_meta_stringdata_SpecificWorker_t qt_meta_stringdata_
         QT_MOC_LITERAL(185, 15),  // "Eigen::Vector2f"
         QT_MOC_LITERAL(201, 23),  // "RoboCompLidar3D::TPoint"
         QT_MOC_LITERAL(225, 11),  // "local_point"
-        QT_MOC_LITERAL(237, 15),  // "Eigen::Affine2f"
-        QT_MOC_LITERAL(253, 10),  // "robot_pose"
-        QT_MOC_LITERAL(264, 9),  // "emergency"
-        QT_MOC_LITERAL(274, 7),  // "restore"
-        QT_MOC_LITERAL(282, 13)   // "startup_check"
+        QT_MOC_LITERAL(237, 15),  // "obtain_rotation"
+        QT_MOC_LITERAL(253, 9),  // "emergency"
+        QT_MOC_LITERAL(263, 7),  // "restore"
+        QT_MOC_LITERAL(271, 13)   // "startup_check"
     },
     "SpecificWorker",
     "initialize",
@@ -96,8 +94,7 @@ Q_CONSTINIT static const qt_meta_stringdata_SpecificWorker_t qt_meta_stringdata_
     "Eigen::Vector2f",
     "RoboCompLidar3D::TPoint",
     "local_point",
-    "Eigen::Affine2f",
-    "robot_pose",
+    "obtain_rotation",
     "emergency",
     "restore",
     "startup_check"
@@ -111,7 +108,7 @@ Q_CONSTINIT static const uint qt_meta_data_SpecificWorker[] = {
       10,       // revision
        0,       // classname
        0,    0, // classinfo
-       8,   14, // methods
+       9,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -119,21 +116,23 @@ Q_CONSTINIT static const uint qt_meta_data_SpecificWorker[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   62,    2, 0x0a,    1 /* Public */,
-       3,    0,   63,    2, 0x0a,    2 /* Public */,
-       4,    2,   64,    2, 0x0a,    3 /* Public */,
-       9,    2,   69,    2, 0x0a,    6 /* Public */,
-      13,    2,   74,    2, 0x0a,    9 /* Public */,
-      19,    0,   79,    2, 0x0a,   12 /* Public */,
-      20,    0,   80,    2, 0x0a,   13 /* Public */,
-      21,    0,   81,    2, 0x0a,   14 /* Public */,
+       1,    0,   68,    2, 0x0a,    1 /* Public */,
+       3,    0,   69,    2, 0x0a,    2 /* Public */,
+       4,    2,   70,    2, 0x0a,    3 /* Public */,
+       9,    2,   75,    2, 0x0a,    6 /* Public */,
+      13,    1,   80,    2, 0x0a,    9 /* Public */,
+      17,    0,   83,    2, 0x0a,   11 /* Public */,
+      18,    0,   84,    2, 0x0a,   12 /* Public */,
+      19,    0,   85,    2, 0x0a,   13 /* Public */,
+      20,    0,   86,    2, 0x0a,   14 /* Public */,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, 0x80000000 | 5, 0x80000000 | 7,    6,    8,
     QMetaType::Void, 0x80000000 | 10, QMetaType::Double,   11,   12,
-    0x80000000 | 14, 0x80000000 | 15, 0x80000000 | 17,   16,   18,
+    0x80000000 | 14, 0x80000000 | 15,   16,
+    QMetaType::Float,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Int,
@@ -165,7 +164,8 @@ Q_CONSTINIT const QMetaObject SpecificWorker::staticMetaObject = { {
         // method 'transform_to_world'
         QtPrivate::TypeAndForceComplete<Eigen::Vector2f, std::false_type>,
         QtPrivate::TypeAndForceComplete<const RoboCompLidar3D::TPoint &, std::false_type>,
-        QtPrivate::TypeAndForceComplete<const Eigen::Affine2f &, std::false_type>,
+        // method 'obtain_rotation'
+        QtPrivate::TypeAndForceComplete<float, std::false_type>,
         // method 'emergency'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
         // method 'restore'
@@ -186,11 +186,13 @@ void SpecificWorker::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _
         case 1: _t->compute(); break;
         case 2: _t->draw_lidar((*reinterpret_cast< std::add_pointer_t<RoboCompLidar3D::TPoints>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<QGraphicsScene*>>(_a[2]))); break;
         case 3: _t->update_pose((*reinterpret_cast< std::add_pointer_t<RoboCompWebots2Robocomp::ObjectPose>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<double>>(_a[2]))); break;
-        case 4: { Eigen::Vector2f _r = _t->transform_to_world((*reinterpret_cast< std::add_pointer_t<RoboCompLidar3D::TPoint>>(_a[1])),(*reinterpret_cast< std::add_pointer_t<Eigen::Affine2f>>(_a[2])));
+        case 4: { Eigen::Vector2f _r = _t->transform_to_world((*reinterpret_cast< std::add_pointer_t<RoboCompLidar3D::TPoint>>(_a[1])));
             if (_a[0]) *reinterpret_cast< Eigen::Vector2f*>(_a[0]) = std::move(_r); }  break;
-        case 5: _t->emergency(); break;
-        case 6: _t->restore(); break;
-        case 7: { int _r = _t->startup_check();
+        case 5: { float _r = _t->obtain_rotation();
+            if (_a[0]) *reinterpret_cast< float*>(_a[0]) = std::move(_r); }  break;
+        case 6: _t->emergency(); break;
+        case 7: _t->restore(); break;
+        case 8: { int _r = _t->startup_check();
             if (_a[0]) *reinterpret_cast< int*>(_a[0]) = std::move(_r); }  break;
         default: ;
         }
@@ -227,13 +229,13 @@ int SpecificWorker::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 8)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 8;
+        _id -= 9;
     }
     return _id;
 }

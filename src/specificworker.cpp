@@ -94,7 +94,6 @@ void SpecificWorker::compute()
 	}
 	catch (const Ice::Exception &e){std::cout<<e.what()<<std::endl; return;}
 	double yaw = yawFromQuaternion(pose.orientation.w, pose.orientation.x, pose.orientation.y, pose.orientation.z);
-	double yaw_degrees = (yaw*180)/M_PI;
 
 	// 2. Update robot_pose_display (modifies
 	update_pose(pose, yaw);
@@ -102,7 +101,7 @@ void SpecificWorker::compute()
 	// 3. Update visual representation of the robot
 	robot_draw->setPos(robot_pose_display.translation().x(),
 					   robot_pose_display.translation().y());
-	robot_draw->setRotation(yaw_degrees); //Hay que usar yaw_degrees
+	robot_draw->setRotation((obtain_rotation()*180 / M_PI)); //Hay que usar la rotación en grados
 
 	// 4. Draw lidar points
 	RoboCompLidar3D::TPoints data = filtro_datos();
@@ -125,7 +124,7 @@ void SpecificWorker::draw_lidar(const RoboCompLidar3D::TPoints &filtered_points,
 	//const QBrush brush(color, Qt::SolidPattern);
 	for (const auto &p : filtered_points)
 	{
-		Eigen::Vector2f worldP = transform_to_world(p, robot_pose_display);
+		Eigen::Vector2f worldP = transform_to_world(p);
 
 		const auto dp = scene->addRect(-25, -25, 50, 50, pen);
 		dp->setPos(worldP.x(), worldP.y());
@@ -153,13 +152,13 @@ void SpecificWorker::update_pose(RoboCompWebots2Robocomp::ObjectPose pose, doubl
 	this->robot_pose_display.linear() = Eigen::Rotation2Df(yaw).toRotationMatrix();
 }
 
-Eigen::Vector2f SpecificWorker::transform_to_world(const RoboCompLidar3D::TPoint &local_point, const Eigen::Affine2f &robot_pose)
+Eigen::Vector2f SpecificWorker::transform_to_world(const RoboCompLidar3D::TPoint &local_point)
 {
 	// Creamos un vector Eigen con los datos del Lidar (pasando a metros) TODO: Tengo que dividir por 1000?
 	Eigen::Vector2f p(local_point.x, local_point.y);
 
 	// Aplicamos la transformación completa (rotación + traslación)
-	return robot_pose * p;
+	return robot_pose_display * p;
 }
 
 RoboCompLidar3D::TPoints SpecificWorker::filtro_datos()
@@ -175,7 +174,13 @@ RoboCompLidar3D::TPoints SpecificWorker::filtro_datos()
 	return data.points;
 }
 
+float SpecificWorker::obtain_rotation() {
+	//Extraemos la rotacion, necesario para actualizar robot_draw:
+	Eigen::Rotation2Df rotation;
+	rotation.fromRotationMatrix(robot_pose_display.linear());
 
+	return rotation.angle();
+}
 
 void SpecificWorker::emergency()
 {
