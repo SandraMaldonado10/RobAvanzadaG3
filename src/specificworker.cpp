@@ -161,6 +161,14 @@ Eigen::Vector2f SpecificWorker::transform_to_world(const RoboCompLidar3D::TPoint
 	return robot_pose_display * p;
 }
 
+float SpecificWorker::obtain_rotation() {
+	//Extraemos la rotacion, necesario para actualizar robot_draw:
+	Eigen::Rotation2Df rotation;
+	rotation.fromRotationMatrix(robot_pose_display.linear());
+
+	return rotation.angle();
+}
+
 RoboCompLidar3D::TPoints SpecificWorker::filtro_datos()
 {
 	RoboCompLidar3D::TData  data;
@@ -172,14 +180,6 @@ RoboCompLidar3D::TPoints SpecificWorker::filtro_datos()
 	}
 	catch (const Ice::Exception &e){ std::cout<<e.what()<<std::endl; return {};}
 	return data.points;
-}
-
-float SpecificWorker::obtain_rotation() {
-	//Extraemos la rotacion, necesario para actualizar robot_draw:
-	Eigen::Rotation2Df rotation;
-	rotation.fromRotationMatrix(robot_pose_display.linear());
-
-	return rotation.angle();
 }
 
 void SpecificWorker::emergency()
