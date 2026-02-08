@@ -34,6 +34,8 @@
 #include <genericworker.h>
 #include <grid2d/grid.h>
 #include "abstract_graphic_viewer/abstract_graphic_viewer.h"
+#include <Eigen/Geometry>
+
 
 /**
  * \brief Class SpecificWorker implements the core functionality of the component.
@@ -52,6 +54,8 @@ public:
 
 	//Obtener los datos del LiDAR
 	RoboCompLidar3D::TPoints filtro_datos();
+
+	double yawFromQuaternion(double w, double x, double y, double z);
 
 	/**
      * \brief Destructor for SpecificWorker.
@@ -72,6 +76,12 @@ public slots:
 	void compute();
 
 	void draw_lidar (const RoboCompLidar3D::TPoints &filtered_points, QGraphicsScene *scene);
+
+	//Updates robot_pose_display with the new robot coordinates each iteration (modifies robot_pose_display class attribute)
+	void update_pose(RoboCompWebots2Robocomp::ObjectPose pose, double yaw);
+
+	//Transforms param local_point to the room's coordinate system by multiplying with robot_pose (which already is at the room's coordinate system)
+	Eigen::Vector2f transform_to_world(const RoboCompLidar3D::TPoint &local_point, const Eigen::Affine2f &robot_pose);
 
 	/**
 	 * \brief Handles the emergency state loop.
@@ -136,6 +146,7 @@ private:
 	// viewer
 	AbstractGraphicViewer *viewer;
 	QGraphicsPolygonItem *robot_draw, *robot_room_draw;
+	Eigen::Affine2f robot_pose_display;
 
 signals:
 	//void customSignal();

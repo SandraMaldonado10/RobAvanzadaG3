@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/usuario/RobAvanzadaG3
+CMAKE_SOURCE_DIR = /home/xeihtt/robotica2/mapa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/usuario/RobAvanzadaG3
+CMAKE_BINARY_DIR = /home/xeihtt/robotica2/mapa
 
 # Utility rule file for mapa_autogen.
 
@@ -71,9 +71,9 @@ generated/CMakeFiles/mapa_autogen: generated/mapa_autogen/timestamp
 generated/mapa_autogen/timestamp: /usr/lib/qt6/libexec/moc
 generated/mapa_autogen/timestamp: /usr/lib/qt6/libexec/uic
 generated/mapa_autogen/timestamp: generated/CMakeFiles/mapa_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/usuario/RobAvanzadaG3/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target mapa"
-	cd /home/usuario/RobAvanzadaG3/generated && /usr/bin/cmake -E cmake_autogen /home/usuario/RobAvanzadaG3/generated/CMakeFiles/mapa_autogen.dir/AutogenInfo.json Debug
-	cd /home/usuario/RobAvanzadaG3/generated && /usr/bin/cmake -E touch /home/usuario/RobAvanzadaG3/generated/mapa_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/robotica2/mapa/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target mapa"
+	cd /home/xeihtt/robotica2/mapa/generated && /usr/bin/cmake -E cmake_autogen /home/xeihtt/robotica2/mapa/generated/CMakeFiles/mapa_autogen.dir/AutogenInfo.json Debug
+	cd /home/xeihtt/robotica2/mapa/generated && /usr/bin/cmake -E touch /home/xeihtt/robotica2/mapa/generated/mapa_autogen/timestamp
 
 mapa_autogen: generated/CMakeFiles/mapa_autogen
 mapa_autogen: generated/mapa_autogen/timestamp
@@ -85,10 +85,10 @@ generated/CMakeFiles/mapa_autogen.dir/build: mapa_autogen
 .PHONY : generated/CMakeFiles/mapa_autogen.dir/build
 
 generated/CMakeFiles/mapa_autogen.dir/clean:
-	cd /home/usuario/RobAvanzadaG3/generated && $(CMAKE_COMMAND) -P CMakeFiles/mapa_autogen.dir/cmake_clean.cmake
+	cd /home/xeihtt/robotica2/mapa/generated && $(CMAKE_COMMAND) -P CMakeFiles/mapa_autogen.dir/cmake_clean.cmake
 .PHONY : generated/CMakeFiles/mapa_autogen.dir/clean
 
 generated/CMakeFiles/mapa_autogen.dir/depend:
-	cd /home/usuario/RobAvanzadaG3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/RobAvanzadaG3 /home/usuario/RobAvanzadaG3/generated /home/usuario/RobAvanzadaG3 /home/usuario/RobAvanzadaG3/generated /home/usuario/RobAvanzadaG3/generated/CMakeFiles/mapa_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/xeihtt/robotica2/mapa && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xeihtt/robotica2/mapa /home/xeihtt/robotica2/mapa/generated /home/xeihtt/robotica2/mapa /home/xeihtt/robotica2/mapa/generated /home/xeihtt/robotica2/mapa/generated/CMakeFiles/mapa_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : generated/CMakeFiles/mapa_autogen.dir/depend
 

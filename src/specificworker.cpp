@@ -87,19 +87,26 @@ void SpecificWorker::initialize()
 
 void SpecificWorker::compute()
 {
-    std::cout << "Compute worker" << std::endl;
-
-	RoboCompLidar3D::TPoints data = filtro_datos();
-
-	draw_lidar(data, &viewer->scene);
-
+	RoboCompWebots2Robocomp::ObjectPose pose;
 	try
 	{
-		auto a = webots2robocomp_proxy->getObjectPose("shadow");
-		// Coordenadas:
-		//qDebug << a.
+		pose = this->webots2robocomp_proxy->getObjectPose("shadow");
 	}
-	catch (const Ice::Exception &e){}
+	catch (const Ice::Exception &e){std::cout<<e.what()<<std::endl; return;}
+	double yaw = yawFromQuaternion(pose.orientation.w, pose.orientation.x, pose.orientation.y, pose.orientation.z);
+	double yaw_degrees = (yaw*180)/M_PI;
+
+	// 2. Update robot_pose_display (modifies
+	update_pose(pose, yaw);
+
+	// 3. Update visual representation of the robot
+	robot_draw->setPos(robot_pose_display.translation().x(),
+					   robot_pose_display.translation().y());
+	robot_draw->setRotation(yaw_degrees); //Hay que usar yaw_degrees
+
+	// 4. Draw lidar points
+	RoboCompLidar3D::TPoints data = filtro_datos();
+	draw_lidar(data, &viewer->scene);
 }
 
 
@@ -118,11 +125,54 @@ void SpecificWorker::draw_lidar(const RoboCompLidar3D::TPoints &filtered_points,
 	//const QBrush brush(color, Qt::SolidPattern);
 	for (const auto &p : filtered_points)
 	{
+		Eigen::Vector2f worldP = transform_to_world(p, robot_pose_display);
+
 		const auto dp = scene->addRect(-25, -25, 50, 50, pen);
-		qInfo() << p.x << p.y;;
-		dp->setPos(p.x, p.y);
+		dp->setPos(worldP.x(), worldP.y());
 		draw_points.push_back(dp);   // add to the list of points to be deleted next time
 	}
+}
+
+// Devuelve el yaw (rotación alrededor del eje Z) en radianes
+double SpecificWorker::yawFromQuaternion(double w, double x, double y, double z) {
+
+	//TODO: El quaternion tiene que estar normalizado, si no lo está, descomentar este código
+
+	// double norm = std::sqrt(w*w + x*x + y*y + z*z);
+	// w /= norm; x /= norm; y /= norm; z /= norm;
+
+	double siny_cosp = 2.0 * (w * z + x * y);
+	double cosy_cosp = 1.0 - 2.0 * (y * y + z * z);
+
+	return std::atan2(siny_cosp, cosy_cosp);
+
+}
+
+void SpecificWorker::update_pose(RoboCompWebots2Robocomp::ObjectPose pose, double yaw) {
+	this->robot_pose_display.translation() = Eigen::Vector2f(pose.position.x, pose.position.z);
+	this->robot_pose_display.linear() = Eigen::Rotation2Df(yaw).toRotationMatrix();
+}
+
+Eigen::Vector2f SpecificWorker::transform_to_world(const RoboCompLidar3D::TPoint &local_point, const Eigen::Affine2f &robot_pose)
+{
+	// Creamos un vector Eigen con los datos del Lidar (pasando a metros) TODO: Tengo que dividir por 1000?
+	Eigen::Vector2f p(local_point.x, local_point.y);
+
+	// Aplicamos la transformación completa (rotación + traslación)
+	return robot_pose * p;
+}
+
+RoboCompLidar3D::TPoints SpecificWorker::filtro_datos()
+{
+	RoboCompLidar3D::TData  data;
+	try
+	{
+		data =  lidar3d_proxy->getLidarData("bpearl", 0, 2*M_PI, 1); //para mayor precision (puedo comparar ejemplos de ejecucion entre este y 0.1f round en la docu)
+		//qInfo() << "Size: "<<data.points.size();
+
+	}
+	catch (const Ice::Exception &e){ std::cout<<e.what()<<std::endl; return {};}
+	return data.points;
 }
 
 
@@ -155,19 +205,7 @@ int SpecificWorker::startup_check()
 	return 0;
 }
 
-RoboCompLidar3D::TPoints SpecificWorker::filtro_datos()
-{
-	RoboCompLidar3D::TData  data;
-	try
-	{
-		data =  lidar3d_proxy->getLidarData("bpearl", 0, 2*M_PI, 1); //para mayor precision (puedo comparar ejemplos de ejecucion entre este y 0.1f round en la docu)
-		qInfo() << "Size: "<<data.points.size();
 
-	}
-	catch (const Ice::Exception &e){ std::cout<<e.what()<<std::endl; return {};}
-	return data.points;
-
-}
 
 
 

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/usuario/RobAvanzadaG3"
+			"value" : "/home/xeihtt/robotica2/mapa"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -167,11 +167,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "CXX compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/bin/c++"
+			"type" : "UNINITIALIZED",
+			"value" : "/usr/bin/g++-13"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -295,11 +295,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "C compiler"
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "STRING",
-			"value" : "/usr/bin/cc"
+			"type" : "UNINITIALIZED",
+			"value" : "/usr/bin/gcc-13"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -430,6 +430,18 @@
 			"value" : "CMAKE_DLLTOOL-NOTFOUND"
 		},
 		{
+			"name" : "CMAKE_EDIT_COMMAND",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to cache edit program executable."
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/snap/cmake/1515/bin/ccmake"
+		},
+		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
 			"properties" : 
 			[
@@ -535,7 +547,7 @@
 				}
 			],
 			"type" : "BOOL",
-			"value" : "1"
+			"value" : ""
 		},
 		{
 			"name" : "CMAKE_EXTRA_GENERATOR",
@@ -559,7 +571,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/usuario/RobAvanzadaG3/CMakeFiles/pkgRedirects"
+			"value" : "/home/xeihtt/robotica2/mapa/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,7 +643,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/usuario/RobAvanzadaG3"
+			"value" : "/home/xeihtt/robotica2/mapa"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -946,16 +958,12 @@
 			"properties" : 
 			[
 				{
-					"name" : "ADVANCED",
-					"value" : "1"
-				},
-				{
 					"name" : "HELPSTRING",
-					"value" : "Path to a program."
+					"value" : "No help, variable specified on the command line."
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "/usr/bin/gmake"
+			"type" : "UNINITIALIZED",
+			"value" : "/usr/bin/make"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -1158,6 +1166,18 @@
 			"value" : "mapa"
 		},
 		{
+			"name" : "CMAKE_PROJECT_SPDX_LICENSE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : ""
+		},
+		{
 			"name" : "CMAKE_RANLIB",
 			"properties" : 
 			[
@@ -1323,7 +1343,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during all build types."
+					"value" : "Flags used by the linker during the creation of static libraries during all build types."
 				}
 			],
 			"type" : "STRING",
@@ -1339,7 +1359,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during DEBUG builds."
+					"value" : "Flags used by the linker during the creation of static libraries during DEBUG builds."
 				}
 			],
 			"type" : "STRING",
@@ -1355,7 +1375,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during MINSIZEREL builds."
+					"value" : "Flags used by the linker during the creation of static libraries during MINSIZEREL builds."
 				}
 			],
 			"type" : "STRING",
@@ -1371,7 +1391,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during RELEASE builds."
+					"value" : "Flags used by the linker during the creation of static libraries during RELEASE builds."
 				}
 			],
 			"type" : "STRING",
@@ -1387,7 +1407,7 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "Flags used by the archiver during the creation of static libraries during RELWITHDEBINFO builds."
+					"value" : "Flags used by the linker during the creation of static libraries during RELWITHDEBINFO builds."
 				}
 			],
 			"type" : "STRING",
@@ -1524,6 +1544,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[/usr/include][v()]"
+		},
+		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_XKB",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding XKB"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/lib/x86_64-linux-gnu/libxkbcommon.so][/usr/include][v1.6.0(0.5.0)]"
 		},
 		{
 			"name" : "Freeze_INCLUDE_DIR",
@@ -1807,7 +1839,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_GLACIER2ROUTER_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/glacier2router"
 		},
 		{
 			"name" : "Ice_ICE++11_LIBRARY_DEBUG",
@@ -1863,7 +1895,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICEBOXADMIN_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/iceboxadmin"
 		},
 		{
 			"name" : "Ice_ICEBOXD_EXECUTABLE",
@@ -1911,7 +1943,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICEBRIDGE_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icebridge"
 		},
 		{
 			"name" : "Ice_ICEGRIDADMIN_EXECUTABLE",
@@ -1923,7 +1955,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICEGRIDADMIN_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icegridadmin"
 		},
 		{
 			"name" : "Ice_ICEGRIDDB_EXECUTABLE",
@@ -1935,7 +1967,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICEGRIDDB_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icegriddb"
 		},
 		{
 			"name" : "Ice_ICEGRIDNODED_EXECUTABLE",
@@ -1959,7 +1991,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICEGRIDNODE_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icegridnode"
 		},
 		{
 			"name" : "Ice_ICEGRIDREGISTRYD_EXECUTABLE",
@@ -1983,7 +2015,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICEGRIDREGISTRY_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icegridregistry"
 		},
 		{
 			"name" : "Ice_ICEPATCH2CALC_EXECUTABLE",
@@ -1995,7 +2027,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICEPATCH2CALC_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icepatch2calc"
 		},
 		{
 			"name" : "Ice_ICEPATCH2CLIENT_EXECUTABLE",
@@ -2007,7 +2039,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICEPATCH2CLIENT_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icepatch2client"
 		},
 		{
 			"name" : "Ice_ICEPATCH2SERVER_EXECUTABLE",
@@ -2019,7 +2051,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICEPATCH2SERVER_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icepatch2server"
 		},
 		{
 			"name" : "Ice_ICESERVICEINSTALL_EXECUTABLE",
@@ -2075,7 +2107,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICESTORMADMIN_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icestormadmin"
 		},
 		{
 			"name" : "Ice_ICESTORMDB_EXECUTABLE",
@@ -2087,7 +2119,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "Ice_ICESTORMDB_EXECUTABLE-NOTFOUND"
+			"value" : "/usr/bin/icestormdb"
 		},
 		{
 			"name" : "Ice_ICESTORMMIGRATE_EXECUTABLE",
@@ -2639,7 +2671,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "-I/usr/include"
 		},
 		{
 			"name" : "PKG_XKB_CFLAGS_I",
@@ -2675,10 +2707,46 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "1"
 		},
 		{
 			"name" : "PKG_XKB_INCLUDEDIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "PKG_XKB_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "PKG_XKB_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/lib/x86_64-linux-gnu;-lxkbcommon"
+		},
+		{
+			"name" : "PKG_XKB_LDFLAGS_OTHER",
 			"properties" : 
 			[
 				{
@@ -2699,7 +2767,31 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr/lib/x86_64-linux-gnu"
+		},
+		{
+			"name" : "PKG_XKB_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "xkbcommon"
+		},
+		{
+			"name" : "PKG_XKB_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
 		},
 		{
 			"name" : "PKG_XKB_LIBS",
@@ -2759,7 +2851,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "xkbcommon"
 		},
 		{
 			"name" : "PKG_XKB_PREFIX",
@@ -2771,7 +2863,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "/usr"
 		},
 		{
 			"name" : "PKG_XKB_STATIC_CFLAGS",
@@ -2783,7 +2875,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "-I/usr/include"
 		},
 		{
 			"name" : "PKG_XKB_STATIC_CFLAGS_I",
@@ -2810,6 +2902,42 @@
 			"value" : ""
 		},
 		{
+			"name" : "PKG_XKB_STATIC_INCLUDE_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "PKG_XKB_STATIC_LDFLAGS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "-L/usr/lib/x86_64-linux-gnu;-lxkbcommon"
+		},
+		{
+			"name" : "PKG_XKB_STATIC_LDFLAGS_OTHER",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
+		},
+		{
 			"name" : "PKG_XKB_STATIC_LIBDIR",
 			"properties" : 
 			[
@@ -2820,6 +2948,30 @@
 			],
 			"type" : "INTERNAL",
 			"value" : ""
+		},
+		{
+			"name" : "PKG_XKB_STATIC_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "xkbcommon"
+		},
+		{
+			"name" : "PKG_XKB_STATIC_LIBRARY_DIRS",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
 		},
 		{
 			"name" : "PKG_XKB_STATIC_LIBS",
@@ -2879,7 +3031,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "1.6.0"
 		},
 		{
 			"name" : "PKG_XKB_xkbcommon_INCLUDEDIR",
@@ -7403,7 +7555,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/usuario/RobAvanzadaG3"
+			"value" : "/home/xeihtt/robotica2/mapa"
 		},
 		{
 			"name" : "RC_COMPONENT_INSTALL_PATH",
@@ -7427,7 +7579,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : "/home/usuario/RobAvanzadaG3"
+			"value" : "/home/xeihtt/robotica2/mapa"
 		},
 		{
 			"name" : "RoboComp_VERSION",
@@ -7551,7 +7703,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "XKB_INCLUDE_DIR-NOTFOUND"
+			"value" : "/usr/include"
 		},
 		{
 			"name" : "XKB_LIBRARY",
@@ -7563,7 +7715,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "XKB_LIBRARY-NOTFOUND"
+			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon.so"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -7588,6 +7740,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "/usr/local"
+		},
+		{
+			"name" : "__pkg_config_arguments_PKG_XKB",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "QUIET;xkbcommon"
 		},
 		{
 			"name" : "__pkg_config_checked_PKG_XKB",
@@ -7627,7 +7791,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/usuario/RobAvanzadaG3"
+			"value" : "/home/xeihtt/robotica2/mapa"
 		},
 		{
 			"name" : "mapa_IS_TOP_LEVEL",
@@ -7651,7 +7815,35 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/usuario/RobAvanzadaG3"
+			"value" : "/home/xeihtt/robotica2/mapa"
+		},
+		{
+			"name" : "pkgcfg_lib_PKG_XKB_xkbcommon",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libxkbcommon.so"
+		},
+		{
+			"name" : "prefix_result",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : ""
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "/usr/lib/x86_64-linux-gnu"
 		}
 	],
 	"kind" : "cache",

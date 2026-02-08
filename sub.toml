@@ -20,7 +20,7 @@ ice_name = "Webots2Robocomp:tcp -h localhost -p 10006"
 name = "pearl"
 cwd = "~/robocomp/components/robocomp-robolab/components/hardware/laser/lidar3D"
 cmd = "bin/Lidar3D etc/config_pearl_webots"
-ice_name = "Lidar3D:tcp -h localhost -p 11990"
+ice_name = "Lidar3D:tcp -h localhost -p 11989"
 
 #[[components]]
 #name = "rgbd"

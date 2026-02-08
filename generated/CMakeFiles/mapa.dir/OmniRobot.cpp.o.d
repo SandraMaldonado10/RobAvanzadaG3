@@ -1,7 +1,7 @@
 generated/CMakeFiles/mapa.dir/OmniRobot.cpp.o: \
- /home/usuario/RobAvanzadaG3/generated/OmniRobot.cpp \
+ /home/xeihtt/robotica2/mapa/generated/OmniRobot.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/RobAvanzadaG3/generated/OmniRobot.h \
+ /home/xeihtt/robotica2/mapa/generated/OmniRobot.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/13/stdlib.h /usr/include/c++/13/cstdlib \
@@ -279,4 +279,4 @@ generated/CMakeFiles/mapa.dir/OmniRobot.cpp.o: \
  /usr/include/c++/13/deque /usr/include/c++/13/bits/stl_deque.h \
  /usr/include/c++/13/bits/deque.tcc /usr/include/Ice/FactoryTableInit.h \
  /usr/include/Ice/DefaultValueFactory.h \
- /home/usuario/RobAvanzadaG3/generated/GenericBase.h
+ /home/xeihtt/robotica2/mapa/generated/GenericBase.h

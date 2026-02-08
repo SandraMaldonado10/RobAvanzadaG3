@@ -57,18 +57,18 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/usuario/RobAvanzadaG3
+CMAKE_SOURCE_DIR = /home/xeihtt/robotica2/mapa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/usuario/RobAvanzadaG3
+CMAKE_BINARY_DIR = /home/xeihtt/robotica2/mapa
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
+	/snap/cmake/1515/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/RobAvanzadaG3/CMakeFiles /home/usuario/RobAvanzadaG3//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xeihtt/robotica2/mapa/CMakeFiles /home/xeihtt/robotica2/mapa//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/usuario/RobAvanzadaG3/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/xeihtt/robotica2/mapa/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -162,17 +162,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ICES__home_usuario_RobAvanzadaG3_generated
+# Target rules for targets named ICES__home_xeihtt_robotica2_mapa_generated
 
 # Build rule for target.
-ICES__home_usuario_RobAvanzadaG3_generated: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICES__home_usuario_RobAvanzadaG3_generated
-.PHONY : ICES__home_usuario_RobAvanzadaG3_generated
+ICES__home_xeihtt_robotica2_mapa_generated: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICES__home_xeihtt_robotica2_mapa_generated
+.PHONY : ICES__home_xeihtt_robotica2_mapa_generated
 
 # fast build rule for target.
-ICES__home_usuario_RobAvanzadaG3_generated/fast:
-	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICES__home_usuario_RobAvanzadaG3_generated.dir/build.make generated/CMakeFiles/ICES__home_usuario_RobAvanzadaG3_generated.dir/build
-.PHONY : ICES__home_usuario_RobAvanzadaG3_generated/fast
+ICES__home_xeihtt_robotica2_mapa_generated/fast:
+	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICES__home_xeihtt_robotica2_mapa_generated.dir/build.make generated/CMakeFiles/ICES__home_xeihtt_robotica2_mapa_generated.dir/build
+.PHONY : ICES__home_xeihtt_robotica2_mapa_generated/fast
 
 #=============================================================================
 # Target rules for targets named ICE_OmniRobot_target
@@ -303,7 +303,7 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... ICES__home_usuario_RobAvanzadaG3_generated"
+	@echo "... ICES__home_xeihtt_robotica2_mapa_generated"
 	@echo "... ICE_Camera360RGB_target"
 	@echo "... ICE_GenericBase_target"
 	@echo "... ICE_Gridder_target"

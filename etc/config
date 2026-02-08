@@ -1,8 +1,8 @@
 # Proxies for required interfaces
 Proxies.Camera360RGB = "camera360rgb:tcp -h localhost -p 10098"
-Proxies.Lidar3D = "lidar3d:tcp -h localhost -p 11991"
+Proxies.Lidar3D = "lidar3d:tcp -h localhost -p 11989"
 Proxies.OmniRobot = "omnirobot:tcp -h localhost -p 10004"
-
+Proxies.Webots2Robocomp = "webots2robocomp:tcp -h localhost -p 10006"
 
 
 Period.Compute = 100

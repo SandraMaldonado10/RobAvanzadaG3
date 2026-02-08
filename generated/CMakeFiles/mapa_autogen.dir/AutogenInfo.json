@@ -1,14 +1,14 @@
 {
-	"BUILD_DIR" : "/home/usuario/RobAvanzadaG3/generated/mapa_autogen",
-	"CMAKE_BINARY_DIR" : "/home/usuario/RobAvanzadaG3",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/usuario/RobAvanzadaG3/generated",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/usuario/RobAvanzadaG3/generated",
+	"BUILD_DIR" : "/home/xeihtt/robotica2/mapa/generated/mapa_autogen",
+	"CMAKE_BINARY_DIR" : "/home/xeihtt/robotica2/mapa",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/xeihtt/robotica2/mapa/generated",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/xeihtt/robotica2/mapa/generated",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/usuario/RobAvanzadaG3/generated/CMakeLists.txt",
-		"/home/usuario/robocomp/cmake/robocomp.cmake",
-		"/home/usuario/robocomp/cmake/modules/qt.cmake",
+		"/home/xeihtt/robotica2/mapa/generated/CMakeLists.txt",
+		"/home/robocomp/robocomp/cmake/robocomp.cmake",
+		"/home/robocomp/robocomp/cmake/modules/qt.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersion.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6ConfigVersionImpl.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6/Qt6Config.cmake",
@@ -195,7 +195,7 @@
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6StateMachine/Qt6StateMachineTargets-none.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6StateMachine/Qt6StateMachineAdditionalTargetInfo.cmake",
 		"/usr/lib/x86_64-linux-gnu/cmake/Qt6StateMachine/Qt6StateMachineVersionlessTargets.cmake",
-		"/home/usuario/RobAvanzadaG3/src/CMakeLists.txt",
+		"/home/xeihtt/robotica2/mapa/src/CMakeLists.txt",
 		"/usr/share/cmake-3.28/Modules/FindIce.cmake",
 		"/usr/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake",
 		"/usr/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake",
@@ -214,63 +214,69 @@
 		"/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake",
 		"/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/usuario/RobAvanzadaG3",
-	"DEP_FILE" : "/home/usuario/RobAvanzadaG3/generated/mapa_autogen/deps",
+	"CMAKE_SOURCE_DIR" : "/home/xeihtt/robotica2/mapa",
+	"DEP_FILE" : "/home/xeihtt/robotica2/mapa/generated/mapa_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "mapa_autogen/timestamp",
 	"HEADERS" : 
 	[
 		[
-			"/home/usuario/RobAvanzadaG3/generated/genericworker.h",
+			"/home/robocomp/robocomp/classes/ConfigLoader/ConfigLoader.h",
+			"MU",
+			"LZCDZ2OWWR/moc_ConfigLoader.cpp",
+			null
+		],
+		[
+			"/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h",
+			"MU",
+			"EEBIQBSTGR/moc_abstract_graphic_viewer.cpp",
+			null
+		],
+		[
+			"/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h",
+			"MU",
+			"2PQVQJTGAJ/moc_GRAFCETStep.cpp",
+			null
+		],
+		[
+			"/home/robocomp/robocomp/classes/grid2d/grid.h",
+			"MU",
+			"ZGKO52E5LR/moc_grid.cpp",
+			null
+		],
+		[
+			"/home/robocomp/robocomp/classes/rapplication/rapplication.h",
+			"MU",
+			"XM3TIXDJID/moc_rapplication.cpp",
+			null
+		],
+		[
+			"/home/robocomp/robocomp/classes/sigwatch/sigwatch.h",
+			"MU",
+			"RFGDW5AE53/moc_sigwatch.cpp",
+			null
+		],
+		[
+			"/home/robocomp/robocomp/classes/sigwatch/sigwatch_p.h",
+			"MU",
+			"RFGDW5AE53/moc_sigwatch_p.cpp",
+			null
+		],
+		[
+			"/home/xeihtt/robotica2/mapa/generated/genericworker.h",
 			"MU",
 			"EWIEGA46WW/moc_genericworker.cpp",
 			null
 		],
 		[
-			"/home/usuario/RobAvanzadaG3/src/specificworker.h",
+			"/home/xeihtt/robotica2/mapa/src/specificworker.h",
 			"MU",
 			"VNU7RW3YIC/moc_specificworker.cpp",
-			null
-		],
-		[
-			"/home/usuario/robocomp/classes/ConfigLoader/ConfigLoader.h",
-			"MU",
-			"EVVQFOUPAI/moc_ConfigLoader.cpp",
-			null
-		],
-		[
-			"/home/usuario/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h",
-			"MU",
-			"4B7W4TDGLD/moc_abstract_graphic_viewer.cpp",
-			null
-		],
-		[
-			"/home/usuario/robocomp/classes/grafcetStep/GRAFCETStep.h",
-			"MU",
-			"UITLZZOD3R/moc_GRAFCETStep.cpp",
-			null
-		],
-		[
-			"/home/usuario/robocomp/classes/grid2d/grid.h",
-			"MU",
-			"MTJWOOGR53/moc_grid.cpp",
-			null
-		],
-		[
-			"/home/usuario/robocomp/classes/rapplication/rapplication.h",
-			"MU",
-			"EMJXXFBHS2/moc_rapplication.cpp",
-			null
-		],
-		[
-			"/home/usuario/robocomp/classes/sigwatch/sigwatch.h",
-			"MU",
-			"I7T5MHM6VT/moc_sigwatch.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/usuario/RobAvanzadaG3/generated/mapa_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/usuario/RobAvanzadaG3/generated/mapa_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/xeihtt/robotica2/mapa/generated/mapa_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/xeihtt/robotica2/mapa/generated/mapa_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"ICE_CPP11_MAPPING",
@@ -290,14 +296,14 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/usuario/RobAvanzadaG3/generated",
-		"/home/usuario/RobAvanzadaG3/generated",
+		"/home/xeihtt/robotica2/mapa/generated",
+		"/home/xeihtt/robotica2/mapa/generated",
 		"/opt/robocomp/include",
 		"/classes",
-		"/home/usuario/RobAvanzadaG3",
-		"/home/usuario/robocomp/classes",
-		"/home/usuario/robocomp/libs",
-		"/home/usuario/robocomp/interfaces",
+		"/home/xeihtt/robotica2/mapa",
+		"/home/robocomp/robocomp/classes",
+		"/home/robocomp/robocomp/libs",
+		"/home/robocomp/robocomp/interfaces",
 		"/include",
 		"/usr/include/x86_64-linux-gnu/qt6/QtGui",
 		"/usr/include/x86_64-linux-gnu/qt6",
@@ -327,70 +333,70 @@
 	"MOC_PATH_PREFIX" : false,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"/usr/bin/c++",
+		"/usr/bin/g++-13",
 		"-std=c++23",
 		"-dM",
 		"-E",
 		"-c",
 		"/usr/share/cmake-3.28/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/usuario/RobAvanzadaG3/generated/mapa_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/xeihtt/robotica2/mapa/generated/mapa_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : 
 	[
-		"/home/usuario/RobAvanzadaG3/generated/Camera360RGB.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/GenericBase.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/Gridder.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/Lidar3D.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/OmniRobot.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/Webots2Robocomp.cpp"
+		"/home/xeihtt/robotica2/mapa/generated/Camera360RGB.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/GenericBase.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/Gridder.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/Lidar3D.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/OmniRobot.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/Webots2Robocomp.cpp"
 	],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "/home/usuario/RobAvanzadaG3/generated/CMakeFiles/mapa_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/xeihtt/robotica2/mapa/generated/CMakeFiles/mapa_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/lib/qt6/libexec/moc",
 	"QT_UIC_EXECUTABLE" : "/usr/lib/qt6/libexec/uic",
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 4,
-	"SETTINGS_FILE" : "/home/usuario/RobAvanzadaG3/generated/CMakeFiles/mapa_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/xeihtt/robotica2/mapa/generated/CMakeFiles/mapa_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/usuario/RobAvanzadaG3/generated/genericworker.cpp", "MU", null ],
-		[ "/home/usuario/RobAvanzadaG3/generated/main.cpp", "MU", null ],
-		[ "/home/usuario/RobAvanzadaG3/src/specificworker.cpp", "MU", null ],
 		[
-			"/home/usuario/robocomp/classes/ConfigLoader/ConfigLoader.cpp",
+			"/home/robocomp/robocomp/classes/ConfigLoader/ConfigLoader.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp",
+			"/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/usuario/robocomp/classes/grafcetStep/GRAFCETStep.cpp",
+			"/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.cpp",
 			"MU",
 			null
 		],
-		[ "/home/usuario/robocomp/classes/grid2d/grid.cpp", "MU", null ],
+		[ "/home/robocomp/robocomp/classes/grid2d/grid.cpp", "MU", null ],
 		[
-			"/home/usuario/robocomp/classes/rapplication/rapplication.cpp",
+			"/home/robocomp/robocomp/classes/rapplication/rapplication.cpp",
 			"MU",
 			null
 		],
-		[ "/home/usuario/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ]
+		[ "/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp", "MU", null ],
+		[ "/home/xeihtt/robotica2/mapa/generated/genericworker.cpp", "MU", null ],
+		[ "/home/xeihtt/robotica2/mapa/generated/main.cpp", "MU", null ],
+		[ "/home/xeihtt/robotica2/mapa/src/specificworker.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
-	"UIC_SEARCH_PATHS" : [ "/home/usuario/RobAvanzadaG3/src" ],
+	"UIC_SEARCH_PATHS" : [ "/home/xeihtt/robotica2/mapa/src" ],
 	"UIC_SKIP" : 
 	[
-		"/home/usuario/RobAvanzadaG3/generated/Camera360RGB.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/GenericBase.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/Gridder.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/Lidar3D.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/OmniRobot.cpp",
-		"/home/usuario/RobAvanzadaG3/generated/Webots2Robocomp.cpp"
+		"/home/xeihtt/robotica2/mapa/generated/Camera360RGB.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/GenericBase.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/Gridder.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/Lidar3D.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/OmniRobot.cpp",
+		"/home/xeihtt/robotica2/mapa/generated/Webots2Robocomp.cpp"
 	],
 	"UIC_UI_FILES" : [],
 	"VERBOSITY" : 0

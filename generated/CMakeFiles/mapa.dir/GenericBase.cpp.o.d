@@ -1,7 +1,7 @@
 generated/CMakeFiles/mapa.dir/GenericBase.cpp.o: \
- /home/usuario/RobAvanzadaG3/generated/GenericBase.cpp \
+ /home/xeihtt/robotica2/mapa/generated/GenericBase.cpp \
  /usr/include/stdc-predef.h \
- /home/usuario/RobAvanzadaG3/generated/GenericBase.h \
+ /home/xeihtt/robotica2/mapa/generated/GenericBase.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/13/stdlib.h /usr/include/c++/13/cstdlib \

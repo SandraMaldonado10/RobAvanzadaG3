@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/usuario/RobAvanzadaG3
+CMAKE_SOURCE_DIR = /home/xeihtt/robotica2/mapa
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/usuario/RobAvanzadaG3
+CMAKE_BINARY_DIR = /home/xeihtt/robotica2/mapa
 
 # Utility rule file for mapa_autogen_timestamp_deps.
 
@@ -66,9 +66,9 @@ include generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/compiler_depend.mak
 # Include the progress variables for this target.
 include generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/progress.make
 
+generated/CMakeFiles/mapa_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
 generated/CMakeFiles/mapa_autogen_timestamp_deps: /usr/lib/qt6/libexec/moc
 generated/CMakeFiles/mapa_autogen_timestamp_deps: /usr/lib/qt6/libexec/uic
-generated/CMakeFiles/mapa_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
 generated/CMakeFiles/mapa_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2
 generated/CMakeFiles/mapa_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6Xml.so.6.4.2
 generated/CMakeFiles/mapa_autogen_timestamp_deps: /usr/lib/x86_64-linux-gnu/libQt6StateMachine.so.6.4.2
@@ -82,10 +82,10 @@ generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/build: mapa_autogen_timesta
 .PHONY : generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/build
 
 generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/clean:
-	cd /home/usuario/RobAvanzadaG3/generated && $(CMAKE_COMMAND) -P CMakeFiles/mapa_autogen_timestamp_deps.dir/cmake_clean.cmake
+	cd /home/xeihtt/robotica2/mapa/generated && $(CMAKE_COMMAND) -P CMakeFiles/mapa_autogen_timestamp_deps.dir/cmake_clean.cmake
 .PHONY : generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/clean
 
 generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/depend:
-	cd /home/usuario/RobAvanzadaG3 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/usuario/RobAvanzadaG3 /home/usuario/RobAvanzadaG3/generated /home/usuario/RobAvanzadaG3 /home/usuario/RobAvanzadaG3/generated /home/usuario/RobAvanzadaG3/generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/xeihtt/robotica2/mapa && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xeihtt/robotica2/mapa /home/xeihtt/robotica2/mapa/generated /home/xeihtt/robotica2/mapa /home/xeihtt/robotica2/mapa/generated /home/xeihtt/robotica2/mapa/generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : generated/CMakeFiles/mapa_autogen_timestamp_deps.dir/depend
 

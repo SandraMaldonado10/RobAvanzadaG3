@@ -389,5 +389,5 @@ generated/CMakeFiles/mapa.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/xeihtt/robotica_avanzada/mapa/generated/mapa_autogen/include/moc_sigwatch.cpp \
- /home/xeihtt/robotica_avanzada/mapa/generated/mapa_autogen/include/../../../../../robocomp/classes/sigwatch/sigwatch.h
+ /home/xeihtt/robotica2/mapa/generated/mapa_autogen/include/moc_sigwatch.cpp \
+ /home/xeihtt/robotica2/mapa/generated/mapa_autogen/include/../../../../../robocomp/classes/sigwatch/sigwatch.h

@@ -74,57 +74,57 @@
 			[
 				{
 					"directoryIndex" : 1,
-					"id" : "ICES__home_usuario_RobAvanzadaG3_generated::@21bfa6e54ac71a0c1a55",
-					"jsonFile" : "target-ICES__home_usuario_RobAvanzadaG3_generated-Debug-bb1de4299b71f7f3cc58.json",
-					"name" : "ICES__home_usuario_RobAvanzadaG3_generated",
+					"id" : "ICES__home_xeihtt_robotica2_mapa_generated::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ICES__home_xeihtt_robotica2_mapa_generated-Debug-490555b05d9e856ca716.json",
+					"name" : "ICES__home_xeihtt_robotica2_mapa_generated",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ICE_Camera360RGB_target::@21bfa6e54ac71a0c1a55",
-					"jsonFile" : "target-ICE_Camera360RGB_target-Debug-0a482a4d3ce990ea546f.json",
+					"jsonFile" : "target-ICE_Camera360RGB_target-Debug-f4dc76e5a3dc97f814f9.json",
 					"name" : "ICE_Camera360RGB_target",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ICE_GenericBase_target::@21bfa6e54ac71a0c1a55",
-					"jsonFile" : "target-ICE_GenericBase_target-Debug-a9f5621596054f64ebf0.json",
+					"jsonFile" : "target-ICE_GenericBase_target-Debug-9f173fd6d6f7ba33363a.json",
 					"name" : "ICE_GenericBase_target",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ICE_Gridder_target::@21bfa6e54ac71a0c1a55",
-					"jsonFile" : "target-ICE_Gridder_target-Debug-8b11361c27850afbe933.json",
+					"jsonFile" : "target-ICE_Gridder_target-Debug-95567d030ac930fc8ec7.json",
 					"name" : "ICE_Gridder_target",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ICE_Lidar3D_target::@21bfa6e54ac71a0c1a55",
-					"jsonFile" : "target-ICE_Lidar3D_target-Debug-ed19db56f778d8ef166f.json",
+					"jsonFile" : "target-ICE_Lidar3D_target-Debug-b231c5aae2c8bc86f660.json",
 					"name" : "ICE_Lidar3D_target",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ICE_OmniRobot_target::@21bfa6e54ac71a0c1a55",
-					"jsonFile" : "target-ICE_OmniRobot_target-Debug-6f747443caeb22fc22c9.json",
+					"jsonFile" : "target-ICE_OmniRobot_target-Debug-4bdaf86b90ce12625ab5.json",
 					"name" : "ICE_OmniRobot_target",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "ICE_Webots2Robocomp_target::@21bfa6e54ac71a0c1a55",
-					"jsonFile" : "target-ICE_Webots2Robocomp_target-Debug-a7b3c1418cabd70d46c7.json",
+					"jsonFile" : "target-ICE_Webots2Robocomp_target-Debug-b9d54fe98f63c84dd55c.json",
 					"name" : "ICE_Webots2Robocomp_target",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 1,
 					"id" : "mapa::@21bfa6e54ac71a0c1a55",
-					"jsonFile" : "target-mapa-Debug-765b86159c6398ef5743.json",
+					"jsonFile" : "target-mapa-Debug-11a229fd7af986ce780b.json",
 					"name" : "mapa",
 					"projectIndex" : 0
 				},
@@ -148,8 +148,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/usuario/RobAvanzadaG3",
-		"source" : "/home/usuario/RobAvanzadaG3"
+		"build" : "/home/xeihtt/robotica2/mapa",
+		"source" : "/home/xeihtt/robotica2/mapa"
 	},
 	"version" : 
 	{
