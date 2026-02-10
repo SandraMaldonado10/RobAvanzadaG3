@@ -30,22 +30,6 @@ SpecificWorker::SpecificWorker(const ConfigLoader& configLoader, TuplePrx tprx, 
 		#ifdef HIBERNATION_ENABLED
 			hibernationChecker.start(500);
 		#endif
-		
-		// Example statemachine:
-		/***
-		//Your definition for the statesmachine (if you dont want use a execute function, use nullptr)
-		states["CustomState"] = std::make_unique<GRAFCETStep>("CustomState", period, 
-															std::bind(&SpecificWorker::customLoop, this),  // Cyclic function
-															std::bind(&SpecificWorker::customEnter, this), // On-enter function
-															std::bind(&SpecificWorker::customExit, this)); // On-exit function
-
-		//Add your definition of transitions (addTransition(originOfSignal, signal, dstState))
-		states["CustomState"]->addTransition(states["CustomState"].get(), SIGNAL(entered()), states["OtherState"].get());
-		states["Compute"]->addTransition(this, SIGNAL(customSignal()), states["CustomState"].get()); //Define your signal in the .h file under the "Signals" section.
-
-		//Add your custom state
-		statemachine.addState(states["CustomState"].get());
-		***/
 
 		statemachine.setChildMode(QState::ExclusiveStates);
 		statemachine.start();
@@ -69,47 +53,61 @@ void SpecificWorker::initialize()
     std::cout << "initialize worker" << std::endl;
 
 	// Viewer
-	viewer = new AbstractGraphicViewer(this->frame, params.GRID_MAX_DIM);
+	viewer = new AbstractGraphicViewer(this->frame, params.GRID_MAX_DIM, true);
 	auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
 	robot_draw = r;
-
 	show ();
-
-    //initializeCODE
-
-    /////////GET PARAMS, OPEND DEVICES....////////
-    //int period = configLoader.get<int>("Period.Compute") //NOTE: If you want get period of compute use getPeriod("compute")
-    //std::string device = configLoader.get<std::string>("Device.name") 
-
 }
 
 
 
 void SpecificWorker::compute()
 {
-	RoboCompWebots2Robocomp::ObjectPose pose;
-	try
-	{
-		pose = this->webots2robocomp_proxy->getObjectPose("shadow");
-	}
-	catch (const Ice::Exception &e){std::cout<<e.what()<<std::endl; return;}
-	double yaw = yawFromQuaternion(pose.orientation.w, pose.orientation.x, pose.orientation.y, pose.orientation.z);
+	// Get robot pose from Webots and return transform
+	robot_pose = get_robot_pose();
 
-	// 2. Update robot_pose_display (modifies
-	update_pose(pose, yaw);
+	// Update visual representation of the robot
+	robot_draw->setPos(robot_pose.translation().x(), robot_pose.translation().y());
+	robot_draw->setRotation(qRadiansToDegrees((Eigen::Rotation2Df(robot_pose.linear()).angle())));
 
-	// 3. Update visual representation of the robot
-	robot_draw->setPos(robot_pose_display.translation().x(),
-					   robot_pose_display.translation().y());
-	robot_draw->setRotation((obtain_rotation()*180 / M_PI)); //Hay que usar la rotación en grados
+	// Draw lidar points
+	const auto data = get_lidar();
+	draw_lidar(data, robot_pose, &viewer->scene);
 
-	// 4. Draw lidar points
-	RoboCompLidar3D::TPoints data = filtro_datos();
-	draw_lidar(data, &viewer->scene);
 }
 
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Eigen::Affine2f SpecificWorker::get_robot_pose()
+{
+	RoboCompWebots2Robocomp::ObjectPose pose;
+	Eigen::Affine2f robot_pose;
+	try
+	{
+		pose = webots2robocomp_proxy->getObjectPose("shadow");
+		//qInfo() << "Robot pose from Webots: x=" << pose.position.x << " y=" << pose.position.y << " z=" << pose.position.z;
+		robot_pose.translation() = Eigen::Vector2f(-pose.position.y, pose.position.x);
+		const auto yaw = yawFromQuaternion(pose.orientation);
+		robot_pose.linear() = Eigen::Rotation2Df(yaw).toRotationMatrix();
+	}
+	catch (const Ice::Exception &e){ std::cout<<e.what()<<std::endl; return {};}
+	return robot_pose;
+}
 
-void SpecificWorker::draw_lidar(const RoboCompLidar3D::TPoints &filtered_points, QGraphicsScene *scene)
+// Devuelve el yaw (rotación alrededor del eje Z) en radianes
+double SpecificWorker::yawFromQuaternion(const RoboCompWebots2Robocomp::Quaternion &quat)
+{
+	double w = quat.w;
+	double x = quat.x;
+	double y = quat.y;
+	double z = quat.z;
+	const auto norm = std::sqrt(w*w + x*x + y*y + z*z);
+	w /= norm; x /= norm; y /= norm; z /= norm;
+	return std::atan2(2.0 * (w * z + x * y), 1.0 - 2.0 * (y * y + z * z));
+}
+
+void SpecificWorker::draw_lidar(const RoboCompLidar3D::TPoints &points,
+								const Eigen::Affine2f &robot_pose,
+								QGraphicsScene *scene)
 {
 	static std::vector<QGraphicsItem*> draw_points;
 	for (const auto &p : draw_points)
@@ -122,66 +120,54 @@ void SpecificWorker::draw_lidar(const RoboCompLidar3D::TPoints &filtered_points,
 	const QColor color("LightGreen");
 	const QPen pen(color, 10);
 	//const QBrush brush(color, Qt::SolidPattern);
-	for (const auto &p : filtered_points)
+	for (const auto &p : points)
 	{
-		Eigen::Vector2f worldP = transform_to_world(p);
-
 		const auto dp = scene->addRect(-25, -25, 50, 50, pen);
+		Eigen::Vector2f worldP = robot_pose * Eigen::Vector2f(p.x, p.y);
 		dp->setPos(worldP.x(), worldP.y());
 		draw_points.push_back(dp);   // add to the list of points to be deleted next time
 	}
 }
 
-// Devuelve el yaw (rotación alrededor del eje Z) en radianes
-double SpecificWorker::yawFromQuaternion(double w, double x, double y, double z) {
-
-	//TODO: El quaternion tiene que estar normalizado, si no lo está, descomentar este código
-
-	// double norm = std::sqrt(w*w + x*x + y*y + z*z);
-	// w /= norm; x /= norm; y /= norm; z /= norm;
-
-	double siny_cosp = 2.0 * (w * z + x * y);
-	double cosy_cosp = 1.0 - 2.0 * (y * y + z * z);
-
-	return std::atan2(siny_cosp, cosy_cosp);
-
-}
-
-void SpecificWorker::update_pose(RoboCompWebots2Robocomp::ObjectPose pose, double yaw) {
-	this->robot_pose_display.translation() = Eigen::Vector2f(pose.position.x, pose.position.z);
-	this->robot_pose_display.linear() = Eigen::Rotation2Df(yaw).toRotationMatrix();
-}
-
-Eigen::Vector2f SpecificWorker::transform_to_world(const RoboCompLidar3D::TPoint &local_point)
+Eigen::Affine2f SpecificWorker::update_robot_transform(const RoboCompWebots2Robocomp::ObjectPose &pose, Eigen::Affine2f &robot_pose)
 {
-	// Creamos un vector Eigen con los datos del Lidar (pasando a metros) TODO: Tengo que dividir por 1000?
-	Eigen::Vector2f p(local_point.x, local_point.y);
-
-	// Aplicamos la transformación completa (rotación + traslación)
-	return robot_pose_display * p;
+	robot_pose.translation() = Eigen::Vector2f(pose.position.x, pose.position.z);
+	auto yaw = yawFromQuaternion(pose.orientation);
+	robot_pose.linear() = Eigen::Rotation2Df(yaw).toRotationMatrix();
+	return robot_pose;
 }
 
-float SpecificWorker::obtain_rotation() {
-	//Extraemos la rotacion, necesario para actualizar robot_draw:
-	Eigen::Rotation2Df rotation;
-	rotation.fromRotationMatrix(robot_pose_display.linear());
+// Eigen::Vector2f SpecificWorker::transform_to_world(const RoboCompLidar3D::TPoint &local_point)
+// {
+// 	// Creamos un vector Eigen con los datos del Lidar (pasando a metros) TODO: Tengo que dividir por 1000?
+// 	Eigen::Vector2f p(local_point.x, local_point.y);
+//
+// 	// Aplicamos la transformación completa (rotación + traslación)
+// 	return robot_pose_display * p;
+// }
 
-	return rotation.angle();
-}
+// float SpecificWorker::obtain_rotation()
+// {
+// 	//Extraemos la rotacion, necesario para actualizar robot_draw:
+// 	Eigen::Rotation2Df rotation;
+// 	rotation.fromRotationMatrix(robot_pose_display.linear());
+//
+// 	return rotation.angle();
+// }
 
-RoboCompLidar3D::TPoints SpecificWorker::filtro_datos()
+RoboCompLidar3D::TPoints SpecificWorker::get_lidar()
 {
 	RoboCompLidar3D::TData  data;
 	try
 	{
 		data =  lidar3d_proxy->getLidarData("bpearl", 0, 2*M_PI, 1); //para mayor precision (puedo comparar ejemplos de ejecucion entre este y 0.1f round en la docu)
 		//qInfo() << "Size: "<<data.points.size();
-
 	}
 	catch (const Ice::Exception &e){ std::cout<<e.what()<<std::endl; return {};}
 	return data.points;
 }
 
+////////////////////////////////////////////////////////////
 void SpecificWorker::emergency()
 {
     std::cout << "Emergency worker" << std::endl;
@@ -209,9 +195,6 @@ int SpecificWorker::startup_check()
 	QTimer::singleShot(200, QCoreApplication::instance(), SLOT(quit()));
 	return 0;
 }
-
-
-
 
 
 /**************************************/
