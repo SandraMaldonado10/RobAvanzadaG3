@@ -1,14 +1,9 @@
 /home/xeihtt/robotica2/mapa/generated/mapa_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/xeihtt/robotica2/mapa/generated/genericworker.h \
   /home/xeihtt/robotica2/mapa/generated/mapa_autogen/moc_predefs.h \
+  /home/xeihtt/robocomp/components/webots-bridge/generated/Camera360RGB.h \
   /home/xeihtt/robocomp/core/classes/ConfigLoader/ConfigLoader.h \
   /home/xeihtt/robocomp/core/classes/ConfigLoader/ConfigLoader.tpp \
   /home/xeihtt/robocomp/core/classes/grafcetStep/GRAFCETStep.h \
-  /home/xeihtt/robotica2/mapa/generated/Camera360RGB.h \
-  /home/xeihtt/robotica2/mapa/generated/GenericBase.h \
-  /home/xeihtt/robotica2/mapa/generated/Gridder.h \
-  /home/xeihtt/robotica2/mapa/generated/Lidar3D.h \
-  /home/xeihtt/robotica2/mapa/generated/OmniRobot.h \
-  /home/xeihtt/robotica2/mapa/generated/Webots2Robocomp.h \
   /usr/include/GL/gl.h \
   /usr/include/Ice/AsyncResult.h \
   /usr/include/Ice/BatchRequestQueueF.h \

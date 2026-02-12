@@ -12,12 +12,12 @@
   CMakeFiles/mapa.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o \
   CMakeFiles/mapa.dir/main.cpp.o \
   CMakeFiles/mapa.dir/genericworker.cpp.o \
-  CMakeFiles/mapa.dir/OmniRobot.cpp.o \
-  CMakeFiles/mapa.dir/Gridder.cpp.o \
-  CMakeFiles/mapa.dir/GenericBase.cpp.o \
-  CMakeFiles/mapa.dir/Lidar3D.cpp.o \
-  CMakeFiles/mapa.dir/Camera360RGB.cpp.o \
   CMakeFiles/mapa.dir/Webots2Robocomp.cpp.o \
+  CMakeFiles/mapa.dir/Camera360RGB.cpp.o \
+  CMakeFiles/mapa.dir/Gridder.cpp.o \
+  CMakeFiles/mapa.dir/OmniRobot.cpp.o \
+  CMakeFiles/mapa.dir/Lidar3D.cpp.o \
+  CMakeFiles/mapa.dir/GenericBase.cpp.o \
   /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Xml.so.6.4.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 \
@@ -127,17 +127,17 @@ CMakeFiles/mapa.dir/main.cpp.o:
 
 CMakeFiles/mapa.dir/genericworker.cpp.o:
 
-CMakeFiles/mapa.dir/OmniRobot.cpp.o:
-
-CMakeFiles/mapa.dir/Gridder.cpp.o:
-
-CMakeFiles/mapa.dir/GenericBase.cpp.o:
-
-CMakeFiles/mapa.dir/Lidar3D.cpp.o:
+CMakeFiles/mapa.dir/Webots2Robocomp.cpp.o:
 
 CMakeFiles/mapa.dir/Camera360RGB.cpp.o:
 
-CMakeFiles/mapa.dir/Webots2Robocomp.cpp.o:
+CMakeFiles/mapa.dir/Gridder.cpp.o:
+
+CMakeFiles/mapa.dir/OmniRobot.cpp.o:
+
+CMakeFiles/mapa.dir/Lidar3D.cpp.o:
+
+CMakeFiles/mapa.dir/GenericBase.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2:
 

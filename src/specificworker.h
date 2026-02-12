@@ -35,6 +35,7 @@
 #include <grid2d/grid.h>
 #include "abstract_graphic_viewer/abstract_graphic_viewer.h"
 #include <Eigen/Geometry>
+#include <Gridder.h>
 
 
 /**
@@ -122,13 +123,15 @@ class SpecificWorker : public GenericWorker
 		Params params;
 
 		// viewer
-		AbstractGraphicViewer *viewer;
+		AbstractGraphicViewer *viewer, *viewer_map;
 		QGraphicsPolygonItem *robot_draw;
 		Eigen::Affine2f robot_pose;
 
 		Eigen::Affine2f get_robot_pose();
 
 		void draw_lidar (const RoboCompLidar3D::TPoints &filtered_points, const Eigen::Affine2f &robot_pose, QGraphicsScene *scene);
+
+		void draw_map (const RoboCompGridder::Map &map, QGraphicsScene *scene);
 
 		//Updates robot_pose_display with the new robot coordinates each iteration (modifies robot_pose_display class attribute)
 		Eigen::Affine2f update_robot_transform(const RoboCompWebots2Robocomp::ObjectPose &pose, Eigen::Affine2f &robot_transform);

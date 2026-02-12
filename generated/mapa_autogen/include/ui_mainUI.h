@@ -21,7 +21,8 @@ class Ui_guiDlg
 {
 public:
     QWidget *centralwidget;
-    QFrame *frame;
+    QFrame *viewer_lidar;
+    QFrame *viewer_room;
     QStatusBar *statusbar;
 
     void setupUi(QWidget *guiDlg)
@@ -31,13 +32,20 @@ public:
         guiDlg->resize(1122, 887);
         centralwidget = new QWidget(guiDlg);
         centralwidget->setObjectName("centralwidget");
-        frame = new QFrame(centralwidget);
-        frame->setObjectName("frame");
-        frame->setGeometry(QRect(0, 0, 1101, 881));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
+        centralwidget->setGeometry(QRect(0, 0, 1101, 881));
+        viewer_lidar = new QFrame(centralwidget);
+        viewer_lidar->setObjectName("viewer_lidar");
+        viewer_lidar->setGeometry(QRect(0, 0, 551, 881));
+        viewer_lidar->setFrameShape(QFrame::StyledPanel);
+        viewer_lidar->setFrameShadow(QFrame::Raised);
+        viewer_room = new QFrame(centralwidget);
+        viewer_room->setObjectName("viewer_room");
+        viewer_room->setGeometry(QRect(550, 0, 551, 881));
+        viewer_room->setFrameShape(QFrame::StyledPanel);
+        viewer_room->setFrameShadow(QFrame::Raised);
         statusbar = new QStatusBar(guiDlg);
         statusbar->setObjectName("statusbar");
+        statusbar->setGeometry(QRect(0, 0, 3, 23));
 
         retranslateUi(guiDlg);
 

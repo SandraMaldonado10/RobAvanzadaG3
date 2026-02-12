@@ -53,7 +53,8 @@ void SpecificWorker::initialize()
     std::cout << "initialize worker" << std::endl;
 
 	// Viewer
-	viewer = new AbstractGraphicViewer(this->frame, params.GRID_MAX_DIM, true);
+	viewer = new AbstractGraphicViewer(this->viewer_lidar, params.GRID_MAX_DIM, true);
+	viewer_map = new AbstractGraphicViewer(this->viewer_room, params.GRID_MAX_DIM, true);
 	auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
 	robot_draw = r;
 	show ();
@@ -70,9 +71,11 @@ void SpecificWorker::compute()
 	robot_draw->setPos(robot_pose.translation().x(), robot_pose.translation().y());
 	robot_draw->setRotation(qRadiansToDegrees((Eigen::Rotation2Df(robot_pose.linear()).angle())));
 
+	RoboCompGridder::Map map = this->gridder_proxy->getMap();
 	// Draw lidar points
 	const auto data = get_lidar();
 	draw_lidar(data, robot_pose, &viewer->scene);
+	draw_map(map, &viewer_map->scene);
 
 }
 
@@ -127,6 +130,30 @@ void SpecificWorker::draw_lidar(const RoboCompLidar3D::TPoints &points,
 		dp->setPos(worldP.x(), worldP.y());
 		draw_points.push_back(dp);   // add to the list of points to be deleted next time
 	}
+}
+void SpecificWorker::draw_map(const RoboCompGridder::Map &map, QGraphicsScene *scene) {
+
+	static std::vector<QGraphicsItem*> draw_points;
+	for (const auto &p : draw_points)
+	{
+		scene->removeItem(p);
+		delete p;
+	}
+	draw_points.clear();
+
+	const QColor color("LightGreen");
+	const QPen pen(color, 10);
+
+	//const QBrush brush(color, Qt::SolidPattern);
+	for (const auto &p : map.cells)
+	{
+		const auto dp = scene->addRect(-25, -25, 50, 50, pen);
+		//Eigen::Vector2f worldP = robot_pose * Eigen::Vector2f(p.x, p.y);
+		dp->setPos(p.x, p.y);
+		draw_points.push_back(dp);   // add to the list of points to be deleted next time
+	}
+
+
 }
 
 Eigen::Affine2f SpecificWorker::update_robot_transform(const RoboCompWebots2Robocomp::ObjectPose &pose, Eigen::Affine2f &robot_pose)
