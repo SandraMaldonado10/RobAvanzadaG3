@@ -58,6 +58,8 @@ void SpecificWorker::initialize()
 	auto [r, e] = viewer->add_robot(params.ROBOT_WIDTH, params.ROBOT_LENGTH, 0, 100, QColor("Blue"));
 	robot_draw = r;
 	show ();
+	RoboCompGridder::Map map = this->gridder_proxy->getMap();
+	draw_map(map, &viewer_map->scene);
 }
 
 
@@ -71,11 +73,11 @@ void SpecificWorker::compute()
 	robot_draw->setPos(robot_pose.translation().x(), robot_pose.translation().y());
 	robot_draw->setRotation(qRadiansToDegrees((Eigen::Rotation2Df(robot_pose.linear()).angle())));
 
-	RoboCompGridder::Map map = this->gridder_proxy->getMap();
+
 	// Draw lidar points
 	const auto data = get_lidar();
 	draw_lidar(data, robot_pose, &viewer->scene);
-	draw_map(map, &viewer_map->scene);
+
 
 }
 
