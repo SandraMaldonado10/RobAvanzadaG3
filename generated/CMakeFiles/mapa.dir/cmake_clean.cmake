@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "../bin/mapa"
   "../bin/mapa.pdb"
+  "CMakeFiles/mapa.dir/link.d"
   "CMakeFiles/mapa_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/mapa_autogen.dir/ParseCache.txt"
   "mapa_autogen"
