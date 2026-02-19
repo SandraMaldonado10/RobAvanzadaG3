@@ -193,8 +193,13 @@ void SpecificWorker::left_click_handler(QPointF p)
 	const Eigen::Vector2f target{p.x(), p.y()};
 
     const auto start_time = std::chrono::high_resolution_clock::now();
-	auto path = grid_esdf.compute_path(source, target, params.ROBOT_SEMI_WIDTH, params.SAFETY_FACTOR);
-    qInfo() << "A* path computed (ESDF), path size:" << path.size();
+	//auto path = grid_esdf.compute_path(source, target, params.ROBOT_SEMI_WIDTH, params.SAFETY_FACTOR); //TODO: Quitarlo y ponerlo en un trycatch
+	RoboCompGridder::Result path_result;
+	try
+	{
+		path_result = gridder_proxy->getPaths({source.x(), source.y()}, {target.x(), target.y()}, 1, false, false, params.SAFETY_FACTOR);
+	}catch (const Ice::Exception &e){std::cout << "Error calling getPaths: " << e.what() << std::endl; return;}
+	const auto &path = path_result.paths[0];    qInfo() << "A* path computed (ESDF), path size:" << path.size();
 
     const auto end_time = std::chrono::high_resolution_clock::now();
     const auto elapsed_ms = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count();
@@ -204,8 +209,14 @@ void SpecificWorker::left_click_handler(QPointF p)
     {
         // Calculate path length (sum of segment distances)
         float path_length = 0.f;
-        for (size_t i = 1; i < path.size(); ++i)
-            path_length += (path[i] - path[i-1]).norm();
+    	for (size_t i = 1; i < path.size(); ++i) {
+    		// Convertimos los TPoint a Eigen::Vector2f
+    		Eigen::Vector2f p_actual(path[i].x, path[i].y);
+    		Eigen::Vector2f p_anterior(path[i-1].x, path[i-1].y);
+
+    		// Ahora tu operación original funciona perfectamente
+    		path_length += (p_actual - p_anterior).norm();
+    	}
 
         // Update UI displays
         lcdNumber_length->display(static_cast<double>(path_length / 1000.f));  // Show in meters
@@ -239,7 +250,7 @@ void SpecificWorker::left_click_handler(QPointF p)
     }
 };
 
-void SpecificWorker::draw_path(const std::vector<Eigen::Vector2f> &path, QGraphicsScene *scene, bool erase_only)
+void SpecificWorker::draw_path(const RoboCompGridder::TPath &path, QGraphicsScene *scene, bool erase_only)
 {
 	static std::vector<QGraphicsEllipseItem*> points;
 	static const QColor color("blue");
@@ -260,7 +271,7 @@ void SpecificWorker::draw_path(const std::vector<Eigen::Vector2f> &path, QGraphi
 	for(const auto &p: path)
 	{
 		auto ptr = scene->addEllipse(-s/2, -s/2, s, s, pen, brush);
-		ptr->setPos(p.x(), p.y());
+		ptr->setPos(p.x, p.y);
 		ptr->setZValue(10);
 		points.push_back(ptr);
 	}
