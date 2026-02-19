@@ -1,0 +1,27 @@
+# Sources set
+# Obtener la variable de entorno y guardarla en una variable de CMake
+SET(ROBOCOMP $ENV{ROBOCOMP})
+
+# Verificar que la ruta no esté vacía para evitar errores crípticos
+IF(NOT ROBOCOMP)
+    MESSAGE(FATAL_ERROR "La variable de entorno ROBOCOMP no está definida. Por favor, haz 'export ROBOCOMP=/ruta/a/robocomp' o añádela a tu .bashrc")
+ENDIF()
+
+
+LIST(APPEND SOURCES
+  ../src/specificworker.cpp
+        ${ROBOCOMP}/classes/grid2d/grid.cpp
+)
+
+# Headers set
+LIST(APPEND HEADERS
+  ../src/specificworker.h
+        ${ROBOCOMP}/classes/grid2d/grid.h
+)
+
+
+LIST(APPEND LIBS ${LIBS})
+
+# no-char8_t to avoid a problem with ICE Connection lib.
+add_definitions(-g -fmax-errors=1 -fno-char8_t)
+
