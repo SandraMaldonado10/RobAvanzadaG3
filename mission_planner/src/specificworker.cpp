@@ -266,6 +266,37 @@ void SpecificWorker::draw_path(const std::vector<Eigen::Vector2f> &path, QGraphi
 	}
 }
 
+std::tuple<float, float> SpecificWorker::robot_controller(const Eigen::Vector2f &target)
+{
+	float new_theta, rot;
+	float sigma = M_PI / 4;
+	float kp = 0.5f;
+	float k = 10; //10, termino medio
+	float d_stop = 600.0f; //le pongo 600 a la distancia de freno
+
+	const double x = target.x();
+	const double y = target.y();
+
+	new_theta = std::atan2(x, y);
+	rot = (kp * new_theta); //+ (kd * inc_theta);
+
+	float d = std::sqrt(x*x + y*y);
+	float f_zero = std::exp(- (new_theta*new_theta)/(2*sigma*sigma));
+	float f_d = 1/ (1+std::exp(k/(0.01f+d-d_stop))); //la alternativa con el signo - y multiplicando funciona peor
+
+	//vmax = 800
+	float v = 800 * f_zero * f_d;
+
+	//qDebug()<<"D es: "<<d;
+	//qDebug()<<"f_zero es: "<<f_zero;
+	//qDebug()<<"f_d es: "<<f_d;
+	//qDebug()<<"v es: "<<v;
+	//qDebug()<<"El resultado del exp de la formula de f_d es: "<<std::exp(k/(0.01f+d-d_stop));
+	//debe devolver v y rot en vez de 0, 0
+	return {v, rot};
+}
+
+
 /////////////////////////////// EMERGENCY AND RESTORE ////////////////////////////////
 void SpecificWorker::emergency()
 {
