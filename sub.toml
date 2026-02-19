@@ -30,14 +30,14 @@ ice_name = "Lidar3D:tcp -h localhost -p 11989"
 
 [[components]]
 name = "joy"
-cwd = "~/robocomp/components/robocomp-robolab/components/hardware/external_control/joystickpublish"
-cmd = "bin/JoystickPublish etc/config_shadow"
+cwd = "~/robocomp/components/robocomp-robolab/components/hardware/external_control/python_xbox_controller"
+cmd = "bin/python_xbox_controller etc/config"
 ice_name = "JoystickPublish:tcp -h localhost -p 11230"
 
 [[components]]
 name = "gridder"
 cwd = "~/robocomp/components/beta-robotica-class/gridder"
-cmd = "bin/gridder etc/config_wb"
+cmd = "bin/gridder etc/config"
 ice_name = "gridder:tcp -h localhost -p 13541"
 
 #[[components]]
