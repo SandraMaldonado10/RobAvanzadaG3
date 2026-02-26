@@ -1,6 +1,7 @@
 # Proxies for required interfaces
-Proxies.Gridder = "gridder:tcp -h localhost -p 13541"
-
+Proxies.Gridder = "gridder:tcp -h localhost -p 13541" #Test en casa
+#Proxies.Gridder = "gridder:tcp -h 158.49.227.90 -p 13541" #Test en el aula
+Proxies.OmniRobot = "omnirobot:tcp -h localhost -p 10004"
 
 
 Period.Compute = 100

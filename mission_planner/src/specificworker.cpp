@@ -240,6 +240,18 @@ void SpecificWorker::left_click_handler(QPointF p)
             QBrush(QColor(255, 0, 0, 150)));  // Semi-transparent red fill
         target_marker->setPos(target.x(), target.y());
         target_marker->setZValue(20);  // On top of everything
+
+    	follow_path(path);
+    	/*
+    	const auto& status = gridder_proxy->startNavigation();
+
+    	const auto& nav_status = gridder_proxy->getNavigationStatus();
+		lcdNumber_Dist->display(nav_status.distanceToTarget);
+    	lcdNumber_Speed->display(nav_status.currentSpeed);
+    	qInfo() << "status: " << QString::fromStdString(nav_status.statusMessage);
+    	statusLabel->setText(QString::fromStdString(nav_status.statusMessage));
+		*/
+
     }
     else
     {
@@ -279,6 +291,7 @@ void SpecificWorker::draw_path(const RoboCompGridder::TPath &path, QGraphicsScen
 
 std::tuple<float, float> SpecificWorker::robot_controller(const Eigen::Vector2f &target)
 {
+	/*
 	float new_theta, rot;
 	float sigma = M_PI / 4;
 	float kp = 0.5f;
@@ -305,47 +318,71 @@ std::tuple<float, float> SpecificWorker::robot_controller(const Eigen::Vector2f 
 	//qDebug()<<"El resultado del exp de la formula de f_d es: "<<std::exp(k/(0.01f+d-d_stop));
 	//debe devolver v y rot en vez de 0, 0
 	return {v, rot};
+	*/
 }
-
+/*
 void SpecificWorker::follow_path(const vector<RoboCompGridder::TPoint> & path) {
-	int step = 10;
+
+	int step = 1;
 
 	for (size_t i = 0; i < path.size(); i += step) {
 		const auto &p = path[i];
 		Eigen::Vector2f p_dest(p.x, p.y);
 
-		qDebug() << "Siguiente objetivo intermedio: " << p_dest.x() << "//" << p_dest.y();
-
-		// 1. Declaramos las variables fuera para poder actualizarlas
 		float adv = 0, rot = 0;
-
-		// 2. Usamos OR (||). Seguimos mientras ALGO sea mayor que el umbral
-		// O mejor aún: mientras la distancia al punto sea grande.
+		qDebug() << "Siguiente objetivo intermedio: " << p_dest.x() << "//" << p_dest.y();
 		do {
-			// 3. ACTUALIZAMOS las variables sin volver a poner 'auto' o 'float'
+			// 1. Obtener velocidades del controlador
 			auto result = robot_controller(p_dest);
 			adv = std::get<0>(result);
 			rot = std::get<1>(result);
 
+			// 2. LÓGICA DE PRIORIDAD:
+			// Si la rotación es muy alta, ignoramos el avance para que primero se alinee.
+			// Esto evita que el robot trace círculos infinitos alrededor del punto.
+			float final_adv = adv;
+			if (std::abs(rot) > 0.4) { // Umbral de rotación pura (ajustable)
+				final_adv = 0;
+			}
+
 			try {
-				omnirobot_proxy->setSpeedBase(0, adv, rot);
-				// 4. Pequeño sleep para no saturar el bus de comunicaciones (opcional pero recomendado)
-				// usleep(20000);
+				// Enviamos las velocidades calculadas con la prioridad aplicada
+				omnirobot_proxy->setSpeedBase(0, final_adv, rot);
+				//usleep(50000); // 50ms: Da tiempo al hardware a reaccionar
 			}
 			catch (const Ice::Exception &e) {
 				std::cout << e << " Error de conexión" << std::endl;
 				return;
 			}
 
-			// Debug opcional para ver cómo baja la velocidad
-			// qDebug() << "Velocidades: " << adv << " / " << rot;
-
-		} while (std::abs(adv) > 1.0 || std::abs(rot) > 0.1);
-		// Ajusta estos umbrales: 0.001 es demasiado pequeño para hardware real
+			// 3. Condición de salida: hemos llegado al punto intermedio
+		} while (std::abs(adv) > 5.0 || std::abs(rot) > 0.1);
 	}
 
-	// Al finalizar todo el path, paramos el robot por seguridad
 	omnirobot_proxy->setSpeedBase(0, 0, 0);
+
+}*/
+
+void SpecificWorker::follow_path(const vector<RoboCompGridder::TPoint> & path) {
+
+	int step = 1;
+
+	for (size_t i = 0; i < path.size(); i += step) {
+
+		//const RoboCompGridder::TPoint& closest_point = gridder_proxy->getClosestFreePoint(path[i]);
+		gridder_proxy->setTarget(path[i]);
+
+		const auto& status = gridder_proxy->startNavigation();
+
+		const auto& nav_status = gridder_proxy->getNavigationStatus();
+		lcdNumber_Dist->display(nav_status.distanceToTarget);
+		lcdNumber_Speed->display(nav_status.currentSpeed);
+		qInfo() << "status: " << QString::fromStdString(nav_status.statusMessage);
+		statusLabel->setText(QString::fromStdString(nav_status.statusMessage));
+
+	}
+
+
 }
 
 
