@@ -142,6 +142,7 @@ private:
 	void update_ui();
 	void initialize_grid();
 	void draw_path(const RoboCompGridder::TPath &path, QGraphicsScene *scene, bool erase_only=false);
+	void follow_path(const vector<RoboCompGridder::TPoint> & path);
 
 	std::tuple<float, float> robot_controller(const Eigen::Vector2f &target);
 

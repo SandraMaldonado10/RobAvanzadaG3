@@ -307,6 +307,47 @@ std::tuple<float, float> SpecificWorker::robot_controller(const Eigen::Vector2f 
 	return {v, rot};
 }
 
+void SpecificWorker::follow_path(const vector<RoboCompGridder::TPoint> & path) {
+	int step = 10;
+
+	for (size_t i = 0; i < path.size(); i += step) {
+		const auto &p = path[i];
+		Eigen::Vector2f p_dest(p.x, p.y);
+
+		qDebug() << "Siguiente objetivo intermedio: " << p_dest.x() << "//" << p_dest.y();
+
+		// 1. Declaramos las variables fuera para poder actualizarlas
+		float adv = 0, rot = 0;
+
+		// 2. Usamos OR (||). Seguimos mientras ALGO sea mayor que el umbral
+		// O mejor aún: mientras la distancia al punto sea grande.
+		do {
+			// 3. ACTUALIZAMOS las variables sin volver a poner 'auto' o 'float'
+			auto result = robot_controller(p_dest);
+			adv = std::get<0>(result);
+			rot = std::get<1>(result);
+
+			try {
+				omnirobot_proxy->setSpeedBase(0, adv, rot);
+				// 4. Pequeño sleep para no saturar el bus de comunicaciones (opcional pero recomendado)
+				// usleep(20000);
+			}
+			catch (const Ice::Exception &e) {
+				std::cout << e << " Error de conexión" << std::endl;
+				return;
+			}
+
+			// Debug opcional para ver cómo baja la velocidad
+			// qDebug() << "Velocidades: " << adv << " / " << rot;
+
+		} while (std::abs(adv) > 1.0 || std::abs(rot) > 0.1);
+		// Ajusta estos umbrales: 0.001 es demasiado pequeño para hardware real
+	}
+
+	// Al finalizar todo el path, paramos el robot por seguridad
+	omnirobot_proxy->setSpeedBase(0, 0, 0);
+}
+
 
 /////////////////////////////// EMERGENCY AND RESTORE ////////////////////////////////
 void SpecificWorker::emergency()

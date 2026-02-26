@@ -1,10 +1,10 @@
 import "Gridder.idsl";
-
+import "OmniRobot.idsl";
 Component mission_planner
 {
     Communications
     {
-        requires Gridder;
+        requires Gridder, OmniRobot;
     };
     language Cpp11;
     gui Qt(QWidget);

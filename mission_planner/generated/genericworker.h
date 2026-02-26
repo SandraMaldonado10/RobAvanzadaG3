@@ -41,11 +41,13 @@
 #include <unordered_map>
 
 
+#include <GenericBase.h>
 #include <Gridder.h>
+#include <OmniRobot.h>
 
 #define BASIC_PERIOD 100
 
-using TuplePrx = std::tuple<RoboCompGridder::GridderPrxPtr>;
+using TuplePrx = std::tuple<RoboCompGridder::GridderPrxPtr,RoboCompOmniRobot::OmniRobotPrxPtr>;
 
 
 class GenericWorker : public QWidget, public Ui_guiDlg
@@ -65,6 +67,7 @@ public:
 
 
 	RoboCompGridder::GridderPrxPtr gridder_proxy;
+	RoboCompOmniRobot::OmniRobotPrxPtr omnirobot_proxy;
 
 
 protected:

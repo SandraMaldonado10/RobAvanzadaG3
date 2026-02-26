@@ -78,7 +78,9 @@
 #include "../src/specificworker.h"
 
 
+#include <GenericBase.h>
 #include <Gridder.h>
+#include <OmniRobot.h>
 
 #define USE_QTGUI
 
@@ -170,13 +172,16 @@ int mission_planner::run(int argc, char* argv[])
 	int status=EXIT_SUCCESS;
 
 	RoboCompGridder::GridderPrxPtr gridder_proxy;
+	RoboCompOmniRobot::OmniRobotPrxPtr omnirobot_proxy;
 
 
 	//Require code
 	require<RoboCompGridder::GridderPrx, RoboCompGridder::GridderPrxPtr>(communicator(),
 	                    configLoader.get<std::string>("Proxies.Gridder"), "GridderProxy", gridder_proxy);
+	require<RoboCompOmniRobot::OmniRobotPrx, RoboCompOmniRobot::OmniRobotPrxPtr>(communicator(),
+	                    configLoader.get<std::string>("Proxies.OmniRobot"), "OmniRobotProxy", omnirobot_proxy);
 
-	tprx = std::make_tuple(gridder_proxy);
+	tprx = std::make_tuple(gridder_proxy,omnirobot_proxy);
 	SpecificWorker *worker = new SpecificWorker(this->configLoader, tprx, startup_check_flag);
 	QObject::connect(worker, SIGNAL(kill()), &a, SLOT(quit()));
 
