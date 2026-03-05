@@ -1,0 +1,114 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-c4da37b8141827da22c7.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner"
+				},
+				{
+					"build" : "generated",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-generated-be27a6a86f0bdba49430.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ainf_mission_planner",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ICES__home_efeme_robocomp_components_beta-robotica-class_ainf_mission_planner_generated::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ICES__home_efeme_robocomp_components_beta-robotica-class_ainf_mission_planner_generated-7ad5a72e211c0a21314d.json",
+					"name" : "ICES__home_efeme_robocomp_components_beta-robotica-class_ainf_mission_planner_generated",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ICE_Navigator_target::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ICE_Navigator_target-f6c0eef88f767264f125.json",
+					"name" : "ICE_Navigator_target",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ainf_mission_planner::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ainf_mission_planner-8cea01a5d1019d3d7715.json",
+					"name" : "ainf_mission_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ainf_mission_planner_autogen::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ainf_mission_planner_autogen-19cd3c0f4ab8e261e0df.json",
+					"name" : "ainf_mission_planner_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ainf_mission_planner_autogen_timestamp_deps::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ainf_mission_planner_autogen_timestamp_deps-60d87463634c03f823ad.json",
+					"name" : "ainf_mission_planner_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner",
+		"source" : "/mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

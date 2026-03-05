@@ -1,0 +1,37 @@
+file(REMOVE_RECURSE
+  "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner"
+  "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner.pdb"
+  "CMakeFiles/ainf_mission_planner.dir/link.d"
+  "CMakeFiles/ainf_mission_planner_autogen.dir/AutogenUsed.txt"
+  "CMakeFiles/ainf_mission_planner_autogen.dir/ParseCache.txt"
+  "ainf_mission_planner_autogen"
+  "CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o.d"
+  "CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o.d"
+  "CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o.d"
+  "CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o.d"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o.d"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o.d"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o.d"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o.d"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o.d"
+  "CMakeFiles/ainf_mission_planner.dir/main.cpp.o"
+  "CMakeFiles/ainf_mission_planner.dir/main.cpp.o.d"
+  "Navigator.cpp"
+  "Navigator.h"
+  "ainf_mission_planner_autogen/mocs_compilation.cpp"
+  "ainf_mission_planner_autogen/timestamp"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/ainf_mission_planner.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

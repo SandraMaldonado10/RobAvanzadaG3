@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ainf_mission_planner_FILE /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner)
+set(__QT_DEPLOY_TARGET_ainf_mission_planner_TYPE EXECUTABLE)
