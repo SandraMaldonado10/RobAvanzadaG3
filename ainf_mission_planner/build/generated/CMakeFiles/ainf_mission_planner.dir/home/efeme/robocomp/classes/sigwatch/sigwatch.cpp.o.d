@@ -440,8 +440,8 @@ generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwat
  /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/include/x86_64-linux-gnu/bits/signal_ext.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/moc_sigwatch.cpp \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/../../../../../../../classes/sigwatch/sigwatch.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/moc_sigwatch.cpp \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/../../../../../../../../../robocomp/classes/sigwatch/sigwatch.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmochelpers.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmocconstants.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \

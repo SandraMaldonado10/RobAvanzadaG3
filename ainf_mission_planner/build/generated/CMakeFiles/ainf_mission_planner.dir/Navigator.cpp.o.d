@@ -1,7 +1,7 @@
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o: \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.cpp \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/Navigator.cpp \
  /usr/include/stdc-predef.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/Navigator.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/c++/15/stdlib.h /usr/include/c++/15/cstdlib \

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner
+CMAKE_SOURCE_DIR = /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build
+CMAKE_BINARY_DIR = /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build
 
 # Utility rule file for ainf_mission_planner_autogen.
 
@@ -71,9 +71,9 @@ generated/CMakeFiles/ainf_mission_planner_autogen: generated/ainf_mission_planne
 generated/ainf_mission_planner_autogen/timestamp: /usr/lib/qt6/libexec/moc
 generated/ainf_mission_planner_autogen/timestamp: /usr/lib/qt6/libexec/uic
 generated/ainf_mission_planner_autogen/timestamp: generated/CMakeFiles/ainf_mission_planner_autogen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target ainf_mission_planner"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/cmake -E cmake_autogen /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner_autogen.dir/AutogenInfo.json ""
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/cmake -E touch /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target ainf_mission_planner"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/cmake -E cmake_autogen /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner_autogen.dir/AutogenInfo.json ""
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/cmake -E touch /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/timestamp
 
 generated/CMakeFiles/ainf_mission_planner_autogen.dir/codegen:
 .PHONY : generated/CMakeFiles/ainf_mission_planner_autogen.dir/codegen
@@ -88,10 +88,10 @@ generated/CMakeFiles/ainf_mission_planner_autogen.dir/build: ainf_mission_planne
 .PHONY : generated/CMakeFiles/ainf_mission_planner_autogen.dir/build
 
 generated/CMakeFiles/ainf_mission_planner_autogen.dir/clean:
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && $(CMAKE_COMMAND) -P CMakeFiles/ainf_mission_planner_autogen.dir/cmake_clean.cmake
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && $(CMAKE_COMMAND) -P CMakeFiles/ainf_mission_planner_autogen.dir/cmake_clean.cmake
 .PHONY : generated/CMakeFiles/ainf_mission_planner_autogen.dir/clean
 
 generated/CMakeFiles/ainf_mission_planner_autogen.dir/depend:
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner_autogen.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : generated/CMakeFiles/ainf_mission_planner_autogen.dir/depend
 

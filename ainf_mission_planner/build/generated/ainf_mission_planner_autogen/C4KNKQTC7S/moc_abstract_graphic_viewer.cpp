@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../../../../../../../home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h"
+#include "../../../../../../../../../robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h"
 #include <QtGui/qtextcursor.h>
 #include <QtCore/qmetatype.h>
 

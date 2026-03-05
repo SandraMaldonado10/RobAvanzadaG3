@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../../../../classes/sigwatch/sigwatch.h"
+#include "../../../../../../../../../robocomp/classes/sigwatch/sigwatch.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>

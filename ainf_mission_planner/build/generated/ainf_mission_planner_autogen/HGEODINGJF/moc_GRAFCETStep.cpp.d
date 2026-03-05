@@ -1,5 +1,5 @@
-/mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/HGEODINGJF/moc_GRAFCETStep.cpp: /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.h \
-  /mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/moc_predefs.h \
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/HGEODINGJF/moc_GRAFCETStep.cpp: /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.h \
+  /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

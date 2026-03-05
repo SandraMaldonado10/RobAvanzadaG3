@@ -1,4 +1,13 @@
 ainf_mission_planner_autogen/timestamp: \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/moc_predefs.h \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/CMakeLists.txt \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.h \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.h \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/CMakeLists.txt \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/specificworker.h \
 	/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp \
 	/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.h \
 	/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp \
@@ -11,19 +20,10 @@ ainf_mission_planner_autogen/timestamp: \
 	/home/efeme/robocomp/classes/sigwatch/sigwatch.h \
 	/home/efeme/robocomp/cmake/modules/qt.cmake \
 	/home/efeme/robocomp/cmake/robocomp.cmake \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.h \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/moc_predefs.h \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/CMakeLists.txt \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/genericworker.cpp \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/genericworker.h \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/main.cpp \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/CMakeLists.txt \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/specificworker.cpp \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/specificworker.h \
-	/home/efeme/robocomp/core/classes/ConfigLoader/ConfigLoader.h \
-	/home/efeme/robocomp/core/classes/ConfigLoader/ConfigLoader.tpp \
-	/home/efeme/robocomp/core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-	/home/efeme/robocomp/core/classes/grafcetStep/GRAFCETStep.h \
+	/mnt/SDROJA/robocomp/core/classes/ConfigLoader/ConfigLoader.h \
+	/mnt/SDROJA/robocomp/core/classes/ConfigLoader/ConfigLoader.tpp \
+	/mnt/SDROJA/robocomp/core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+	/mnt/SDROJA/robocomp/core/classes/grafcetStep/GRAFCETStep.h \
 	/usr/include/GL/gl.h \
 	/usr/include/Ice/AsyncResult.h \
 	/usr/include/Ice/BatchRequestQueueF.h \
@@ -1320,5 +1320,5 @@ ainf_mission_planner_autogen/timestamp: \
 	/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake \
 	/usr/share/cmake-3.31/Modules/MacroAddFileDependencies.cmake \
 	/usr/share/cmake-3.31/Modules/SelectLibraryConfigurations.cmake \
-	/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/mainUI.ui \
+	/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/mainUI.ui \
 	/usr/bin/cmake

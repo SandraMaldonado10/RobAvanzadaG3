@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner"
-  "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner.pdb"
+  "/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner"
+  "/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner.pdb"
   "CMakeFiles/ainf_mission_planner.dir/link.d"
   "CMakeFiles/ainf_mission_planner_autogen.dir/AutogenUsed.txt"
   "CMakeFiles/ainf_mission_planner_autogen.dir/ParseCache.txt"

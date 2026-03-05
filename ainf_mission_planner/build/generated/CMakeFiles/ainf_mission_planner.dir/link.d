@@ -1,4 +1,4 @@
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: \
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/Scrt1.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/../../../x86_64-linux-gnu/crti.o \
   /usr/lib/gcc/x86_64-linux-gnu/15/crtbeginS.o \

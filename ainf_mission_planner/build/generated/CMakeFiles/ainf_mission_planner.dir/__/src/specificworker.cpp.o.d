@@ -1,8 +1,8 @@
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/specificworker.cpp \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp \
  /usr/include/stdc-predef.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/specificworker.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/./genericworker.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/specificworker.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/./genericworker.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -1057,7 +1057,7 @@ generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector4d.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/ui_mainUI.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
@@ -1162,7 +1162,7 @@ generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/Navigator.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/Ice/ProxyHandle.h /usr/include/Ice/ObjectF.h \

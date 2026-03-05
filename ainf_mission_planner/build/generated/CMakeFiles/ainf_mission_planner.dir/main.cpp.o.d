@@ -1,5 +1,5 @@
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/main.cpp \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp \
  /usr/include/stdc-predef.h /usr/include/signal.h /usr/include/features.h \
  /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -1389,9 +1389,9 @@ generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: \
  /home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.h \
  /home/efeme/robocomp/classes/sigwatch/sigwatch.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/genericworker.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/ui_mainUI.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
@@ -1413,9 +1413,9 @@ generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/../src/specificworker.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/./genericworker.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/Navigator.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/../src/specificworker.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/./genericworker.h \
  /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \

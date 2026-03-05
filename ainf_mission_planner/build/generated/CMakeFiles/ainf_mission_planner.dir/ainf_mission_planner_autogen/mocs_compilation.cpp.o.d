@@ -1,16 +1,10 @@
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o: \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/mocs_compilation.cpp \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/mocs_compilation.cpp \
  /usr/include/stdc-predef.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/SALGZVAS5P/moc_abstract_graphic_viewer.cpp \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/SALGZVAS5P/../../../../../../../classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
- /usr/include/c++/15/type_traits \
- /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
- /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/EWIEGA46WW/moc_genericworker.cpp \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/EWIEGA46WW/../../../../generated/genericworker.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/bits/timesize.h \
@@ -18,6 +12,21 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/bits/long-double.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/time64.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGuiDepends \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
+ /usr/include/c++/15/type_traits \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/os_defines.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/cpu_defines.h \
  /usr/include/c++/15/pstl/pstl_config.h \
  /usr/include/c++/15/bits/version.h /usr/include/c++/15/cstddef \
@@ -29,16 +38,7 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/c++/15/ext/numeric_traits.h \
  /usr/include/c++/15/bits/cpp_type_traits.h \
  /usr/include/c++/15/ext/type_traits.h /usr/include/c++/15/cstdint \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
- /usr/include/x86_64-linux-gnu/bits/types.h \
- /usr/include/x86_64-linux-gnu/bits/typesizes.h \
- /usr/include/x86_64-linux-gnu/bits/time64.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-least.h /usr/include/assert.h \
- /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h \
+ /usr/include/assert.h /usr/lib/gcc/x86_64-linux-gnu/15/include/stdbool.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreglobal.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtversionchecks.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtconfiginclude.h \
@@ -227,60 +227,20 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtresource.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qttranslation.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversiontagging.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcomparehelpers.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20type_traits.h \
- /usr/include/c++/15/functional /usr/include/c++/15/bits/stl_function.h \
- /usr/include/c++/15/backward/binders.h \
- /usr/include/c++/15/bits/refwrap.h \
- /usr/include/c++/15/bits/std_function.h \
- /usr/include/c++/15/unordered_map \
- /usr/include/c++/15/bits/unordered_map.h \
- /usr/include/c++/15/bits/hashtable.h \
- /usr/include/c++/15/bits/hashtable_policy.h \
- /usr/include/c++/15/ext/aligned_buffer.h \
- /usr/include/c++/15/ext/alloc_traits.h \
- /usr/include/c++/15/bits/alloc_traits.h \
- /usr/include/c++/15/bits/memoryfwd.h \
- /usr/include/c++/15/bits/allocator.h \
- /usr/include/x86_64-linux-gnu/c++/15/bits/c++allocator.h \
- /usr/include/c++/15/bits/new_allocator.h \
- /usr/include/c++/15/bits/node_handle.h \
- /usr/include/c++/15/bits/range_access.h \
- /usr/include/c++/15/bits/erase_if.h \
- /usr/include/c++/15/bits/memory_resource.h \
- /usr/include/c++/15/bits/uses_allocator_args.h \
- /usr/include/c++/15/vector /usr/include/c++/15/bits/stl_uninitialized.h \
- /usr/include/c++/15/bits/stl_vector.h \
- /usr/include/c++/15/bits/stl_bvector.h \
- /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/bits/formatfwd.h \
- /usr/include/c++/15/array /usr/include/c++/15/bits/move_only_function.h \
- /usr/include/c++/15/bits/mofunc_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h \
- /usr/include/c++/15/memory \
- /usr/include/c++/15/bits/stl_raw_storage_iter.h \
- /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
- /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
+ /usr/include/c++/15/iterator /usr/include/c++/15/bits/stream_iterator.h \
  /usr/include/c++/15/iosfwd /usr/include/c++/15/bits/stringfwd.h \
- /usr/include/c++/15/bits/postypes.h /usr/include/c++/15/cwchar \
- /usr/include/wchar.h /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
+ /usr/include/c++/15/bits/memoryfwd.h /usr/include/c++/15/bits/postypes.h \
+ /usr/include/c++/15/cwchar /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/15/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
  /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
  /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
- /usr/include/c++/15/bits/char_traits.h \
- /usr/include/c++/15/bits/localefwd.h \
+ /usr/include/c++/15/bits/streambuf_iterator.h \
+ /usr/include/c++/15/streambuf /usr/include/c++/15/bits/localefwd.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/c++locale.h \
  /usr/include/c++/15/clocale /usr/include/locale.h \
  /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/15/cctype \
@@ -289,9 +249,19 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/c++/15/bits/atomic_word.h \
  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
  /usr/include/c++/15/bits/locale_classes.h /usr/include/c++/15/string \
+ /usr/include/c++/15/bits/char_traits.h \
+ /usr/include/c++/15/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/c++allocator.h \
+ /usr/include/c++/15/bits/new_allocator.h \
  /usr/include/c++/15/bits/ostream_insert.h \
  /usr/include/c++/15/bits/cxxabi_forced.h \
- /usr/include/c++/15/bits/basic_string.h /usr/include/c++/15/string_view \
+ /usr/include/c++/15/bits/stl_function.h \
+ /usr/include/c++/15/backward/binders.h \
+ /usr/include/c++/15/bits/refwrap.h \
+ /usr/include/c++/15/bits/range_access.h \
+ /usr/include/c++/15/bits/basic_string.h \
+ /usr/include/c++/15/ext/alloc_traits.h \
+ /usr/include/c++/15/bits/alloc_traits.h /usr/include/c++/15/string_view \
  /usr/include/c++/15/bits/string_view.tcc \
  /usr/include/c++/15/ext/string_conversions.h /usr/include/c++/15/cstdio \
  /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h \
@@ -301,29 +271,95 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/c++/15/bits/charconv.h \
  /usr/include/c++/15/bits/basic_string.tcc \
+ /usr/include/c++/15/bits/memory_resource.h \
+ /usr/include/c++/15/bits/uses_allocator_args.h \
  /usr/include/c++/15/bits/locale_classes.tcc \
  /usr/include/c++/15/system_error \
  /usr/include/x86_64-linux-gnu/c++/15/bits/error_constants.h \
- /usr/include/c++/15/stdexcept /usr/include/c++/15/streambuf \
- /usr/include/c++/15/bits/streambuf.tcc \
+ /usr/include/c++/15/stdexcept /usr/include/c++/15/bits/streambuf.tcc \
+ /usr/include/c++/15/memory /usr/include/c++/15/bits/stl_uninitialized.h \
+ /usr/include/c++/15/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/15/bits/align.h /usr/include/c++/15/bits/unique_ptr.h \
+ /usr/include/c++/15/bits/ostream.h /usr/include/c++/15/ios \
  /usr/include/c++/15/bits/basic_ios.h \
  /usr/include/c++/15/bits/locale_facets.h /usr/include/c++/15/cwctype \
  /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_base.h \
- /usr/include/c++/15/bits/streambuf_iterator.h \
  /usr/include/x86_64-linux-gnu/c++/15/bits/ctype_inline.h \
  /usr/include/c++/15/bits/locale_facets.tcc \
  /usr/include/c++/15/bits/basic_ios.tcc \
  /usr/include/c++/15/bits/shared_ptr.h \
  /usr/include/c++/15/bits/shared_ptr_base.h \
  /usr/include/c++/15/bits/allocated_ptr.h \
+ /usr/include/c++/15/ext/aligned_buffer.h \
  /usr/include/c++/15/ext/concurrence.h \
  /usr/include/c++/15/bits/shared_ptr_atomic.h \
  /usr/include/c++/15/backward/auto_ptr.h \
  /usr/include/c++/15/bits/ranges_uninitialized.h \
  /usr/include/c++/15/bits/out_ptr.h \
  /usr/include/c++/15/pstl/glue_memory_defs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
+ /usr/include/c++/15/functional /usr/include/c++/15/bits/std_function.h \
+ /usr/include/c++/15/unordered_map \
+ /usr/include/c++/15/bits/unordered_map.h \
+ /usr/include/c++/15/bits/hashtable.h \
+ /usr/include/c++/15/bits/hashtable_policy.h \
+ /usr/include/c++/15/bits/node_handle.h \
+ /usr/include/c++/15/bits/erase_if.h /usr/include/c++/15/vector \
+ /usr/include/c++/15/bits/stl_vector.h \
+ /usr/include/c++/15/bits/stl_bvector.h \
+ /usr/include/c++/15/bits/vector.tcc /usr/include/c++/15/bits/formatfwd.h \
+ /usr/include/c++/15/array /usr/include/c++/15/bits/move_only_function.h \
+ /usr/include/c++/15/bits/mofunc_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20chrono.h \
+ /usr/include/c++/15/chrono /usr/include/c++/15/bits/chrono.h \
+ /usr/include/c++/15/ratio /usr/include/c++/15/ctime \
+ /usr/include/c++/15/sstream /usr/include/c++/15/istream \
+ /usr/include/c++/15/ostream /usr/include/c++/15/format \
+ /usr/include/c++/15/charconv /usr/include/c++/15/locale \
+ /usr/include/c++/15/bits/locale_facets_nonio.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
+ /usr/include/x86_64-linux-gnu/c++/15/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
+ /usr/include/c++/15/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/15/bits/locale_conv.h /usr/include/c++/15/span \
+ /usr/include/c++/15/bits/unicode.h \
+ /usr/include/c++/15/bits/unicode-data.h \
+ /usr/include/c++/15/bits/ostream.tcc \
+ /usr/include/c++/15/bits/istream.tcc \
+ /usr/include/c++/15/bits/sstream.tcc \
+ /usr/include/c++/15/bits/chrono_io.h /usr/include/c++/15/iomanip \
+ /usr/include/c++/15/bits/quoted_string.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20map.h \
+ /usr/include/c++/15/map /usr/include/c++/15/bits/stl_tree.h \
+ /usr/include/c++/15/bits/stl_map.h \
+ /usr/include/c++/15/bits/stl_multimap.h \
+ /usr/include/c++/15/memory_resource /usr/include/c++/15/shared_mutex \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20type_traits.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20vector.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q23functional.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q26numeric.h \
+ /usr/include/c++/15/numeric /usr/include/c++/15/bits/stl_numeric.h \
+ /usr/include/c++/15/pstl/glue_numeric_defs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractanimation.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnamespace.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcompare.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstdlibdetection.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcomparehelpers.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobjectdefs_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qfunctionaltools_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qchar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringview.h \
@@ -336,11 +372,8 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainertools_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qxptype_traits.h \
- /usr/include/c++/15/cstring /usr/include/c++/15/iterator \
- /usr/include/c++/15/bits/stream_iterator.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
+ /usr/include/c++/15/cstring \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringfwd.h \
@@ -356,8 +389,6 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringconverter_base.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qhashfunctions.h \
- /usr/include/c++/15/numeric /usr/include/c++/15/bits/stl_numeric.h \
- /usr/include/c++/15/pstl/glue_numeric_defs.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterator.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
@@ -370,64 +401,27 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfloat16.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmath.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtformat_impl.h \
- /usr/include/c++/15/format /usr/include/c++/15/charconv \
- /usr/include/c++/15/locale \
- /usr/include/c++/15/bits/locale_facets_nonio.h /usr/include/c++/15/ctime \
- /usr/include/x86_64-linux-gnu/c++/15/bits/time_members.h \
- /usr/include/x86_64-linux-gnu/c++/15/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/15/bits/codecvt.h \
- /usr/include/c++/15/bits/locale_facets_nonio.tcc \
- /usr/include/c++/15/bits/locale_conv.h /usr/include/c++/15/span \
- /usr/include/c++/15/bits/unicode.h \
- /usr/include/c++/15/bits/unicode-data.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiterable.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetacontainer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontainerinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtaggedpointer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qscopeguard.h \
  /usr/include/c++/15/list /usr/include/c++/15/bits/stl_list.h \
- /usr/include/c++/15/bits/list.tcc /usr/include/c++/15/map \
- /usr/include/c++/15/bits/stl_tree.h /usr/include/c++/15/bits/stl_map.h \
- /usr/include/c++/15/bits/stl_multimap.h \
+ /usr/include/c++/15/bits/list.tcc \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
- /usr/include/c++/15/chrono /usr/include/c++/15/bits/chrono.h \
- /usr/include/c++/15/ratio /usr/include/c++/15/sstream \
- /usr/include/c++/15/istream /usr/include/c++/15/ostream \
- /usr/include/c++/15/bits/ostream.tcc \
- /usr/include/c++/15/bits/istream.tcc \
- /usr/include/c++/15/bits/sstream.tcc \
- /usr/include/c++/15/bits/chrono_io.h /usr/include/c++/15/iomanip \
- /usr/include/c++/15/bits/quoted_string.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
- /usr/include/c++/15/cassert \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtextstream.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcontiguouscache.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsharedpointer_impl.h \
  /usr/include/c++/15/set /usr/include/c++/15/bits/stl_set.h \
  /usr/include/c++/15/bits/stl_multiset.h \
@@ -436,136 +430,8 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qshareddata_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qset.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qhash.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontvariableaxis.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qeventloop.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdeadlinetimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qelapsedtimer.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QResizeEvent \
- /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/QOpenGLWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qopenglwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qopengl.h /usr/include/GL/gl.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglext.h \
- /usr/include/inttypes.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollBar \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollbar.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
- /usr/include/c++/15/iostream \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmochelpers.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmocconstants.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/IBVTDMYKCY/moc_GRAFCETStep.cpp \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/IBVTDMYKCY/../../../../../../../classes/grafcetStep/GRAFCETStep.h \
- /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/QState \
- /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h \
- /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qabstractstate.h \
- /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachineglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qtstatemachineexports.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
- /usr/include/c++/15/mutex /usr/include/c++/15/bits/unique_lock.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/EWIEGA46WW/moc_genericworker.cpp \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/EWIEGA46WW/../../../../generated/genericworker.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGui \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/QtGuiDepends \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCoreDepends \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qtcoreglobal.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q17memory.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20chrono.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20functional.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20map.h \
- /usr/include/c++/15/memory_resource /usr/include/c++/15/shared_mutex \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20memory.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20utility.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q20vector.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q23functional.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23utility.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/q26numeric.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractanimation.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractnativeeventfilter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstractitemmodel.h \
@@ -577,6 +443,12 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMutex \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qmutex.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtsan_impl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbasictimer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qabstracteventdispatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qnativeinterface.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qcoreapplication_platform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydata.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydataops.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qarraydatapointer.h \
@@ -588,20 +460,28 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbindingstorage.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbitarray.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
+ /usr/include/c++/15/cassert \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20iterator.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearray.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayalgorithms.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraylist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearraymatcher.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q20algorithm.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qbytearrayview.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcache.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborarray.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborvalue.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborcommon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qdatetime.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcalendar.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qurl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/quuid.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qendian.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborcommon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcbormap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcborstream.h \
@@ -659,6 +539,8 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfiledevice.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileinfo.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfileselector.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QObject \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qobject.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QStringList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qstringlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfilesystemwatcher.h \
@@ -672,9 +554,11 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qfuture_impl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qthreadpool.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qthread.h \
- /usr/include/c++/15/future /usr/include/c++/15/condition_variable \
- /usr/include/c++/15/stop_token /usr/include/c++/15/bits/std_thread.h \
- /usr/include/c++/15/semaphore /usr/include/c++/15/bits/semaphore_base.h \
+ /usr/include/c++/15/future /usr/include/c++/15/mutex \
+ /usr/include/c++/15/bits/unique_lock.h \
+ /usr/include/c++/15/condition_variable /usr/include/c++/15/stop_token \
+ /usr/include/c++/15/bits/std_thread.h /usr/include/c++/15/semaphore \
+ /usr/include/c++/15/bits/semaphore_base.h \
  /usr/include/c++/15/bits/atomic_timed_wait.h \
  /usr/include/c++/15/bits/this_thread_sleep.h \
  /usr/include/x86_64-linux-gnu/sys/time.h /usr/include/semaphore.h \
@@ -713,6 +597,8 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qversionnumber.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtyperevision.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qpoint.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qlist.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlocale.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qlockfile.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qloggingcategory.h \
@@ -764,6 +650,9 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/c++/15/bits/opt_random.h \
  /usr/include/c++/15/bits/random.tcc \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qreadwritelock.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmargins.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qrefcount.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qregularexpression.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qresource.h \
@@ -897,6 +786,7 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/lib/gcc/x86_64-linux-gnu/15/include/avx10_2copyintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/movrsintrin.h \
  /usr/lib/gcc/x86_64-linux-gnu/15/include/amxmovrsintrin.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qsize.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsocketnotifier.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qsortfilterproxymodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qspan.h \
@@ -935,6 +825,7 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qthreadpool.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qthreadstorage.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimeline.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimer.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtimezone.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtipccommon.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmetamacros.h \
@@ -963,6 +854,7 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantlist.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QList \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariantmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMap \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvarlengtharray.h \
@@ -976,13 +868,54 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/q23functional.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qyieldcpu.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtgui-config.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstractfileiconprovider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtguiglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qicon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixmap.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qrect.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcolor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgb.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qrgba64.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qimage.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpixelformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpolygon.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qregion.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qline.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qabstracttextdocumentlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector2d.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpointingdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputdevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QRect \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSize \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QSizeF \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QTransform \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtransform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qscreen_platform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qinputmethod.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qguiapplication_platform.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qkeysequence.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qglyphrun.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qrawfont.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontdatabase.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextcursor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextdocument.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpen.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qtextoption.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpalette.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaccessible.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaccessible_base.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaccessiblebridge.h \
@@ -992,12 +925,15 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaccessibleplugin.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qactiongroup.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qaction.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbackingstore.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QMargins \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurface.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbitmap.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qbrush.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qclipboard.h \
@@ -1008,11 +944,13 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qcursor.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qdesktopservices.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qdrag.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qevent.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qeventpoint.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfilesystemmodel.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfont.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontdatabase.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontvariableaxis.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qgenericmatrix.h \
@@ -1041,8 +979,13 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qoffscreensurface.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qoffscreensurface_platform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qoffscreensurface.h \
- /usr/include/x86_64-linux-gnu/qt6/QtGui/qopengl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qopengl.h /usr/include/GL/gl.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglext.h \
+ /usr/include/inttypes.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglcontext.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QSurfaceFormat \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qsurfaceformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qopengl.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglcontext_platform.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglcontext.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qopenglextrafunctions.h \
@@ -1061,6 +1004,9 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/QPaintDevice \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpaintengine.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontinfo.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qfontmetrics.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainter.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterstateguard.h \
@@ -1111,12 +1057,26 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvector4d.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qvectornd.h \
  /usr/include/x86_64-linux-gnu/qt6/QtGui/qwindowdefs.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/ui_mainUI.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/include/ui_mainUI.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qapplication.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgets-config.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtwidgetsexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QFrame \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qsizepolicy.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QHBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qboxlayout.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgridlayout.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlabel.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qframe.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpicture.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QPushButton \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qpushbutton.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractbutton.h \
@@ -1124,8 +1084,19 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qlayoutitem.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QTextEdit \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qtextedit.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractscrollarea.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
  /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/QState \
+ /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qmetaobject.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qabstractstate.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qstatemachineglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtStateMachine/qtstatemachineexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QTimer \
+ /usr/include/c++/15/iostream \
  /home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.h \
  /usr/include/c++/15/ranges /usr/include/c++/15/bits/elements_of.h \
  /usr/include/c++/15/fstream \
@@ -1191,7 +1162,7 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QEvent \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QtCore \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/Navigator.h \
  /usr/include/IceUtil/PushDisableWarnings.h /usr/include/Ice/ProxyF.h \
  /usr/include/Ice/Config.h /usr/include/IceUtil/Config.h \
  /usr/include/Ice/ProxyHandle.h /usr/include/Ice/ObjectF.h \
@@ -1232,7 +1203,36 @@ generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_
  /usr/include/c++/15/bits/stl_deque.h /usr/include/c++/15/bits/deque.tcc \
  /usr/include/Ice/FactoryTableInit.h \
  /usr/include/Ice/DefaultValueFactory.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/VNU7RW3YIC/moc_specificworker.cpp \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/VNU7RW3YIC/../../../../src/specificworker.h \
- /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/./genericworker.h \
- /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmochelpers.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qtmocconstants.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/q23type_traits.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/VNU7RW3YIC/moc_specificworker.cpp \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/VNU7RW3YIC/../../../../src/specificworker.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/./genericworker.h \
+ /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsScene \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsView \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsview.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollarea.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsscene.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QMouseEvent \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/QResizeEvent \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/QOpenGLWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qopenglwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtOpenGLWidgets/qtopenglwidgetsexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QScrollBar \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qscrollbar.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qabstractslider.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QApplication \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QVBoxLayout \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QGraphicsPolygonItem \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qgraphicsitem.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtGui/qpainterpath.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QLabel \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/C4KNKQTC7S/moc_abstract_graphic_viewer.cpp \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/C4KNKQTC7S/../../../../../../../../../robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/HGEODINGJF/moc_GRAFCETStep.cpp \
+ /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/HGEODINGJF/../../../../../../../../../robocomp/classes/grafcetStep/GRAFCETStep.h

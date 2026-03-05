@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner
+CMAKE_SOURCE_DIR = /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build
+CMAKE_BINARY_DIR = /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build
 
 # Include any dependencies generated for this target.
 include generated/CMakeFiles/ainf_mission_planner.dir/depend.make
@@ -70,8 +70,8 @@ include generated/CMakeFiles/ainf_mission_planner.dir/progress.make
 include generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 
 generated/Navigator.cpp:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "BU ice=>h/cpp: Generating Navigator.h and Navigator.cpp from /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/Navigator.ice"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && slice2cpp --underscore /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/Navigator.ice -I/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/ --output-dir .
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "BU ice=>h/cpp: Generating Navigator.h and Navigator.cpp from /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.ice"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && slice2cpp --underscore /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.ice -I/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/ --output-dir .
 
 generated/Navigator.h: generated/Navigator.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate generated/Navigator.h
@@ -79,9 +79,9 @@ generated/Navigator.h: generated/Navigator.cpp
 generated/ainf_mission_planner_autogen/timestamp: /usr/lib/qt6/libexec/moc
 generated/ainf_mission_planner_autogen/timestamp: /usr/lib/qt6/libexec/uic
 generated/ainf_mission_planner_autogen/timestamp: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic MOC and UIC for target ainf_mission_planner"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/cmake -E cmake_autogen /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner_autogen.dir/AutogenInfo.json ""
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/cmake -E touch /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Automatic MOC and UIC for target ainf_mission_planner"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/cmake -E cmake_autogen /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner_autogen.dir/AutogenInfo.json ""
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/cmake -E touch /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/timestamp
 
 generated/CMakeFiles/ainf_mission_planner.dir/codegen:
 .PHONY : generated/CMakeFiles/ainf_mission_planner.dir/codegen
@@ -89,142 +89,142 @@ generated/CMakeFiles/ainf_mission_planner.dir/codegen:
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o: generated/ainf_mission_planner_autogen/mocs_compilation.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o -c /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o -c /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/mocs_compilation.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/mocs_compilation.cpp > CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/mocs_compilation.cpp > CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/mocs_compilation.cpp -o CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/mocs_compilation.cpp -o CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o: /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o -c /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o -c /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
-generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/specificworker.cpp
+generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o -c /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/specificworker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o -c /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/specificworker.cpp > CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp > CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/specificworker.cpp -o CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp -o CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o: /home/efeme/robocomp/classes/rapplication/rapplication.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o -c /home/efeme/robocomp/classes/rapplication/rapplication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o -c /home/efeme/robocomp/classes/rapplication/rapplication.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o: /home/efeme/robocomp/classes/sigwatch/sigwatch.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o -c /home/efeme/robocomp/classes/sigwatch/sigwatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o -c /home/efeme/robocomp/classes/sigwatch/sigwatch.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/sigwatch/sigwatch.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/sigwatch/sigwatch.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/sigwatch/sigwatch.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/sigwatch/sigwatch.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o: /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o -c /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o -c /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o: /home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o -c /home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o -c /home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp > CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp -o CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
-generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/main.cpp
+generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/main.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/main.cpp.o -c /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/main.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/main.cpp.o -c /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/main.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/main.cpp > CMakeFiles/ainf_mission_planner.dir/main.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp > CMakeFiles/ainf_mission_planner.dir/main.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/main.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/main.cpp -o CMakeFiles/ainf_mission_planner.dir/main.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp -o CMakeFiles/ainf_mission_planner.dir/main.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
-generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o: /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/genericworker.cpp
+generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o: /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o -c /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/genericworker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o -c /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/genericworker.cpp > CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp > CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/genericworker.cpp -o CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp -o CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o: generated/Navigator.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o -c /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o -c /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/Navigator.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.i"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.cpp > CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.i
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/Navigator.cpp > CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.s"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.cpp -o CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.s
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/Navigator.cpp -o CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.s
 
 # Object files for target ainf_mission_planner
 ainf_mission_planner_OBJECTS = \
@@ -242,45 +242,45 @@ ainf_mission_planner_OBJECTS = \
 # External object files for target ainf_mission_planner
 ainf_mission_planner_EXTERNAL_OBJECTS =
 
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/build.make
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.9.2
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6Xml.so.6.9.2
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.9.2
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6StateMachine.so.6.9.2
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libIce++11.so
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libIceStorm++11.so
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libIce.so
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libIceStorm.so
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.9.2
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libGLX.so
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libOpenGL.so
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.9.2
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner"
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ainf_mission_planner.dir/link.txt --verbose=$(VERBOSE)
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/rapplication/rapplication.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/sigwatch/sigwatch.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/efeme/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/build.make
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.9.2
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6Xml.so.6.9.2
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.9.2
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6StateMachine.so.6.9.2
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libIce++11.so
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libIceStorm++11.so
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libIce.so
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libIceStorm.so
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.9.2
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libGLX.so
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.9.2
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ainf_mission_planner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-generated/CMakeFiles/ainf_mission_planner.dir/build: /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/bin/ainf_mission_planner
+generated/CMakeFiles/ainf_mission_planner.dir/build: /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/bin/ainf_mission_planner
 .PHONY : generated/CMakeFiles/ainf_mission_planner.dir/build
 
 generated/CMakeFiles/ainf_mission_planner.dir/clean:
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && $(CMAKE_COMMAND) -P CMakeFiles/ainf_mission_planner.dir/cmake_clean.cmake
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && $(CMAKE_COMMAND) -P CMakeFiles/ainf_mission_planner.dir/cmake_clean.cmake
 .PHONY : generated/CMakeFiles/ainf_mission_planner.dir/clean
 
 generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/Navigator.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/Navigator.h
 generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/ainf_mission_planner_autogen/timestamp
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : generated/CMakeFiles/ainf_mission_planner.dir/depend
 

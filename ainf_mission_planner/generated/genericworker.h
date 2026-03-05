@@ -38,6 +38,7 @@
 #include <variant>
 #include <unordered_map>
 
+#define USE_QTGUI
 
 #include <Navigator.h>
 

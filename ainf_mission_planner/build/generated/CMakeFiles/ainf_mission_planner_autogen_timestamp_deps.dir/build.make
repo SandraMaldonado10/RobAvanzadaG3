@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner
+CMAKE_SOURCE_DIR = /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build
+CMAKE_BINARY_DIR = /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build
 
 # Utility rule file for ainf_mission_planner_autogen_timestamp_deps.
 
@@ -77,10 +77,10 @@ generated/CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/build: ainf
 .PHONY : generated/CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/build
 
 generated/CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/clean:
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated && $(CMAKE_COMMAND) -P CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/cmake_clean.cmake
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated && $(CMAKE_COMMAND) -P CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/cmake_clean.cmake
 .PHONY : generated/CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/clean
 
 generated/CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/depend:
-	cd /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : generated/CMakeFiles/ainf_mission_planner_autogen_timestamp_deps.dir/depend
 

@@ -1,6 +1,6 @@
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/genericworker.h \
-  /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/moc_predefs.h \
-  /mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.h \
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/EWIEGA46WW/moc_genericworker.cpp: /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.h \
+  /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/moc_predefs.h \
+  /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.h \
   /mnt/SDROJA/robocomp/core/classes/ConfigLoader/ConfigLoader.h \
   /mnt/SDROJA/robocomp/core/classes/ConfigLoader/ConfigLoader.tpp \
   /mnt/SDROJA/robocomp/core/classes/grafcetStep/GRAFCETStep.h \

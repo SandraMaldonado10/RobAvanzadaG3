@@ -1,8 +1,8 @@
 {
 	"InstallScripts" : 
 	[
-		"/mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner/cmake_install.cmake",
-		"/mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/cmake_install.cmake"
+		"/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/cmake_install.cmake",
+		"/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

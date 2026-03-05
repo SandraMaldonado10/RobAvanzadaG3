@@ -1,4 +1,4 @@
-# Install script for directory: /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner
+# Install script for directory: /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -51,19 +51,19 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/home/efeme/robocomp/etc-default" TYPE FILE RENAME "ainf_mission_planner.conf" FILES "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/etc/config")
+  file(INSTALL DESTINATION "/home/efeme/robocomp/etc-default" TYPE FILE RENAME "ainf_mission_planner.conf" FILES "/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/etc/config")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/cmake_install.cmake")
+  include("/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/install_local_manifest.txt"
+  file(WRITE "/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -79,6 +79,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

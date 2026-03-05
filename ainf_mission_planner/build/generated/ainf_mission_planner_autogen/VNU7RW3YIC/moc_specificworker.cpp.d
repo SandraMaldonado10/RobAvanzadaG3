@@ -1,7 +1,7 @@
-/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/VNU7RW3YIC/moc_specificworker.cpp: /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/src/specificworker.h \
-  /home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/moc_predefs.h \
-  /mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner/build/generated/Navigator.h \
-  /mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/genericworker.h \
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/VNU7RW3YIC/moc_specificworker.cpp: /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/src/specificworker.h \
+  /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/build/generated/ainf_mission_planner_autogen/moc_predefs.h \
+  /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.h \
+  /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.h \
   /mnt/SDROJA/robocomp/core/classes/ConfigLoader/ConfigLoader.h \
   /mnt/SDROJA/robocomp/core/classes/ConfigLoader/ConfigLoader.tpp \
   /mnt/SDROJA/robocomp/core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \

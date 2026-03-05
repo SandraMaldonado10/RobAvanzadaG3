@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "/home/efeme/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/Navigator.ice"
+  "/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.ice"
   "CMakeFiles/ICE_Navigator_target"
 )
 
