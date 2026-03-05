@@ -107,7 +107,8 @@ void SpecificWorker::initialize()
 		}
 	});
 
-	connect(object_prompt, &QTextEdit::textChanged, this, &SpecificWorker::on_text_change);
+	//connect(object_prompt, &QTextEdit::textChanged, this, &SpecificWorker::on_text_change);
+	connect(object_prompt, &QLineEdit::returnPressed, this, &SpecificWorker::on_text_change);
 
 	QSettings settings("robocomp", "ainf_mission_planner");
 	if(settings.contains("window/geometry"))
@@ -218,10 +219,10 @@ void SpecificWorker::compute()
 		viewer->robot_poly()->setRotation(qRadiansToDegrees(pose.r));
 		if(not planned_path_points.empty())
 			redraw_planned_path(RoboCompNavigator::TPoint{pose.x, pose.y});
-		/*label_robotCoordsValue->setText(QString("x=%1  y=%2  θ=%3")
+		label_robotCoordsValue->setText(QString("x=%1  y=%2  θ=%3")
 		                               .arg(pose.x, 0, 'f', 2)
 		                               .arg(pose.y, 0, 'f', 2)
-		                               .arg(pose.r, 0, 'f', 2));*/
+		                               .arg(pose.r, 0, 'f', 2));
 
 	}
 	catch(const Ice::Exception &e) { qWarning() << "Error requesting robot pose from Navigator:" << e.what(); }	
@@ -264,8 +265,8 @@ void SpecificWorker::compute()
 
 void SpecificWorker::on_text_change()
 {
-	qInfo() << "CAJA DE TEXTO" << object_prompt->toPlainText();
-	navigator_proxy->gotoObject(object_prompt->toPlainText().toStdString());
+	qInfo() << "CAJA DE TEXTO" << object_prompt->text();
+	navigator_proxy->gotoObject(object_prompt->text().toStdString());
 }
 
 void SpecificWorker::slot_new_target(QPointF target)
