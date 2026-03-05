@@ -39,7 +39,6 @@
 #include <unordered_map>
 
 #define USE_QTGUI
-
 #include <Navigator.h>
 
 #define BASIC_PERIOD 100
