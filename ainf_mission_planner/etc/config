@@ -1,5 +1,6 @@
 # Proxies for required interfaces
 Proxies.Navigator = "navigator:tcp -h localhost -p 13212"
+#Proxies.Navigator = "navigator:tcp -h 158.49.227.90 -p 13212"
 
 Component.Debug.Verbose = false
 

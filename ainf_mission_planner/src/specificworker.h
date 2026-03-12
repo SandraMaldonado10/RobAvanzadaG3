@@ -35,7 +35,12 @@
 #include "abstract_graphic_viewer/abstract_graphic_viewer.h"
 #include <vector>
 #include "ollama.hpp"
-
+#include <future>
+#include <iostream>
+#include <string>
+#include <vector>
+#include <ranges>
+#include <string_view>
 
 /**
  * \brief Class SpecificWorker implements the core functionality of the component.
@@ -97,6 +102,8 @@ private:
 	RoboCompNavigator::TPath planned_path_points;
 	RoboCompNavigator::TPoint last_target{0.f, 0.f};
 	bool has_target = false;
+	std::future<void> ollama_thread; // Variable para "guardar" el hilo
+
 	void redraw_planned_path(const RoboCompNavigator::TPoint &current_source);
 
 	using json = nlohmann::json;

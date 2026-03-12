@@ -293,17 +293,53 @@ void SpecificWorker::on_text_change()
 
 	qInfo() << "CAJA DE TEXTO" << object_prompt->text();
 
-	std::string sistema = "Eres un controlador de robot. Te vamos a dar una lista de objetos con sus coordenadas. Vas a recibir unas coordenadas o el nombre aproximado de un objeto y tienes que devolver SOLO el nombre del objeto más próximo a esas coordenadas o nombre. Lista de objetos: " + json_string + " Responde SOLO el ID. ";
+	std::string sistema = "Eres un controlador de robot. Te vamos a dar una lista de objetos con sus coordenadas. "
+	"Vas a recibir unas coordenadas o el nombre aproximado de un objeto y tienes que devolver "
+	"SOLO el nombre del objeto, o de los objetos, más próximos a esas coordenadas o nombre. Devolverás más de un objeto en caso de que se te pida "
+	"un recorrido que pase por varios puntos. En caso de devolver una lista de IDs, devuelvelos separados por ;"
+    "Lista de objetos: " + json_string + " Responde SOLO el ID o los IDs separados por ; ";
 	std::string prompt = object_prompt->text().toStdString();
+	ollama_thread = std::async(std::launch::async, [this, prompt, sistema]() {
 
-	ollama::request req("gpt-oss:120b-cloud", sistema + prompt, nullptr, false);
+		ollama::request req("gpt-oss:120b-cloud", sistema + prompt, nullptr, false);
+		// Realizamos la generación
+		ollama::response respuesta;
+		try {
+			respuesta = ollama::generate(req);
+		}
+		catch (const std::exception& e){qCritical()<<"Error en el hilo de Ollama: "<<e.what();}
 
-	// Realizamos la generación
-	auto respuesta = ollama::generate(req);
+		std::string respuestaStr = respuesta.as_simple_string();
+		std::cout << "Destino del robot: " << respuesta << std::endl;
 
-	std::cout << "Destino del robot: " << respuesta << std::endl;
+		// Limpieza previa: Ollama suele meter saltos de línea al principio/final
+		respuestaStr.erase(0, respuestaStr.find_first_not_of(" \n\r\t"));
+		respuestaStr.erase(respuestaStr.find_last_not_of(" \n\r\t") + 1);
 
-	navigator_proxy->gotoObject(respuesta);
+		if (respuestaStr.empty()) {
+			qWarning() << "Ollama devolvió una respuesta vacía";
+			return;
+		}
+
+		//Con esto funciona aunque solo haya un objeto
+		std::vector<std::string> tokens;
+		// Si no contiene el delimitador, lo metemos directamente como único objeto
+		if (respuestaStr.find(';') == std::string::npos) {
+			tokens.push_back(respuestaStr);
+		} else {
+			auto split_view = respuestaStr | std::views::split(';');
+			for (auto&& part : split_view) {
+				std::string s(part.begin(), part.end());
+				if (!s.empty()) tokens.push_back(s);
+			}
+		}
+
+		auto split_view = respuestaStr | std::views::split(';'); //TODO: Esto no funciona bien, va solo al primero
+		for (auto&& part: split_view) {
+			navigator_proxy->gotoObject(std::string(part.begin(), part.end()));
+		}
+	});
+
 	//navigator_proxy->gotoObject(object_prompt->text().toStdString());
 
 
