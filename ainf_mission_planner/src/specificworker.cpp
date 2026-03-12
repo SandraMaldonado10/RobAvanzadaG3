@@ -292,7 +292,6 @@ void SpecificWorker::on_text_change()
 	std::string json_string = j.dump();
 
 	qInfo() << "CAJA DE TEXTO" << object_prompt->text();
-	navigator_proxy->gotoObject(object_prompt->text().toStdString());
 
 	std::string sistema = "Eres un controlador de robot. Te vamos a dar una lista de objetos con sus coordenadas. Vas a recibir unas coordenadas o el nombre aproximado de un objeto y tienes que devolver SOLO el nombre del objeto más próximo a esas coordenadas o nombre. Lista de objetos: " + json_string + " Responde SOLO el ID. ";
 	std::string prompt = object_prompt->text().toStdString();
@@ -303,6 +302,10 @@ void SpecificWorker::on_text_change()
 	auto respuesta = ollama::generate(req);
 
 	std::cout << "Destino del robot: " << respuesta << std::endl;
+
+	navigator_proxy->gotoObject(respuesta);
+	//navigator_proxy->gotoObject(object_prompt->text().toStdString());
+
 
 }
 
