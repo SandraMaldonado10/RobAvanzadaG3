@@ -34,6 +34,7 @@
 #include <genericworker.h>
 #include "abstract_graphic_viewer/abstract_graphic_viewer.h"
 #include <vector>
+#include "ollama.hpp"
 
 
 /**
@@ -97,6 +98,10 @@ private:
 	RoboCompNavigator::TPoint last_target{0.f, 0.f};
 	bool has_target = false;
 	void redraw_planned_path(const RoboCompNavigator::TPoint &current_source);
+
+	using json = nlohmann::json;
+
+	json getJson();
 
 	void on_text_change();
 

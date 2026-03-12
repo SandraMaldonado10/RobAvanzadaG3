@@ -6,6 +6,7 @@ LIST(APPEND SOURCES
 # Headers set
 LIST(APPEND HEADERS
   ../src/specificworker.h
+  ../src/ollama.hpp
 )
 
 

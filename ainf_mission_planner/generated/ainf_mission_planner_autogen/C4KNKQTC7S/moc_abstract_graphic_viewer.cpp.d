@@ -1,5 +1,5 @@
-/mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/ainf_mission_planner_autogen/C4KNKQTC7S/moc_abstract_graphic_viewer.cpp: /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-  /mnt/SDROJA/robocomp/components/beta-robotica-class/ainf_mission_planner/generated/ainf_mission_planner_autogen/moc_predefs.h \
+/home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/C4KNKQTC7S/moc_abstract_graphic_viewer.cpp: /home/efeme/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+  /home/efeme/Documentos/Asignaturas/RA/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/moc_predefs.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \

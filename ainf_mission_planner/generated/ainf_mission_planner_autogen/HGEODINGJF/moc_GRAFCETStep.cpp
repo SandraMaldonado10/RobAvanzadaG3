@@ -6,7 +6,7 @@
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../../../../../../../../home/efeme/robocomp/classes/grafcetStep/GRAFCETStep.h"
+#include "../../../../../../../../robocomp/classes/grafcetStep/GRAFCETStep.h"
 #include <QtCore/qmetatype.h>
 
 #include <QtCore/qtmochelpers.h>
