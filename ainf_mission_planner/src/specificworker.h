@@ -41,7 +41,8 @@
 #include <vector>
 #include <ranges>
 #include <string_view>
-
+#include <queue>
+#include <ctype.h>
 /**
  * \brief Class SpecificWorker implements the core functionality of the component.
  */
@@ -103,6 +104,7 @@ private:
 	RoboCompNavigator::TPoint last_target{0.f, 0.f};
 	bool has_target = false;
 	std::future<void> ollama_thread; // Variable para "guardar" el hilo
+	std::queue<std::string> pending_missions;
 
 	void redraw_planned_path(const RoboCompNavigator::TPoint &current_source);
 
@@ -111,6 +113,8 @@ private:
 	json getJson();
 
 	void on_text_change();
+	void interpret_ollama_output_string(std::string& ollamaOutput);
+	void process_mission(const std::string& mission);
 
 private slots:
 	void slot_new_target(QPointF target);

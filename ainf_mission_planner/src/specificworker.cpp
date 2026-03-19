@@ -255,7 +255,15 @@ void SpecificWorker::compute()
 		QString state_text = "UNKNOWN";
 		switch(status.state)
 		{
-			case RoboCompNavigator::NavigationState::IDLE: state_text = "IDLE"; break;
+			case RoboCompNavigator::NavigationState::IDLE: state_text = "IDLE";
+				if (!pending_missions.empty()) {
+					std::string next_mission = pending_missions.front();
+					pending_missions.pop();
+
+					qDebug()<<"Procesando misión: "<<QString::fromStdString(next_mission);
+					process_mission(next_mission);
+				}
+				break;
 			case RoboCompNavigator::NavigationState::NAVIGATING: state_text = "NAVIGATING"; break;
 			case RoboCompNavigator::NavigationState::PAUSED: state_text = "PAUSED"; break;
 			case RoboCompNavigator::NavigationState::REACHED: state_text = "REACHED"; break;
@@ -297,7 +305,11 @@ void SpecificWorker::on_text_change()
 	"Vas a recibir unas coordenadas o el nombre aproximado de un objeto y tienes que devolver "
 	"SOLO el nombre del objeto, o de los objetos, más próximos a esas coordenadas o nombre. Devolverás más de un objeto en caso de que se te pida "
 	"un recorrido que pase por varios puntos. En caso de devolver una lista de IDs, devuelvelos separados por ;"
-    "Lista de objetos: " + json_string + " Responde SOLO el ID o los IDs separados por ; ";
+	"Adicionalmente, es posible que se te pida que, tras llegar a un objeto, el robot haga alguna acción. En tal caso, concatena al final"
+	"de cada ID, una letra que indique la acción a realizar (separada del resto del ID con '-'). De momento, las acciones que hay disponibles son:"
+	"Hacer una foto -> concatena '-f' al final del nombre del objeto"
+	"Esas son todas las acciones. A continuación la lista de objetos"
+    "Lista de objetos: " + json_string + " Responde SOLO el ID o los IDs separados por ; y la letra de la accion correspondiente concatenada al final de cada ID";
 	std::string prompt = object_prompt->text().toStdString();
 	ollama_thread = std::async(std::launch::async, [this, prompt, sistema]() {
 
@@ -310,39 +322,49 @@ void SpecificWorker::on_text_change()
 		catch (const std::exception& e){qCritical()<<"Error en el hilo de Ollama: "<<e.what();}
 
 		std::string respuestaStr = respuesta.as_simple_string();
-		std::cout << "Destino del robot: " << respuesta << std::endl;
-
-		// Limpieza previa: Ollama suele meter saltos de línea al principio/final
-		respuestaStr.erase(0, respuestaStr.find_first_not_of(" \n\r\t"));
-		respuestaStr.erase(respuestaStr.find_last_not_of(" \n\r\t") + 1);
-
-		if (respuestaStr.empty()) {
-			qWarning() << "Ollama devolvió una respuesta vacía";
-			return;
-		}
-
-		//Con esto funciona aunque solo haya un objeto
-		std::vector<std::string> tokens;
-		// Si no contiene el delimitador, lo metemos directamente como único objeto
-		if (respuestaStr.find(';') == std::string::npos) {
-			tokens.push_back(respuestaStr);
-		} else {
-			auto split_view = respuestaStr | std::views::split(';');
-			for (auto&& part : split_view) {
-				std::string s(part.begin(), part.end());
-				if (!s.empty()) tokens.push_back(s);
-			}
-		}
-
-		auto split_view = respuestaStr | std::views::split(';'); //TODO: Esto no funciona bien, va solo al primero
-		for (auto&& part: split_view) {
-			navigator_proxy->gotoObject(std::string(part.begin(), part.end()));
-		}
+		interpret_ollama_output_string(respuestaStr);
 	});
 
-	//navigator_proxy->gotoObject(object_prompt->text().toStdString());
+}
 
+void SpecificWorker::interpret_ollama_output_string(std::string& respuestaStr) {
 
+	std::cout << "Destino del robot: " << respuestaStr << std::endl;
+	std::queue<std::string>().swap(pending_missions); //Limpiamos pending_missions usando la funcion swap
+	//pasandole on the fly una cola vacia recien declarada. Esto es asi porque no existe clear() en std::queue.
+	//Lo que conseguimos al limpiarla es que el nuevo comando de Ollama tenga prioridad sobre lo anterior, es decir
+	//que "pise" a lo que había antes (lo sobreescriba). Supongo que es lo más correcto para así poder corregir
+	//desde la propia interfaz si cometes un error o cambias de idea de qué quieres que haga el robot
+
+	// Limpieza previa: Ollama suele meter saltos de línea al principio/final
+	respuestaStr.erase(0, respuestaStr.find_first_not_of(" \n\r\t"));
+	respuestaStr.erase(respuestaStr.find_last_not_of(" \n\r\t") + 1);
+
+	if (respuestaStr.empty()) {
+		qWarning() << "Ollama devolvió una respuesta vacía";
+		return;
+	}
+
+	auto split_view = respuestaStr | std::views::split(';');
+	for (auto&& part: split_view) {
+		std::string s(part.begin(), part.end());
+		if (!s.empty()) {
+			pending_missions.push(s);
+		}
+	}
+	qInfo()<<"Cola de misiones cargada con: "<<pending_missions.size()<<" misiones";
+}
+
+void SpecificWorker::process_mission(const std::string& mission) {
+	int n = mission.size(); //TODO: Usar find('-')
+	switch (mission.at(n-2)) {
+		case '-':
+			qDebug()<<"hola";
+			break;
+
+		default:
+			break;
+	}
 }
 
 void SpecificWorker::slot_new_target(QPointF target)
