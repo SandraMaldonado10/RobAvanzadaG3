@@ -43,6 +43,7 @@
 #include <string_view>
 #include <queue>
 #include <ctype.h>
+#include <CameraRGBDSimple.h>
 /**
  * \brief Class SpecificWorker implements the core functionality of the component.
  */
@@ -114,7 +115,7 @@ private:
 
 	void on_text_change();
 	void interpret_ollama_output_string(std::string& ollamaOutput);
-	void process_mission(const std::string& mission);
+	void process_mission(std::string& mission);
 
 private slots:
 	void slot_new_target(QPointF target);

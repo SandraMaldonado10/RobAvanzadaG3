@@ -1,5 +1,6 @@
 /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/VNU7RW3YIC/moc_specificworker.cpp: /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/specificworker.h \
   /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/moc_predefs.h \
+  /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/CameraRGBDSimple.h \
   /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.h \
   /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.h \
   /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/ollama.hpp \

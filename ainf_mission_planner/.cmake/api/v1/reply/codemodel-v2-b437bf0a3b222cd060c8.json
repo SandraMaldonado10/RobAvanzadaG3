@@ -1,0 +1,123 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-c9e1010abd1b98f34756.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "generated",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-generated-Debug-d7e8a9541fd26076f90c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "generated",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "ainf_mission_planner",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "ICES__home_xeihtt_Rob-Avanzada_RobAvanzadaG3_ainf_mission_planner_generated::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ICES__home_xeihtt_Rob-Avanzada_RobAvanzadaG3_ainf_mission_planner_generated-Debug-ca8f910838ca93e163b5.json",
+					"name" : "ICES__home_xeihtt_Rob-Avanzada_RobAvanzadaG3_ainf_mission_planner_generated",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ICE_CameraRGBDSimple_target::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ICE_CameraRGBDSimple_target-Debug-0efd16c5e735daf51bd1.json",
+					"name" : "ICE_CameraRGBDSimple_target",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ICE_Navigator_target::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ICE_Navigator_target-Debug-6b7930db9b401eacc4a9.json",
+					"name" : "ICE_Navigator_target",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ainf_mission_planner::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ainf_mission_planner-Debug-e4588f3e5dd7ea3d5f60.json",
+					"name" : "ainf_mission_planner",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ainf_mission_planner_autogen::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ainf_mission_planner_autogen-Debug-2274a80051be5810f1cb.json",
+					"name" : "ainf_mission_planner_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "ainf_mission_planner_autogen_timestamp_deps::@21bfa6e54ac71a0c1a55",
+					"jsonFile" : "target-ainf_mission_planner_autogen_timestamp_deps-Debug-dae9761368dee6c54ef1.json",
+					"name" : "ainf_mission_planner_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner",
+		"source" : "/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

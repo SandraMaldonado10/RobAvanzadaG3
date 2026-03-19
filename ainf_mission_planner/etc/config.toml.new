@@ -2,6 +2,7 @@
 
 [Proxies]
 # Proxies for required interfaces
+CameraRGBDSimple = "camerargbdsimple:tcp -h localhost -p 0"
 Navigator = "navigator:tcp -h localhost -p 0"
 
 

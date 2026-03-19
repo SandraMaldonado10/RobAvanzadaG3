@@ -355,15 +355,38 @@ void SpecificWorker::interpret_ollama_output_string(std::string& respuestaStr) {
 	qInfo()<<"Cola de misiones cargada con: "<<pending_missions.size()<<" misiones";
 }
 
-void SpecificWorker::process_mission(const std::string& mission) {
-	int n = mission.size(); //TODO: Usar find('-')
-	switch (mission.at(n-2)) {
-		case '-':
-			qDebug()<<"hola";
-			break;
+void SpecificWorker::process_mission(std::string& mission) {
+	char target = '-';
+	size_t i = mission.find(target);
+	RoboCompCameraRGBDSimple::TImage img;
+	if (i!=std::string::npos) {
+		qDebug()<<"Hay misiones adicionales tras llegar";
 
-		default:
-			break;
+		while (i < mission.length()) {
+
+			// PROCESAR: Aquí haces lo que necesites con el carácter
+			switch (mission.at(i)) {
+				case 'f':
+					try{
+						img = this->camerargbdsimple_proxy->getImage("");
+						
+					}catch (const Ice::Exception& e){qInfo()<<e.what();}
+					break;
+				default:
+					break;
+			}
+
+			// BORRAR: Eliminamos SOLO el carácter en la posición i
+			mission.erase(i, 1);
+
+			// IMPORTANTE: No sumamos i++.
+			// En la siguiente vuelta, el siguiente carácter (como 'f')
+			// ya estará en la posición 'i'.
+		}
+		qDebug()<<"El string que queda es: "<<QString::fromStdString(mission);
+	}
+	else{
+		qDebug()<<"No hay misiones adicionales tras llegar al punto";
 	}
 }
 

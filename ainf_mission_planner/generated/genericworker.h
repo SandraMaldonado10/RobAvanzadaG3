@@ -27,6 +27,8 @@
 	#include <QtGui>
 #endif
 #include <ui_mainUI.h>
+#define USE_QTGUI
+
 #include <grafcetStep/GRAFCETStep.h>
 #include <ConfigLoader/ConfigLoader.h>
 #include <QStateMachine>
@@ -38,12 +40,13 @@
 #include <variant>
 #include <unordered_map>
 
-#define USE_QTGUI
+
+#include <CameraRGBDSimple.h>
 #include <Navigator.h>
 
 #define BASIC_PERIOD 100
 
-using TuplePrx = std::tuple<RoboCompNavigator::NavigatorPrxPtr>;
+using TuplePrx = std::tuple<RoboCompCameraRGBDSimple::CameraRGBDSimplePrxPtr,RoboCompNavigator::NavigatorPrxPtr>;
 
 
 class GenericWorker : public QWidget, public Ui_guiDlg
@@ -62,6 +65,7 @@ public:
 	std::atomic_bool hibernation = false;
 
 
+	RoboCompCameraRGBDSimple::CameraRGBDSimplePrxPtr camerargbdsimple_proxy;
 	RoboCompNavigator::NavigatorPrxPtr navigator_proxy;
 
 
