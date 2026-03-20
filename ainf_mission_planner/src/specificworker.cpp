@@ -256,15 +256,11 @@ void SpecificWorker::compute()
 		switch(status.state)
 		{
 			case RoboCompNavigator::NavigationState::IDLE: state_text = "IDLE";
-				if (!pending_missions.empty()) {
-					std::string next_mission = pending_missions.front();
-					pending_missions.pop();
-
-					qDebug()<<"Procesando misión: "<<QString::fromStdString(next_mission);
-					process_mission(next_mission);
-				}
+				process_mission_list();
 				break;
-			case RoboCompNavigator::NavigationState::NAVIGATING: state_text = "NAVIGATING"; break;
+			case RoboCompNavigator::NavigationState::NAVIGATING: state_text = "NAVIGATING";
+				navigated = true;
+				break;
 			case RoboCompNavigator::NavigationState::PAUSED: state_text = "PAUSED"; break;
 			case RoboCompNavigator::NavigationState::REACHED: state_text = "REACHED"; break;
 			case RoboCompNavigator::NavigationState::BLOCKED: state_text = "BLOCKED"; break;
@@ -330,12 +326,6 @@ void SpecificWorker::on_text_change()
 void SpecificWorker::interpret_ollama_output_string(std::string& respuestaStr) {
 
 	std::cout << "Destino del robot: " << respuestaStr << std::endl;
-	std::queue<std::string>().swap(pending_missions); //Limpiamos pending_missions usando la funcion swap
-	//pasandole on the fly una cola vacia recien declarada. Esto es asi porque no existe clear() en std::queue.
-	//Lo que conseguimos al limpiarla es que el nuevo comando de Ollama tenga prioridad sobre lo anterior, es decir
-	//que "pise" a lo que había antes (lo sobreescriba). Supongo que es lo más correcto para así poder corregir
-	//desde la propia interfaz si cometes un error o cambias de idea de qué quieres que haga el robot
-
 	// Limpieza previa: Ollama suele meter saltos de línea al principio/final
 	respuestaStr.erase(0, respuestaStr.find_first_not_of(" \n\r\t"));
 	respuestaStr.erase(respuestaStr.find_last_not_of(" \n\r\t") + 1);
@@ -349,45 +339,107 @@ void SpecificWorker::interpret_ollama_output_string(std::string& respuestaStr) {
 	for (auto&& part: split_view) {
 		std::string s(part.begin(), part.end());
 		if (!s.empty()) {
-			pending_missions.push(s);
+			qDebug()<<"Meto en pending missions lo siguiente: "<<QString::fromStdString(s);
+			process_mission(s);
 		}
 	}
-	qInfo()<<"Cola de misiones cargada con: "<<pending_missions.size()<<" misiones";
+	//qInfo()<<"Cola de misiones cargada con: "<<pending_missions.size()<<" misiones";
 }
 
 void SpecificWorker::process_mission(std::string& mission) {
 	char target = '-';
 	size_t i = mission.find(target);
-	RoboCompCameraRGBDSimple::TImage img;
+	std::list<char> actions_todo;
 	if (i!=std::string::npos) {
 		qDebug()<<"Hay misiones adicionales tras llegar";
-
 		while (i < mission.length()) {
-
-			// PROCESAR: Aquí haces lo que necesites con el carácter
 			switch (mission.at(i)) {
 				case 'f':
 					try{
-						img = this->camerargbdsimple_proxy->getImage("");
-						
+						actions_todo.push_back(mission.at(i));
 					}catch (const Ice::Exception& e){qInfo()<<e.what();}
 					break;
 				default:
 					break;
 			}
-
-			// BORRAR: Eliminamos SOLO el carácter en la posición i
 			mission.erase(i, 1);
-
-			// IMPORTANTE: No sumamos i++.
-			// En la siguiente vuelta, el siguiente carácter (como 'f')
-			// ya estará en la posición 'i'.
 		}
 		qDebug()<<"El string que queda es: "<<QString::fromStdString(mission);
 	}
 	else{
 		qDebug()<<"No hay misiones adicionales tras llegar al punto";
 	}
+	//navigator_proxy->gotoObject(mission);
+	missions_list.push_back({mission, actions_todo});
+}
+
+void SpecificWorker::save_image(const RoboCompImageSegmentation::TImage& datos_imagen, const std::string& nombre_archivo) {
+
+	// 1. Crear el cv::Mat apuntando a los datos de la estructura
+	// CV_8UC3 es para imágenes RGB (8 bits, Unsigned, 3 Canales)
+	// Si la imagen es en escala de grises, usa CV_8UC1
+	cv::Mat img_opencv(
+		datos_imagen.height,
+		datos_imagen.width,
+		CV_8UC3,
+		(void*)datos_imagen.image.data()
+	);
+
+	// 2. IMPORTANTE: OpenCV usa BGR por defecto, RoboComp suele usar RGB.
+	// Si los colores salen invertidos (caras azules), necesitas convertirlo:
+	cv::Mat img_bgr;
+	cv::cvtColor(img_opencv, img_bgr, cv::COLOR_RGB2BGR);
+
+	// 3. Guardar en disco (el formato se decide por la extensión: .jpg, .png, etc.)
+	bool resultado = cv::imwrite(nombre_archivo, img_bgr);
+
+	if(resultado) {
+		std::cout << "Imagen guardada con éxito: " << nombre_archivo << std::endl;
+	} else {
+		std::cerr << "Error al guardar la imagen." << std::endl;
+	}
+}
+
+void SpecificWorker::process_mission_list() {
+	RoboCompImageSegmentation::TData data;
+	std::string path = "/home/xeihtt/Rob-Avanzada/images/"; //Path donde guardaremos la imagen
+
+	if (navigated) {
+		navigated = false;
+		if (!missions_list.empty()) { //Si la lista de misiones no esta vacia pero estoy IDLE es porque tengo una pendiente
+			Mission mision_acabada = missions_list.front();
+			missions_list.pop_front();
+			std::string nombre_sucio = mision_acabada.target; //Nos hacemos una copia del nombre
+			for (const auto& c: mision_acabada.actions) { //Procesamos las acciones tras llegar
+				switch (c) {
+					case 'f':
+						try{
+							qDebug()<<"Haciendo foto...";
+							data = this->imagesegmentation_proxy->getAll(false);
+							if (data.image.image.empty())
+								qDebug()<<"Esta vacia la foto";
+							nombre_sucio.erase(std::remove(nombre_sucio.begin(), nombre_sucio.end(), ' '), nombre_sucio.end());
+							save_image(data.image, path+nombre_sucio+".jpg"); //Por defecto las guardamos con extension jpg
+							//TODO: Pasarle la imagen a qwen3.5 y pedirle acciones para corregir posicion
+
+						}catch (const Ice::Exception& e){qInfo()<<e.what();}
+						break;
+					default:
+						break;
+				}
+			}
+			if (!missions_list.empty()) {
+				Mission siguiente = missions_list.front();
+				navigator_proxy->gotoObject(siguiente.target);
+			}
+		}
+	}
+	else if (!missions_list.empty()) {
+		Mission siguiente = missions_list.front();
+		navigator_proxy->gotoObject(siguiente.target);
+	}
+
+
 }
 
 void SpecificWorker::slot_new_target(QPointF target)
@@ -474,8 +526,6 @@ void SpecificWorker::redraw_planned_path(const RoboCompNavigator::TPoint &curren
 	goal_marker->setZValue(210);
 	planned_path_items.push_back(goal_marker);
 }
-
-
 
 void SpecificWorker::emergency()
 {

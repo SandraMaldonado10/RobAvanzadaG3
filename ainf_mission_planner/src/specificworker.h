@@ -43,10 +43,17 @@
 #include <string_view>
 #include <queue>
 #include <ctype.h>
-#include <CameraRGBDSimple.h>
+#include <opencv2/opencv.hpp>
 /**
  * \brief Class SpecificWorker implements the core functionality of the component.
  */
+
+struct Mission{
+	std::string target; //Destino al que el robot tiene que ir
+	std::list<char> actions; //Accion(es) que el robot tiene que realizar tras llegar al target
+};
+
+
 class SpecificWorker : public GenericWorker
 {
 Q_OBJECT
@@ -105,7 +112,12 @@ private:
 	RoboCompNavigator::TPoint last_target{0.f, 0.f};
 	bool has_target = false;
 	std::future<void> ollama_thread; // Variable para "guardar" el hilo
-	std::queue<std::string> pending_missions;
+	bool navigated = false;
+
+	std::list<Mission> missions_list;
+
+	//std::queue<std::string> pending_missions; //Missions son sitios a los que ir + acciones que realizar una vez llega
+	//std::queue<char> pending_actions; //Actions son acciones que hacer una vez el robot llega al sitio (por ejemplo, hacer una foto)
 
 	void redraw_planned_path(const RoboCompNavigator::TPoint &current_source);
 
@@ -116,6 +128,8 @@ private:
 	void on_text_change();
 	void interpret_ollama_output_string(std::string& ollamaOutput);
 	void process_mission(std::string& mission);
+	void process_mission_list(); //Procesa la lista de acciones (debe llamarse cuando el robot está IDLE)
+	void save_image(const RoboCompImageSegmentation::TImage& datos_imagen, const std::string& nombre_archivo);
 
 private slots:
 	void slot_new_target(QPointF target);

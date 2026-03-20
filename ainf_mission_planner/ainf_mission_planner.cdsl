@@ -1,11 +1,11 @@
 import "Navigator.idsl";
-import "CameraRGBDSimple.idsl";
+import "ImageSegmentation.idsl";
 
 Component ainf_mission_planner
 {
     Communications
     {
-        requires Navigator, CameraRGBDSimple;
+        requires Navigator, ImageSegmentation;
     };
     language Cpp11;
     gui Qt(QWidget);

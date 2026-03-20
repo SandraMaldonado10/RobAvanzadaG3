@@ -1,0 +1,287 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"generated/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "ainf_mission_planner_autogen_timestamp_deps::@21bfa6e54ac71a0c1a55",
+	"isGeneratorProvided" : true,
+	"name" : "ainf_mission_planner_autogen_timestamp_deps",
+	"orderDependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::moc::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::Core::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::Gui::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::uic::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::Widgets::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::OpenGL::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::Xml::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "Qt6::StateMachine::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_core::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_flann::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_hdf::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_imgproc::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_intensity_transform::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_ml::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_phase_unwrapping::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_photo::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_plot::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_quality::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_reg::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_surface_matching::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_viz::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_xphoto::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_alphamat::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_dnn::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_dnn_superres::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_features2d::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_freetype::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_fuzzy::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_hfs::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_img_hash::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_imgcodecs::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_line_descriptor::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_saliency::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_text::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_videoio::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_wechat_qrcode::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_barcode::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_calib3d::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_cvv::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_datasets::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_highgui::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_mcc::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_objdetect::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_rapid::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_rgbd::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_shape::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_stitching::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_structured_light::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_video::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_videostab::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_ximgproc::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_xobjdetect::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_aruco::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_bgsegm::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_bioinspired::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_ccalib::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_dnn_objdetect::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_dpm::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_face::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_optflow::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_superres::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_tracking::@21bfa6e54ac71a0c1a55"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "opencv_stereo::@21bfa6e54ac71a0c1a55"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "generated",
+		"source" : "generated"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

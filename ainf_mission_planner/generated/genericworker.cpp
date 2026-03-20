@@ -25,7 +25,7 @@ GenericWorker::GenericWorker(const ConfigLoader& configLoader, TuplePrx tprx) : 
 
 	this->configLoader = configLoader;
 	
-	camerargbdsimple_proxy = std::get<0>(tprx);
+	imagesegmentation_proxy = std::get<0>(tprx);
 	navigator_proxy = std::get<1>(tprx);
 
 	states["Initialize"] = std::make_unique<GRAFCETStep>("Initialize", BASIC_PERIOD, nullptr, std::bind(&GenericWorker::initialize, this));

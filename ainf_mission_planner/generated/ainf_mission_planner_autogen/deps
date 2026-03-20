@@ -1,19 +1,6 @@
 ainf_mission_planner_autogen/timestamp: \
-	/home/robocomp/robocomp/classes/ConfigLoader/ConfigLoader.cpp \
-	/home/robocomp/robocomp/classes/ConfigLoader/ConfigLoader.h \
-	/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp \
-	/home/robocomp/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
-	/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.cpp \
-	/home/robocomp/robocomp/classes/grafcetStep/GRAFCETStep.h \
-	/home/robocomp/robocomp/classes/rapplication/rapplication.cpp \
-	/home/robocomp/robocomp/classes/rapplication/rapplication.h \
-	/home/robocomp/robocomp/classes/sigwatch/sigwatch.cpp \
-	/home/robocomp/robocomp/classes/sigwatch/sigwatch.h \
-	/home/robocomp/robocomp/classes/sigwatch/sigwatch_p.h \
-	/home/robocomp/robocomp/cmake/modules/qt.cmake \
-	/home/robocomp/robocomp/cmake/robocomp.cmake \
 	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/CMakeLists.txt \
-	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/CameraRGBDSimple.h \
+	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.h \
 	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.h \
 	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/moc_predefs.h \
 	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp \
@@ -23,10 +10,45 @@ ainf_mission_planner_autogen/timestamp: \
 	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/ollama.hpp \
 	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp \
 	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/specificworker.h \
+	/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp \
+	/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.h \
+	/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp \
+	/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
+	/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp \
+	/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.h \
+	/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp \
+	/home/xeihtt/robocomp/classes/rapplication/rapplication.h \
+	/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp \
+	/home/xeihtt/robocomp/classes/sigwatch/sigwatch.h \
+	/home/xeihtt/robocomp/classes/sigwatch/sigwatch_p.h \
+	/home/xeihtt/robocomp/cmake/modules/opencv4.cmake \
+	/home/xeihtt/robocomp/cmake/modules/qt.cmake \
+	/home/xeihtt/robocomp/cmake/robocomp.cmake \
 	/home/xeihtt/robocomp/core/classes/ConfigLoader/ConfigLoader.h \
 	/home/xeihtt/robocomp/core/classes/ConfigLoader/ConfigLoader.tpp \
 	/home/xeihtt/robocomp/core/classes/abstract_graphic_viewer/abstract_graphic_viewer.h \
 	/home/xeihtt/robocomp/core/classes/grafcetStep/GRAFCETStep.h \
+	/snap/cmake/1525/share/cmake-4.3/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/CMakeFindDependencyMacro.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/CheckCSourceCompiles.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/CheckCXXCompilerFlag.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/CheckIncludeFile.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/CheckLibraryExists.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/FeatureSummary.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/FindIce.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/FindOpenGL.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/FindPackageMessage.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/FindPkgConfig.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/FindThreads.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/FindVulkan.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/GNUInstallDirs.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/Internal/CheckCompilerFlag.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/Internal/CheckFlagCommonConfig.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/MacroAddFileDependencies.cmake \
+	/snap/cmake/1525/share/cmake-4.3/Modules/SelectLibraryConfigurations.cmake \
 	/usr/include/GL/gl.h \
 	/usr/include/Ice/AsyncResult.h \
 	/usr/include/Ice/BatchRequestQueueF.h \
@@ -255,6 +277,7 @@ ainf_mission_planner_autogen/timestamp: \
 	/usr/include/c++/13/cmath \
 	/usr/include/c++/13/codecvt \
 	/usr/include/c++/13/compare \
+	/usr/include/c++/13/complex \
 	/usr/include/c++/13/concepts \
 	/usr/include/c++/13/condition_variable \
 	/usr/include/c++/13/csignal \
@@ -356,10 +379,110 @@ ainf_mission_planner_autogen/timestamp: \
 	/usr/include/linux/posix_types.h \
 	/usr/include/linux/stddef.h \
 	/usr/include/locale.h \
+	/usr/include/math.h \
 	/usr/include/net/if.h \
 	/usr/include/netdb.h \
 	/usr/include/netinet/in.h \
 	/usr/include/netinet/tcp.h \
+	/usr/include/opencv4/opencv2/calib3d.hpp \
+	/usr/include/opencv4/opencv2/core.hpp \
+	/usr/include/opencv4/opencv2/core/affine.hpp \
+	/usr/include/opencv4/opencv2/core/async.hpp \
+	/usr/include/opencv4/opencv2/core/base.hpp \
+	/usr/include/opencv4/opencv2/core/bufferpool.hpp \
+	/usr/include/opencv4/opencv2/core/check.hpp \
+	/usr/include/opencv4/opencv2/core/cuda.hpp \
+	/usr/include/opencv4/opencv2/core/cuda.inl.hpp \
+	/usr/include/opencv4/opencv2/core/cuda_types.hpp \
+	/usr/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+	/usr/include/opencv4/opencv2/core/cvdef.h \
+	/usr/include/opencv4/opencv2/core/cvstd.hpp \
+	/usr/include/opencv4/opencv2/core/cvstd.inl.hpp \
+	/usr/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
+	/usr/include/opencv4/opencv2/core/fast_math.hpp \
+	/usr/include/opencv4/opencv2/core/hal/interface.h \
+	/usr/include/opencv4/opencv2/core/mat.hpp \
+	/usr/include/opencv4/opencv2/core/mat.inl.hpp \
+	/usr/include/opencv4/opencv2/core/matx.hpp \
+	/usr/include/opencv4/opencv2/core/neon_utils.hpp \
+	/usr/include/opencv4/opencv2/core/operations.hpp \
+	/usr/include/opencv4/opencv2/core/optim.hpp \
+	/usr/include/opencv4/opencv2/core/ovx.hpp \
+	/usr/include/opencv4/opencv2/core/persistence.hpp \
+	/usr/include/opencv4/opencv2/core/saturate.hpp \
+	/usr/include/opencv4/opencv2/core/traits.hpp \
+	/usr/include/opencv4/opencv2/core/types.hpp \
+	/usr/include/opencv4/opencv2/core/utility.hpp \
+	/usr/include/opencv4/opencv2/core/version.hpp \
+	/usr/include/opencv4/opencv2/core/vsx_utils.hpp \
+	/usr/include/opencv4/opencv2/dnn.hpp \
+	/usr/include/opencv4/opencv2/dnn/dict.hpp \
+	/usr/include/opencv4/opencv2/dnn/dnn.hpp \
+	/usr/include/opencv4/opencv2/dnn/dnn.inl.hpp \
+	/usr/include/opencv4/opencv2/dnn/layer.hpp \
+	/usr/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
+	/usr/include/opencv4/opencv2/dnn/version.hpp \
+	/usr/include/opencv4/opencv2/features2d.hpp \
+	/usr/include/opencv4/opencv2/flann.hpp \
+	/usr/include/opencv4/opencv2/flann/all_indices.h \
+	/usr/include/opencv4/opencv2/flann/allocator.h \
+	/usr/include/opencv4/opencv2/flann/any.h \
+	/usr/include/opencv4/opencv2/flann/autotuned_index.h \
+	/usr/include/opencv4/opencv2/flann/composite_index.h \
+	/usr/include/opencv4/opencv2/flann/config.h \
+	/usr/include/opencv4/opencv2/flann/defines.h \
+	/usr/include/opencv4/opencv2/flann/dist.h \
+	/usr/include/opencv4/opencv2/flann/dynamic_bitset.h \
+	/usr/include/opencv4/opencv2/flann/flann_base.hpp \
+	/usr/include/opencv4/opencv2/flann/general.h \
+	/usr/include/opencv4/opencv2/flann/ground_truth.h \
+	/usr/include/opencv4/opencv2/flann/heap.h \
+	/usr/include/opencv4/opencv2/flann/hierarchical_clustering_index.h \
+	/usr/include/opencv4/opencv2/flann/index_testing.h \
+	/usr/include/opencv4/opencv2/flann/kdtree_index.h \
+	/usr/include/opencv4/opencv2/flann/kdtree_single_index.h \
+	/usr/include/opencv4/opencv2/flann/kmeans_index.h \
+	/usr/include/opencv4/opencv2/flann/linear_index.h \
+	/usr/include/opencv4/opencv2/flann/logger.h \
+	/usr/include/opencv4/opencv2/flann/lsh_index.h \
+	/usr/include/opencv4/opencv2/flann/lsh_table.h \
+	/usr/include/opencv4/opencv2/flann/matrix.h \
+	/usr/include/opencv4/opencv2/flann/miniflann.hpp \
+	/usr/include/opencv4/opencv2/flann/nn_index.h \
+	/usr/include/opencv4/opencv2/flann/params.h \
+	/usr/include/opencv4/opencv2/flann/random.h \
+	/usr/include/opencv4/opencv2/flann/result_set.h \
+	/usr/include/opencv4/opencv2/flann/sampling.h \
+	/usr/include/opencv4/opencv2/flann/saving.h \
+	/usr/include/opencv4/opencv2/flann/timer.h \
+	/usr/include/opencv4/opencv2/highgui.hpp \
+	/usr/include/opencv4/opencv2/imgcodecs.hpp \
+	/usr/include/opencv4/opencv2/imgproc.hpp \
+	/usr/include/opencv4/opencv2/imgproc/segmentation.hpp \
+	/usr/include/opencv4/opencv2/ml.hpp \
+	/usr/include/opencv4/opencv2/ml/ml.inl.hpp \
+	/usr/include/opencv4/opencv2/objdetect.hpp \
+	/usr/include/opencv4/opencv2/objdetect/detection_based_tracker.hpp \
+	/usr/include/opencv4/opencv2/objdetect/face.hpp \
+	/usr/include/opencv4/opencv2/opencv.hpp \
+	/usr/include/opencv4/opencv2/opencv_modules.hpp \
+	/usr/include/opencv4/opencv2/photo.hpp \
+	/usr/include/opencv4/opencv2/stitching.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/blenders.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/camera.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/exposure_compensate.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/matchers.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/seam_finders.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/util.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/warpers.hpp \
+	/usr/include/opencv4/opencv2/stitching/detail/warpers_inl.hpp \
+	/usr/include/opencv4/opencv2/stitching/warpers.hpp \
+	/usr/include/opencv4/opencv2/video.hpp \
+	/usr/include/opencv4/opencv2/video/background_segm.hpp \
+	/usr/include/opencv4/opencv2/video/tracking.hpp \
+	/usr/include/opencv4/opencv2/videoio.hpp \
 	/usr/include/pthread.h \
 	/usr/include/resolv.h \
 	/usr/include/rpc/netdb.h \
@@ -447,13 +570,22 @@ ainf_mission_planner_autogen/timestamp: \
 	/usr/include/x86_64-linux-gnu/bits/fcntl.h \
 	/usr/include/x86_64-linux-gnu/bits/floatn-common.h \
 	/usr/include/x86_64-linux-gnu/bits/floatn.h \
+	/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+	/usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+	/usr/include/x86_64-linux-gnu/bits/fp-logb.h \
 	/usr/include/x86_64-linux-gnu/bits/getopt_core.h \
 	/usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
 	/usr/include/x86_64-linux-gnu/bits/in.h \
+	/usr/include/x86_64-linux-gnu/bits/iscanonical.h \
 	/usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+	/usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
 	/usr/include/x86_64-linux-gnu/bits/local_lim.h \
 	/usr/include/x86_64-linux-gnu/bits/locale.h \
 	/usr/include/x86_64-linux-gnu/bits/long-double.h \
+	/usr/include/x86_64-linux-gnu/bits/math-vector.h \
+	/usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+	/usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
+	/usr/include/x86_64-linux-gnu/bits/mathcalls.h \
 	/usr/include/x86_64-linux-gnu/bits/mman-linux.h \
 	/usr/include/x86_64-linux-gnu/bits/mman-map-flags-generic.h \
 	/usr/include/x86_64-linux-gnu/bits/mman-shared.h \
@@ -1186,26 +1318,9 @@ ainf_mission_planner_autogen/timestamp: \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Xml/Qt6XmlTargets-none.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Xml/Qt6XmlTargets.cmake \
 	/usr/lib/x86_64-linux-gnu/cmake/Qt6Xml/Qt6XmlVersionlessTargets.cmake \
-	/usr/share/cmake-3.28/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
-	/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake \
-	/usr/share/cmake-3.28/Modules/CheckCSourceCompiles.cmake \
-	/usr/share/cmake-3.28/Modules/CheckCXXCompilerFlag.cmake \
-	/usr/share/cmake-3.28/Modules/CheckCXXSourceCompiles.cmake \
-	/usr/share/cmake-3.28/Modules/CheckIncludeFile.cmake \
-	/usr/share/cmake-3.28/Modules/CheckLibraryExists.cmake \
-	/usr/share/cmake-3.28/Modules/FeatureSummary.cmake \
-	/usr/share/cmake-3.28/Modules/FindIce.cmake \
-	/usr/share/cmake-3.28/Modules/FindOpenGL.cmake \
-	/usr/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake \
-	/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake \
-	/usr/share/cmake-3.28/Modules/FindPkgConfig.cmake \
-	/usr/share/cmake-3.28/Modules/FindThreads.cmake \
-	/usr/share/cmake-3.28/Modules/FindVulkan.cmake \
-	/usr/share/cmake-3.28/Modules/GNUInstallDirs.cmake \
-	/usr/share/cmake-3.28/Modules/Internal/CheckCompilerFlag.cmake \
-	/usr/share/cmake-3.28/Modules/Internal/CheckFlagCommonConfig.cmake \
-	/usr/share/cmake-3.28/Modules/Internal/CheckSourceCompiles.cmake \
-	/usr/share/cmake-3.28/Modules/MacroAddFileDependencies.cmake \
-	/usr/share/cmake-3.28/Modules/SelectLibraryConfigurations.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig-version.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVConfig.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules-release.cmake \
+	/usr/lib/x86_64-linux-gnu/cmake/opencv4/OpenCVModules.cmake \
 	/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/mainUI.ui \
-	/usr/bin/cmake
+	/snap/cmake/1525/bin/cmake

@@ -1,5 +1,5 @@
 # Proxies for required interfaces
-Proxies.CameraRGBDSimple = "camerargbdsimple:tcp -h localhost -p 0"
+Proxies.ImageSegmentation = "imagesegmentation:tcp -h localhost -p 0"
 Proxies.Navigator = "navigator:tcp -h localhost -p 0"
 
 

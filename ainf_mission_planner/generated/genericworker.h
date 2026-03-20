@@ -41,12 +41,12 @@
 #include <unordered_map>
 
 
-#include <CameraRGBDSimple.h>
+#include <ImageSegmentation.h>
 #include <Navigator.h>
 
 #define BASIC_PERIOD 100
 
-using TuplePrx = std::tuple<RoboCompCameraRGBDSimple::CameraRGBDSimplePrxPtr,RoboCompNavigator::NavigatorPrxPtr>;
+using TuplePrx = std::tuple<RoboCompImageSegmentation::ImageSegmentationPrxPtr,RoboCompNavigator::NavigatorPrxPtr>;
 
 
 class GenericWorker : public QWidget, public Ui_guiDlg
@@ -65,7 +65,7 @@ public:
 	std::atomic_bool hibernation = false;
 
 
-	RoboCompCameraRGBDSimple::CameraRGBDSimplePrxPtr camerargbdsimple_proxy;
+	RoboCompImageSegmentation::ImageSegmentationPrxPtr imagesegmentation_proxy;
 	RoboCompNavigator::NavigatorPrxPtr navigator_proxy;
 
 

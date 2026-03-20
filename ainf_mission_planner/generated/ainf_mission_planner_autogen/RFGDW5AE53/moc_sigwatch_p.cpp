@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../../../../../robocomp/robocomp/classes/sigwatch/sigwatch_p.h"
+#include "../../../../../../robocomp/classes/sigwatch/sigwatch_p.h"
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'sigwatch_p.h' doesn't include <QObject>."

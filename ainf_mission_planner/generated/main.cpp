@@ -78,7 +78,7 @@
 #include "../src/specificworker.h"
 
 
-#include <CameraRGBDSimple.h>
+#include <ImageSegmentation.h>
 #include <Navigator.h>
 
 #define USE_QTGUI
@@ -170,17 +170,17 @@ int ainf_mission_planner::run(int argc, char* argv[])
 
 	int status=EXIT_SUCCESS;
 
-	RoboCompCameraRGBDSimple::CameraRGBDSimplePrxPtr camerargbdsimple_proxy;
+	RoboCompImageSegmentation::ImageSegmentationPrxPtr imagesegmentation_proxy;
 	RoboCompNavigator::NavigatorPrxPtr navigator_proxy;
 
 
 	//Require code
-	require<RoboCompCameraRGBDSimple::CameraRGBDSimplePrx, RoboCompCameraRGBDSimple::CameraRGBDSimplePrxPtr>(communicator(),
-	                    configLoader.get<std::string>("Proxies.CameraRGBDSimple"), "CameraRGBDSimpleProxy", camerargbdsimple_proxy);
+	require<RoboCompImageSegmentation::ImageSegmentationPrx, RoboCompImageSegmentation::ImageSegmentationPrxPtr>(communicator(),
+	                    configLoader.get<std::string>("Proxies.ImageSegmentation"), "ImageSegmentationProxy", imagesegmentation_proxy);
 	require<RoboCompNavigator::NavigatorPrx, RoboCompNavigator::NavigatorPrxPtr>(communicator(),
 	                    configLoader.get<std::string>("Proxies.Navigator"), "NavigatorProxy", navigator_proxy);
 
-	tprx = std::make_tuple(camerargbdsimple_proxy,navigator_proxy);
+	tprx = std::make_tuple(imagesegmentation_proxy,navigator_proxy);
 	SpecificWorker *worker = new SpecificWorker(this->configLoader, tprx, startup_check_flag);
 	QObject::connect(worker, SIGNAL(kill()), &a, SLOT(quit()));
 
