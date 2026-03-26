@@ -421,7 +421,7 @@ void SpecificWorker::process_mission_list() {
 							nombre_sucio.erase(std::remove(nombre_sucio.begin(), nombre_sucio.end(), ' '), nombre_sucio.end());
 							save_image(data.image, path+nombre_sucio+".jpg"); //Por defecto las guardamos con extension jpg
 
-							qwen_process_image(path+nombre_sucio+".jpg");
+							gemma_process_image(path+nombre_sucio+".jpg");
 
 						}catch (const Ice::Exception& e){qInfo()<<e.what();}
 						break;
@@ -443,7 +443,7 @@ void SpecificWorker::process_mission_list() {
 
 }
 
-void SpecificWorker::qwen_process_image(const std::string& path) {
+void SpecificWorker::gemma_process_image(const std::string& path) {
 
 	std::string sistema = "Eres un controlador de robot. Te vamos a dar una foto que saca el robot"
 	"tras acercarse a un objeto. En ocasiones, el objeto (por ejemplo, una maceta, una silla o una mesa) estará mal "
@@ -459,23 +459,26 @@ void SpecificWorker::qwen_process_image(const std::string& path) {
 	"de una, devuélvelas separadas por ';', por ejemplo 'BACK;LEFT'";
 	std::string prompt = "¿Qué acciones tendría que realizar el robot para centrar el objeto en esta imagen?";
 	ollama_thread = std::async(std::launch::async, [this, sistema, prompt, path]() {
-		qDebug()<<"Llega a la rutina asíncrona";
-		qDebug()<<"El path pasado es: "<<QString::fromStdString(path);
-		ollama::image image = ollama::image::from_file(path);
-		// Creamos un vector de imágenes (aunque solo sea una)
-		std::vector<ollama::image> images_vec = { image };
-		ollama::request req("qwen3.5:cloud", sistema + '\n' + prompt, images_vec, false);
-		// Realizamos la generación
-		ollama::response respuesta;
 		try {
-			qDebug()<<"Llega3";
-			respuesta = ollama::generate(req);
-		}
-		catch (const std::exception& e){qCritical()<<"Error en el hilo de Ollama: "<<e.what();}
+			qDebug() << "1. Iniciando proceso...";
+			ollama::image img = ollama::image::from_file(path);
 
-		std::string respuestaStr = respuesta.as_simple_string();
-		qDebug()<<"La respuesta dada por Qwen es: ";
-		qDebug()<<QString::fromStdString(respuestaStr);
+			std::vector<ollama::image> images_vec = { img };
+
+			qDebug() << "2. Construyendo request...";
+			ollama::request req("gemma3:27b-cloud", sistema + "\n" + prompt, images_vec, false);
+
+			qDebug() << "3. Generando (esperando a la nube)...";
+			ollama::response respuesta = ollama::generate(req);
+
+			// ... resto del código
+		}
+		catch (const std::exception& e) {
+			qCritical() << "EXCEPCIÓN CAPTURADA:" << e.what();
+		}
+		catch (...) {
+			qCritical() << "Fallo masivo (Segmentation Fault o similar)";
+		}
 	});
 }
 

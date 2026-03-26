@@ -130,7 +130,7 @@ private:
 	void process_mission(std::string& mission);
 	void process_mission_list(); //Procesa la lista de acciones (debe llamarse cuando el robot está IDLE)
 	void save_image(const RoboCompImageSegmentation::TImage& datos_imagen, const std::string& nombre_archivo);
-	void qwen_process_image(const std::string& path);
+	void gemma_process_image(const std::string& path);
 	std::string base64_encode(const std::vector<unsigned char>& data);
 
 private slots:
