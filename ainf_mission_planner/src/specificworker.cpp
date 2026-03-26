@@ -420,7 +420,8 @@ void SpecificWorker::process_mission_list() {
 								qDebug()<<"Esta vacia la foto";
 							nombre_sucio.erase(std::remove(nombre_sucio.begin(), nombre_sucio.end(), ' '), nombre_sucio.end());
 							save_image(data.image, path+nombre_sucio+".jpg"); //Por defecto las guardamos con extension jpg
-							//TODO: Pasarle la imagen a qwen3.5 y pedirle acciones para corregir posicion
+
+							qwen_process_image(path+nombre_sucio+".jpg");
 
 						}catch (const Ice::Exception& e){qInfo()<<e.what();}
 						break;
@@ -441,6 +442,61 @@ void SpecificWorker::process_mission_list() {
 
 
 }
+
+void SpecificWorker::qwen_process_image(const std::string& path) {
+
+	std::string sistema = "Eres un controlador de robot. Te vamos a dar una foto que saca el robot"
+	"tras acercarse a un objeto. En ocasiones, el objeto (por ejemplo, una maceta, una silla o una mesa) estará mal "
+	"encuadrado en la foto, porque el robot no estará en la posición adecuada como para que la foto que toma salga centrada.  "
+	"Lo que queremos que hagas es, viendo la foto que te pasamos, nos des el movimiento que debe hacer el robot para que el"
+	"objeto quede centrado. Por ejemplo, si el objeto está demasiado a la izquierda y no sale entero, el robot debería girar "
+	"a la izquierda para quedar alineado. Las acciones posibles que puede hacer el robot son:"
+	"LEFT -> Gira a la izquierda"
+	"RIGHT -> Gira a la derecha"
+	"ADVANCE -> Muévete hacia delante"
+	"BACK -> Muévete hacia atrás"
+	"Responde tan solo la acción que tiene que hacer el robot, en mayúscula, por ejemplo 'BACK'. Si tuviera que hacer más"
+	"de una, devuélvelas separadas por ';', por ejemplo 'BACK;LEFT'";
+	std::string prompt = "¿Qué acciones tendría que realizar el robot para centrar el objeto en esta imagen?";
+	ollama_thread = std::async(std::launch::async, [this, sistema, prompt, path]() {
+		qDebug()<<"Llega a la rutina asíncrona";
+		qDebug()<<"El path pasado es: "<<QString::fromStdString(path);
+		ollama::image image = ollama::image::from_file(path);
+		// Creamos un vector de imágenes (aunque solo sea una)
+		std::vector<ollama::image> images_vec = { image };
+		ollama::request req("qwen3.5:cloud", sistema + '\n' + prompt, images_vec, false);
+		// Realizamos la generación
+		ollama::response respuesta;
+		try {
+			qDebug()<<"Llega3";
+			respuesta = ollama::generate(req);
+		}
+		catch (const std::exception& e){qCritical()<<"Error en el hilo de Ollama: "<<e.what();}
+
+		std::string respuestaStr = respuesta.as_simple_string();
+		qDebug()<<"La respuesta dada por Qwen es: ";
+		qDebug()<<QString::fromStdString(respuestaStr);
+	});
+}
+
+//Funcion auxiliar para pasar la imagen a Base64
+std::string SpecificWorker::base64_encode(const std::vector<unsigned char>& data) {
+	static const char sEncodingTable[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+	std::string out;
+	int val = 0, valb = -6;
+	for (unsigned char c : data) {
+		val = (val << 8) + c;
+		valb += 8;
+		while (valb >= 0) {
+			out.push_back(sEncodingTable[(val >> valb) & 0x3F]);
+			valb -= 6;
+		}
+	}
+	if (valb > -6) out.push_back(sEncodingTable[((val << 8) >> (valb + 8)) & 0x3F]);
+	while (out.size() % 4) out.push_back('=');
+	return out;
+}
+
 
 void SpecificWorker::slot_new_target(QPointF target)
 {
