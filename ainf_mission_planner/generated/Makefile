@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1525/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1531/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1525/bin/cmake -E rm -f
+RM = /snap/cmake/1531/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/snap/cmake/1515/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1531/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/1525/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1531/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,37 +97,37 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/cmake/1525/bin/cmake -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/cmake/1525/bin/cmake -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/cmake/1525/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/cmake/1525/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/cmake/1525/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/cmake/1525/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
@@ -176,18 +176,32 @@ ICES__home_xeihtt_Rob-Avanzada_RobAvanzadaG3_ainf_mission_planner_generated/fast
 .PHONY : ICES__home_xeihtt_Rob-Avanzada_RobAvanzadaG3_ainf_mission_planner_generated/fast
 
 # Convenience name for target.
-generated/CMakeFiles/ICE_ImageSegmentation_target.dir/rule:
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 generated/CMakeFiles/ICE_ImageSegmentation_target.dir/rule
-.PHONY : generated/CMakeFiles/ICE_ImageSegmentation_target.dir/rule
+generated/CMakeFiles/ICE_OmniRobot_target.dir/rule:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 generated/CMakeFiles/ICE_OmniRobot_target.dir/rule
+.PHONY : generated/CMakeFiles/ICE_OmniRobot_target.dir/rule
 
 # Convenience name for target.
-ICE_ImageSegmentation_target: generated/CMakeFiles/ICE_ImageSegmentation_target.dir/rule
-.PHONY : ICE_ImageSegmentation_target
+ICE_OmniRobot_target: generated/CMakeFiles/ICE_OmniRobot_target.dir/rule
+.PHONY : ICE_OmniRobot_target
 
 # fast build rule for target.
-ICE_ImageSegmentation_target/fast:
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_ImageSegmentation_target.dir/build.make generated/CMakeFiles/ICE_ImageSegmentation_target.dir/build
-.PHONY : ICE_ImageSegmentation_target/fast
+ICE_OmniRobot_target/fast:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_OmniRobot_target.dir/build.make generated/CMakeFiles/ICE_OmniRobot_target.dir/build
+.PHONY : ICE_OmniRobot_target/fast
+
+# Convenience name for target.
+generated/CMakeFiles/ICE_GenericBase_target.dir/rule:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 generated/CMakeFiles/ICE_GenericBase_target.dir/rule
+.PHONY : generated/CMakeFiles/ICE_GenericBase_target.dir/rule
+
+# Convenience name for target.
+ICE_GenericBase_target: generated/CMakeFiles/ICE_GenericBase_target.dir/rule
+.PHONY : ICE_GenericBase_target
+
+# fast build rule for target.
+ICE_GenericBase_target/fast:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_GenericBase_target.dir/build.make generated/CMakeFiles/ICE_GenericBase_target.dir/build
+.PHONY : ICE_GenericBase_target/fast
 
 # Convenience name for target.
 generated/CMakeFiles/ICE_Navigator_target.dir/rule:
@@ -202,6 +216,20 @@ ICE_Navigator_target: generated/CMakeFiles/ICE_Navigator_target.dir/rule
 ICE_Navigator_target/fast:
 	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_Navigator_target.dir/build.make generated/CMakeFiles/ICE_Navigator_target.dir/build
 .PHONY : ICE_Navigator_target/fast
+
+# Convenience name for target.
+generated/CMakeFiles/ICE_ImageSegmentation_target.dir/rule:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 generated/CMakeFiles/ICE_ImageSegmentation_target.dir/rule
+.PHONY : generated/CMakeFiles/ICE_ImageSegmentation_target.dir/rule
+
+# Convenience name for target.
+ICE_ImageSegmentation_target: generated/CMakeFiles/ICE_ImageSegmentation_target.dir/rule
+.PHONY : ICE_ImageSegmentation_target
+
+# fast build rule for target.
+ICE_ImageSegmentation_target/fast:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_ImageSegmentation_target.dir/build.make generated/CMakeFiles/ICE_ImageSegmentation_target.dir/build
+.PHONY : ICE_ImageSegmentation_target/fast
 
 # Convenience name for target.
 generated/CMakeFiles/ainf_mission_planner.dir/rule:
@@ -244,6 +272,30 @@ ainf_mission_planner_autogen: generated/CMakeFiles/ainf_mission_planner_autogen.
 ainf_mission_planner_autogen/fast:
 	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ainf_mission_planner_autogen.dir/build.make generated/CMakeFiles/ainf_mission_planner_autogen.dir/build
 .PHONY : ainf_mission_planner_autogen/fast
+
+GenericBase.o: GenericBase.cpp.o
+.PHONY : GenericBase.o
+
+# target to build an object file
+GenericBase.cpp.o:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ainf_mission_planner.dir/build.make generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o
+.PHONY : GenericBase.cpp.o
+
+GenericBase.i: GenericBase.cpp.i
+.PHONY : GenericBase.i
+
+# target to preprocess a source file
+GenericBase.cpp.i:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ainf_mission_planner.dir/build.make generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.i
+.PHONY : GenericBase.cpp.i
+
+GenericBase.s: GenericBase.cpp.s
+.PHONY : GenericBase.s
+
+# target to generate assembly for a file
+GenericBase.cpp.s:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ainf_mission_planner.dir/build.make generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.s
+.PHONY : GenericBase.cpp.s
 
 ImageSegmentation.o: ImageSegmentation.cpp.o
 .PHONY : ImageSegmentation.o
@@ -292,6 +344,30 @@ Navigator.s: Navigator.cpp.s
 Navigator.cpp.s:
 	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ainf_mission_planner.dir/build.make generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.s
 .PHONY : Navigator.cpp.s
+
+OmniRobot.o: OmniRobot.cpp.o
+.PHONY : OmniRobot.o
+
+# target to build an object file
+OmniRobot.cpp.o:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ainf_mission_planner.dir/build.make generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o
+.PHONY : OmniRobot.cpp.o
+
+OmniRobot.i: OmniRobot.cpp.i
+.PHONY : OmniRobot.i
+
+# target to preprocess a source file
+OmniRobot.cpp.i:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ainf_mission_planner.dir/build.make generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.i
+.PHONY : OmniRobot.cpp.i
+
+OmniRobot.s: OmniRobot.cpp.s
+.PHONY : OmniRobot.s
+
+# target to generate assembly for a file
+OmniRobot.cpp.s:
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ainf_mission_planner.dir/build.make generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.s
+.PHONY : OmniRobot.cpp.s
 
 __/src/specificworker.o: __/src/specificworker.cpp.o
 .PHONY : __/src/specificworker.o
@@ -522,17 +598,25 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... ICES__home_xeihtt_Rob-Avanzada_RobAvanzadaG3_ainf_mission_planner_generated"
+	@echo "... ICE_GenericBase_target"
 	@echo "... ICE_ImageSegmentation_target"
 	@echo "... ICE_Navigator_target"
+	@echo "... ICE_OmniRobot_target"
 	@echo "... ainf_mission_planner_autogen"
 	@echo "... ainf_mission_planner_autogen_timestamp_deps"
 	@echo "... ainf_mission_planner"
+	@echo "... GenericBase.o"
+	@echo "... GenericBase.i"
+	@echo "... GenericBase.s"
 	@echo "... ImageSegmentation.o"
 	@echo "... ImageSegmentation.i"
 	@echo "... ImageSegmentation.s"
 	@echo "... Navigator.o"
 	@echo "... Navigator.i"
 	@echo "... Navigator.s"
+	@echo "... OmniRobot.o"
+	@echo "... OmniRobot.i"
+	@echo "... OmniRobot.s"
 	@echo "... __/src/specificworker.o"
 	@echo "... __/src/specificworker.i"
 	@echo "... __/src/specificworker.s"

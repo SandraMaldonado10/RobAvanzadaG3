@@ -48,10 +48,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1525/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1531/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1525/bin/cmake -E rm -f
+RM = /snap/cmake/1531/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/snap/cmake/1515/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1531/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -78,7 +78,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/snap/cmake/1525/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/cmake/1531/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -97,37 +97,37 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/cmake/1525/bin/cmake -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/snap/cmake/1525/bin/cmake -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/cmake/1525/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/snap/cmake/1525/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/cmake/1525/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/snap/cmake/1525/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/snap/cmake/1531/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
@@ -175,17 +175,30 @@ ICES__home_xeihtt_Rob-Avanzada_RobAvanzadaG3_ainf_mission_planner_generated/fast
 .PHONY : ICES__home_xeihtt_Rob-Avanzada_RobAvanzadaG3_ainf_mission_planner_generated/fast
 
 #=============================================================================
-# Target rules for targets named ICE_ImageSegmentation_target
+# Target rules for targets named ICE_OmniRobot_target
 
 # Build rule for target.
-ICE_ImageSegmentation_target: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICE_ImageSegmentation_target
-.PHONY : ICE_ImageSegmentation_target
+ICE_OmniRobot_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICE_OmniRobot_target
+.PHONY : ICE_OmniRobot_target
 
 # fast build rule for target.
-ICE_ImageSegmentation_target/fast:
-	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_ImageSegmentation_target.dir/build.make generated/CMakeFiles/ICE_ImageSegmentation_target.dir/build
-.PHONY : ICE_ImageSegmentation_target/fast
+ICE_OmniRobot_target/fast:
+	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_OmniRobot_target.dir/build.make generated/CMakeFiles/ICE_OmniRobot_target.dir/build
+.PHONY : ICE_OmniRobot_target/fast
+
+#=============================================================================
+# Target rules for targets named ICE_GenericBase_target
+
+# Build rule for target.
+ICE_GenericBase_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICE_GenericBase_target
+.PHONY : ICE_GenericBase_target
+
+# fast build rule for target.
+ICE_GenericBase_target/fast:
+	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_GenericBase_target.dir/build.make generated/CMakeFiles/ICE_GenericBase_target.dir/build
+.PHONY : ICE_GenericBase_target/fast
 
 #=============================================================================
 # Target rules for targets named ICE_Navigator_target
@@ -199,6 +212,19 @@ ICE_Navigator_target: cmake_check_build_system
 ICE_Navigator_target/fast:
 	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_Navigator_target.dir/build.make generated/CMakeFiles/ICE_Navigator_target.dir/build
 .PHONY : ICE_Navigator_target/fast
+
+#=============================================================================
+# Target rules for targets named ICE_ImageSegmentation_target
+
+# Build rule for target.
+ICE_ImageSegmentation_target: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ICE_ImageSegmentation_target
+.PHONY : ICE_ImageSegmentation_target
+
+# fast build rule for target.
+ICE_ImageSegmentation_target/fast:
+	$(MAKE) $(MAKESILENT) -f generated/CMakeFiles/ICE_ImageSegmentation_target.dir/build.make generated/CMakeFiles/ICE_ImageSegmentation_target.dir/build
+.PHONY : ICE_ImageSegmentation_target/fast
 
 #=============================================================================
 # Target rules for targets named ainf_mission_planner
@@ -252,8 +278,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... ICES__home_xeihtt_Rob-Avanzada_RobAvanzadaG3_ainf_mission_planner_generated"
+	@echo "... ICE_GenericBase_target"
 	@echo "... ICE_ImageSegmentation_target"
 	@echo "... ICE_Navigator_target"
+	@echo "... ICE_OmniRobot_target"
 	@echo "... ainf_mission_planner_autogen"
 	@echo "... ainf_mission_planner_autogen_timestamp_deps"
 	@echo "... ainf_mission_planner"

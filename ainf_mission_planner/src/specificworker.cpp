@@ -414,14 +414,19 @@ void SpecificWorker::process_mission_list() {
 				switch (c) {
 					case 'f':
 						try{
+							RoboCompNavigator::TObject target = this->getTargetObject(nombre_sucio, navigator_proxy->getLayout().objects);
+							bool res = this->alignRobotWithTarget(target);
+							while (res) {
+								res = this->alignRobotWithTarget(target);
+							}
+
 							qDebug()<<"Haciendo foto...";
 							data = this->imagesegmentation_proxy->getAll(false);
 							if (data.image.image.empty())
 								qDebug()<<"Esta vacia la foto";
+
 							nombre_sucio.erase(std::remove(nombre_sucio.begin(), nombre_sucio.end(), ' '), nombre_sucio.end());
 							save_image(data.image, path+nombre_sucio+".jpg"); //Por defecto las guardamos con extension jpg
-
-							gemma_process_image(path+nombre_sucio+".jpg");
 
 						}catch (const Ice::Exception& e){qInfo()<<e.what();}
 						break;
@@ -443,22 +448,81 @@ void SpecificWorker::process_mission_list() {
 
 }
 
-void SpecificWorker::gemma_process_image(const std::string& path) {
+RoboCompNavigator::TObject SpecificWorker::getTargetObject
+(const std::string& obj, const RoboCompNavigator::TObjects& objects) {
+	for (const RoboCompNavigator::TObject& o: objects) {
+		qDebug()<<"El objeto actual es: "<<QString::fromStdString(o.name);
+		if (o.name == obj){
+			qDebug()<<"Bingo! objeto: "<<QString::fromStdString(obj)<< " encontrado";
+			return o;
+		}
+	}
+}
 
-	std::string sistema = "Eres un controlador de robot. Te vamos a dar una foto que saca el robot"
-	"tras acercarse a un objeto. En ocasiones, el objeto (por ejemplo, una maceta, una silla o una mesa) estará mal "
-	"encuadrado en la foto, porque el robot no estará en la posición adecuada como para que la foto que toma salga centrada.  "
-	"Lo que queremos que hagas es, viendo la foto que te pasamos, nos des el movimiento que debe hacer el robot para que el"
-	"objeto quede centrado. Por ejemplo, si el objeto está demasiado a la izquierda y no sale entero, el robot debería girar "
-	"a la izquierda para quedar alineado. Las acciones posibles que puede hacer el robot son:"
-	"LEFT -> Gira a la izquierda"
-	"RIGHT -> Gira a la derecha"
-	"ADVANCE -> Muévete hacia delante"
-	"BACK -> Muévete hacia atrás"
-	"Responde tan solo la acción que tiene que hacer el robot, en mayúscula, por ejemplo 'BACK'. Si tuviera que hacer más"
-	"de una, devuélvelas separadas por ';', por ejemplo 'BACK;LEFT'";
-	std::string prompt = "¿Qué acciones tendría que realizar el robot para centrar el objeto en esta imagen?";
-	ollama_thread = std::async(std::launch::async, [this, sistema, prompt, path]() {
+bool SpecificWorker::alignRobotWithTarget(const RoboCompNavigator::TObject& target) {
+    if (target.layout.empty()) return false;
+
+    // 1. Obtener la pose actual del robot
+    const auto pose = navigator_proxy->getRobotPose(); // x, y en mm o m, r en rad
+
+    // 2. Centroide en coordenadas del mundo
+
+	Eigen::Vector2f suma = Eigen::Vector2f::Zero();
+	for (const auto& p : target.layout) {
+		suma+=Eigen::Vector2f(p.x, p.y);
+	}
+	Eigen::Vector2f world_centroid = suma / static_cast<float>(target.layout.size());
+
+    // 3. Crear la transformación usando Eigen de forma estricta
+    // Isometry2f combina rotación y traslación en una matriz 3x3 interna
+    Eigen::Isometry2f robot_in_world = Eigen::Isometry2f::Identity();
+    robot_in_world.translate(Eigen::Vector2f(pose.x, pose.y));
+    robot_in_world.rotate(Eigen::Rotation2Df(pose.r));
+
+    // Queremos el punto del mundo expresado DESDE el robot (World -> Local)
+    Eigen::Vector2f local_centroid = robot_in_world.inverse() * world_centroid;
+
+    // 4. Calcular el error angular
+    // atan2(y, x) devuelve el ángulo hacia el punto.
+    // Si el punto está a la izquierda, y es positivo -> ángulo positivo -> giro izquierda.
+    float error_angulo = std::atan2(local_centroid.x(), local_centroid.y());
+	qDebug()<<"El error calculado es: "<<error_angulo;
+	qDebug()<<"El punto centroide calculado es: "<<world_centroid.x()<<"///"<<world_centroid.y();
+
+    // 5. Control
+    const float TOLERANCIA = 0.05f; // ~3 grados
+    if (std::abs(error_angulo) > TOLERANCIA) {
+       // Control P: Limitamos la velocidad máxima para evitar oscilaciones
+       float v_angular = error_angulo * 0.6f;
+
+       // Saturación de velocidad (ajusta según tu robot)
+       v_angular = std::clamp(v_angular, -0.5f, 0.5f);
+
+       this->omnirobot_proxy->setSpeedBase(0, 0, v_angular);
+       return true; // Sigue necesitando alineación
+    } else {
+       this->omnirobot_proxy->setSpeedBase(0, 0, 0);
+       return false; // Ya está alineado
+    }
+}
+
+std::string SpecificWorker::gemma_process_image(const std::string& path, const std::string& obj) {
+
+	std::string sistema =
+	"ACTÚA COMO UN SENSOR DE ENCUADRE PARA UN ROBOT.\n"
+	"Tu prioridad absoluta es que el objeto [" + obj + "] esté CENTRADO HORIZONTALMENTE.\n\n"
+
+	"JERARQUÍA DE DECISIÓN (Sigue este orden):\n"
+	"1. ¿El objeto está cortado por el borde IZQUIERDO? -> Responde 'LEFT'.\n"
+	"2. ¿El objeto está cortado por el borde DERECHO? -> Responde 'RIGHT'.\n"
+	"3. ¿El objeto está muy desplazado a un lado (aunque no esté cortado)? -> Responde 'LEFT' o 'RIGHT' según corresponda.\n"
+	"4. ¿El objeto está centrado pero se ve muy pequeño? -> Responde 'ADVANCE'.\n"
+	"5. ¿El objeto está centrado y ocupa la mayor parte de la imagen sin cortarse? -> Responde 'STOP'.\n\n"
+
+	"REGLA DE ORO: No respondas 'ADVANCE' si el objeto no está primero centrado.\n"
+	"RESPUESTA: Solo una palabra (LEFT, RIGHT, ADVANCE, BACK o STOP).";
+	std::string prompt = "¿Qué acciones tendría que realizar el robot para que el objeto: "+ obj + " de esta imagen salga entero?";
+	std::future<std::string> ollama_future = std::async(std::launch::async, [this, sistema, prompt, path]() {
 		try {
 			qDebug() << "1. Iniciando proceso...";
 			ollama::image img = ollama::image::from_file(path);
@@ -466,20 +530,44 @@ void SpecificWorker::gemma_process_image(const std::string& path) {
 			std::vector<ollama::image> images_vec = { img };
 
 			qDebug() << "2. Construyendo request...";
-			ollama::request req("gemma3:27b-cloud", sistema + "\n" + prompt, images_vec, false);
+			ollama::request req("gemma4:31b-cloud", sistema + "\n" + prompt, nullptr, false);
+			req["images"]= images_vec;
 
 			qDebug() << "3. Generando (esperando a la nube)...";
 			ollama::response respuesta = ollama::generate(req);
+			std::string respuestaStr = respuesta.as_simple_string();
 
-			// ... resto del código
+			qDebug()<<"La respuesta recibida es: ";
+			qDebug()<<QString::fromStdString(respuestaStr);
+
+			process_gemma_output(respuestaStr);
+			return respuestaStr;
 		}
 		catch (const std::exception& e) {
 			qCritical() << "EXCEPCIÓN CAPTURADA:" << e.what();
+			return std::string("ERROR");
 		}
 		catch (...) {
 			qCritical() << "Fallo masivo (Segmentation Fault o similar)";
+			return std::string("ERROR");
 		}
 	});
+
+	return ollama_future.get();
+}
+
+void SpecificWorker::process_gemma_output(const std::string& res) {
+	if (res == "LEFT") {
+		this->omnirobot_proxy->setSpeedBase(0, 0, -0.5);
+	} else if (res == "RIGHT") {
+		this->omnirobot_proxy->setSpeedBase(0, 0, 0.5);
+	} else if (res == "ADVANCE") {
+		this->omnirobot_proxy->setSpeedBase(0, 500, 0);
+	} else if (res == "BACK") {
+		this->omnirobot_proxy->setSpeedBase(0, -500, 0);
+	} else {
+		qDebug() << "Error: La respuesta de Gemma no es válida:" << res.c_str();
+	}
 }
 
 //Funcion auxiliar para pasar la imagen a Base64

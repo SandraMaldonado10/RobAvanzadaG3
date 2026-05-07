@@ -1,11 +1,12 @@
 import "Navigator.idsl";
 import "ImageSegmentation.idsl";
+import "OmniRobot.idsl";
 
 Component ainf_mission_planner
 {
     Communications
     {
-        requires Navigator, ImageSegmentation;
+        requires Navigator, OmniRobot, ImageSegmentation;
     };
     language Cpp11;
     gui Qt(QWidget);

@@ -27,6 +27,13 @@
 #ifndef SPECIFICWORKER_H
 #define SPECIFICWORKER_H
 
+// 1. Primero defines esto para evitar el error de Eigen
+#define EIGEN_DONT_VECTORIZE
+
+// 2. Includes de Eigen específicos
+#include <Eigen/Core>
+#include <Eigen/Dense>
+#include <Eigen/Geometry>
 
 // If you want to reduce the period automatically due to lack of use, you must uncomment the following line
 //#define HIBERNATION_ENABLED
@@ -44,6 +51,9 @@
 #include <queue>
 #include <ctype.h>
 #include <opencv2/opencv.hpp>
+
+
+
 /**
  * \brief Class SpecificWorker implements the core functionality of the component.
  */
@@ -130,7 +140,11 @@ private:
 	void process_mission(std::string& mission);
 	void process_mission_list(); //Procesa la lista de acciones (debe llamarse cuando el robot está IDLE)
 	void save_image(const RoboCompImageSegmentation::TImage& datos_imagen, const std::string& nombre_archivo);
-	void gemma_process_image(const std::string& path);
+	std::string gemma_process_image(const std::string& path, const std::string& obj);
+	RoboCompNavigator::TObject getTargetObject(const std::string& obj, const RoboCompNavigator::TObjects& objects);
+	bool alignRobotWithTarget(const RoboCompNavigator::TObject& target);
+	void process_gemma_output(const std::string& res);
+	void gemma_process_image2(const std::string& path);
 	std::string base64_encode(const std::vector<unsigned char>& data);
 
 private slots:

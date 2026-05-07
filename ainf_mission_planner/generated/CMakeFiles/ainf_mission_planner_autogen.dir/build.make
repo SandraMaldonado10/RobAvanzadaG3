@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1525/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1531/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1525/bin/cmake -E rm -f
+RM = /snap/cmake/1531/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -72,8 +72,8 @@ generated/ainf_mission_planner_autogen/timestamp: /usr/lib/qt6/libexec/moc
 generated/ainf_mission_planner_autogen/timestamp: /usr/lib/qt6/libexec/uic
 generated/ainf_mission_planner_autogen/timestamp: generated/CMakeFiles/ainf_mission_planner_autogen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target ainf_mission_planner"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /snap/cmake/1525/bin/cmake -E cmake_autogen /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/CMakeFiles/ainf_mission_planner_autogen.dir/AutogenInfo.json Debug
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /snap/cmake/1525/bin/cmake -E touch /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/timestamp
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /snap/cmake/1531/bin/cmake -E cmake_autogen /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/CMakeFiles/ainf_mission_planner_autogen.dir/AutogenInfo.json ""
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /snap/cmake/1531/bin/cmake -E touch /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/timestamp
 
 generated/CMakeFiles/ainf_mission_planner_autogen.dir/codegen:
 .PHONY : generated/CMakeFiles/ainf_mission_planner_autogen.dir/codegen

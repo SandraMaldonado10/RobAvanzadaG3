@@ -78,8 +78,10 @@
 #include "../src/specificworker.h"
 
 
+#include <GenericBase.h>
 #include <ImageSegmentation.h>
 #include <Navigator.h>
+#include <OmniRobot.h>
 
 #define USE_QTGUI
 
@@ -172,6 +174,7 @@ int ainf_mission_planner::run(int argc, char* argv[])
 
 	RoboCompImageSegmentation::ImageSegmentationPrxPtr imagesegmentation_proxy;
 	RoboCompNavigator::NavigatorPrxPtr navigator_proxy;
+	RoboCompOmniRobot::OmniRobotPrxPtr omnirobot_proxy;
 
 
 	//Require code
@@ -179,8 +182,10 @@ int ainf_mission_planner::run(int argc, char* argv[])
 	                    configLoader.get<std::string>("Proxies.ImageSegmentation"), "ImageSegmentationProxy", imagesegmentation_proxy);
 	require<RoboCompNavigator::NavigatorPrx, RoboCompNavigator::NavigatorPrxPtr>(communicator(),
 	                    configLoader.get<std::string>("Proxies.Navigator"), "NavigatorProxy", navigator_proxy);
+	require<RoboCompOmniRobot::OmniRobotPrx, RoboCompOmniRobot::OmniRobotPrxPtr>(communicator(),
+	                    configLoader.get<std::string>("Proxies.OmniRobot"), "OmniRobotProxy", omnirobot_proxy);
 
-	tprx = std::make_tuple(imagesegmentation_proxy,navigator_proxy);
+	tprx = std::make_tuple(imagesegmentation_proxy,navigator_proxy,omnirobot_proxy);
 	SpecificWorker *worker = new SpecificWorker(this->configLoader, tprx, startup_check_flag);
 	QObject::connect(worker, SIGNAL(kill()), &a, SLOT(quit()));
 

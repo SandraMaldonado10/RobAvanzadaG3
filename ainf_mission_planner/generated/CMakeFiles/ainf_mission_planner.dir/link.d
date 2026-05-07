@@ -1,7 +1,7 @@
 ../bin/ainf_mission_planner: \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o \
-  /usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o \
+  /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o \
   CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o \
   CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o \
   CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o \
@@ -11,8 +11,10 @@
   CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o \
   CMakeFiles/ainf_mission_planner.dir/main.cpp.o \
   CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o \
-  CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o \
+  CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o \
+  CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o \
   CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o \
+  CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o \
   /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.6.0 \
   /usr/lib/x86_64-linux-gnu/libopencv_alphamat.so.4.6.0 \
   /usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.6.0 \
@@ -53,7 +55,7 @@
   /usr/lib/x86_64-linux-gnu/libQt6Xml.so.6.4.2 \
   /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2 \
   /usr/lib/x86_64-linux-gnu/libQt6StateMachine.so.6.4.2 \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libQt6OpenGLWidgets.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libQt6OpenGLWidgets.so \
   /usr/local/lib/libQGLViewer-qt6.so \
   /usr/lib/x86_64-linux-gnu/libIce++11.so \
   /usr/lib/x86_64-linux-gnu/libIceStorm++11.so \
@@ -82,33 +84,32 @@
   /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2 \
   /usr/lib/x86_64-linux-gnu/libGLX.so \
   /usr/lib/x86_64-linux-gnu/libOpenGL.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so \
   /lib/x86_64-linux-gnu/libm.so.6 \
   /lib/x86_64-linux-gnu/libmvec.so.1 \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libgcc_s.so.1 \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libgcc_s.so.1 \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so \
   /lib/x86_64-linux-gnu/libc.so.6 \
   /usr/lib/x86_64-linux-gnu/libc_nonshared.a \
   /lib64/ld-linux-x86-64.so.2 \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libgcc_s.so.1 \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a \
-  /usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o \
-  /usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o \
-  /lib/x86_64-linux-gnu/libm.so.6 \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libgcc_s.so.1 \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a \
+  /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o \
+  /usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o \
   /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2 \
   /lib/x86_64-linux-gnu/libbz2.so.1.0 \
   /lib/x86_64-linux-gnu/libcrypto.so.3 \
@@ -257,11 +258,11 @@
   /lib/x86_64-linux-gnu/libmd.so.0 \
   /lib/x86_64-linux-gnu/libffi.so.8
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/Scrt1.o:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/Scrt1.o:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crti.o:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crti.o:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/crtbeginS.o:
+/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o:
 
 CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o:
 
@@ -281,9 +282,13 @@ CMakeFiles/ainf_mission_planner.dir/main.cpp.o:
 
 CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o:
 
-CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o:
+CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o:
+
+CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o:
 
 CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o:
+
+CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.6.0:
 
@@ -365,7 +370,7 @@ CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libQt6StateMachine.so.6.4.2:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libQt6OpenGLWidgets.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libQt6OpenGLWidgets.so:
 
 /usr/local/lib/libQGLViewer-qt6.so:
 
@@ -423,35 +428,35 @@ CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o:
 
 /usr/lib/x86_64-linux-gnu/libOpenGL.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libstdc++.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/libstdc++.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libm.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libm.so:
 
 /lib/x86_64-linux-gnu/libm.so.6:
 
 /lib/x86_64-linux-gnu/libmvec.so.1:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libgcc_s.so.1:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libgcc_s.so.1:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libc.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libc.so:
 
 /lib/x86_64-linux-gnu/libc.so.6:
 
@@ -459,23 +464,21 @@ CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o:
 
 /lib64/ld-linux-x86-64.so.2:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc_s.so:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc_s.so:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/libgcc_s.so.1:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/libgcc_s.so.1:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/libgcc.a:
+/usr/lib/gcc/x86_64-linux-gnu/14/libgcc.a:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/crtendS.o:
+/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o:
 
-/usr/lib/gcc/x86_64-linux-gnu/13/../../../x86_64-linux-gnu/crtn.o:
-
-/lib/x86_64-linux-gnu/libm.so.6:
+/usr/lib/gcc/x86_64-linux-gnu/14/../../../x86_64-linux-gnu/crtn.o:
 
 /usr/lib/x86_64-linux-gnu/libQt6OpenGL.so.6.4.2:
 

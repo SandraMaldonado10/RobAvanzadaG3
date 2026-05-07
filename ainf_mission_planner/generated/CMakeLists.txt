@@ -40,8 +40,8 @@ SET (SOURCES
 
 #ROBOCOMP
 ROBOCOMP_INITIALIZE( $ENV{ROBOCOMP}/ )
-ROBOCOMP_IDSL_TO_ICE(ImageSegmentation Navigator)
-ROBOCOMP_ICE_TO_SRC(ImageSegmentation Navigator)
+ROBOCOMP_IDSL_TO_ICE(OmniRobot GenericBase Navigator ImageSegmentation)
+ROBOCOMP_ICE_TO_SRC(OmniRobot GenericBase Navigator ImageSegmentation)
 SET (EXECUTABLE_OUTPUT_PATH ${RC_COMPONENT_DEVEL_PATH}/bin)
 set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/../src)
 

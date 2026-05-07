@@ -41,12 +41,14 @@
 #include <unordered_map>
 
 
+#include <GenericBase.h>
 #include <ImageSegmentation.h>
 #include <Navigator.h>
+#include <OmniRobot.h>
 
 #define BASIC_PERIOD 100
 
-using TuplePrx = std::tuple<RoboCompImageSegmentation::ImageSegmentationPrxPtr,RoboCompNavigator::NavigatorPrxPtr>;
+using TuplePrx = std::tuple<RoboCompImageSegmentation::ImageSegmentationPrxPtr,RoboCompNavigator::NavigatorPrxPtr,RoboCompOmniRobot::OmniRobotPrxPtr>;
 
 
 class GenericWorker : public QWidget, public Ui_guiDlg
@@ -67,6 +69,7 @@ public:
 
 	RoboCompImageSegmentation::ImageSegmentationPrxPtr imagesegmentation_proxy;
 	RoboCompNavigator::NavigatorPrxPtr navigator_proxy;
+	RoboCompOmniRobot::OmniRobotPrxPtr omnirobot_proxy;
 
 
 protected:

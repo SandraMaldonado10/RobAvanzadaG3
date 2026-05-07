@@ -44,10 +44,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/cmake/1525/bin/cmake
+CMAKE_COMMAND = /snap/cmake/1531/bin/cmake
 
 # The command to remove a file.
-RM = /snap/cmake/1525/bin/cmake -E rm -f
+RM = /snap/cmake/1531/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -69,26 +69,40 @@ include generated/CMakeFiles/ainf_mission_planner.dir/progress.make
 # Include the compile flags for this target's objects.
 include generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 
-generated/ImageSegmentation.cpp:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "BU ice=>h/cpp: Generating ImageSegmentation.h and ImageSegmentation.cpp from /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.ice"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && slice2cpp --underscore /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.ice -I/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ --output-dir .
+generated/OmniRobot.cpp:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "BU ice=>h/cpp: Generating OmniRobot.h and OmniRobot.cpp from /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/OmniRobot.ice"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && slice2cpp --underscore /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/OmniRobot.ice -I/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ --output-dir .
 
-generated/ImageSegmentation.h: generated/ImageSegmentation.cpp
-	@$(CMAKE_COMMAND) -E touch_nocreate generated/ImageSegmentation.h
+generated/OmniRobot.h: generated/OmniRobot.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate generated/OmniRobot.h
+
+generated/GenericBase.cpp:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "BU ice=>h/cpp: Generating GenericBase.h and GenericBase.cpp from /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/GenericBase.ice"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && slice2cpp --underscore /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/GenericBase.ice -I/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ --output-dir .
+
+generated/GenericBase.h: generated/GenericBase.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate generated/GenericBase.h
 
 generated/Navigator.cpp:
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "BU ice=>h/cpp: Generating Navigator.h and Navigator.cpp from /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.ice"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "BU ice=>h/cpp: Generating Navigator.h and Navigator.cpp from /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.ice"
 	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && slice2cpp --underscore /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.ice -I/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ --output-dir .
 
 generated/Navigator.h: generated/Navigator.cpp
 	@$(CMAKE_COMMAND) -E touch_nocreate generated/Navigator.h
 
+generated/ImageSegmentation.cpp:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "BU ice=>h/cpp: Generating ImageSegmentation.h and ImageSegmentation.cpp from /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.ice"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && slice2cpp --underscore /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.ice -I/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ --output-dir .
+
+generated/ImageSegmentation.h: generated/ImageSegmentation.cpp
+	@$(CMAKE_COMMAND) -E touch_nocreate generated/ImageSegmentation.h
+
 generated/ainf_mission_planner_autogen/timestamp: /usr/lib/qt6/libexec/moc
 generated/ainf_mission_planner_autogen/timestamp: /usr/lib/qt6/libexec/uic
 generated/ainf_mission_planner_autogen/timestamp: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Automatic MOC and UIC for target ainf_mission_planner"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /snap/cmake/1525/bin/cmake -E cmake_autogen /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/CMakeFiles/ainf_mission_planner_autogen.dir/AutogenInfo.json Debug
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /snap/cmake/1525/bin/cmake -E touch /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/timestamp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Automatic MOC and UIC for target ainf_mission_planner"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /snap/cmake/1531/bin/cmake -E cmake_autogen /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/CMakeFiles/ainf_mission_planner_autogen.dir/AutogenInfo.json ""
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /snap/cmake/1531/bin/cmake -E touch /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/timestamp
 
 generated/CMakeFiles/ainf_mission_planner.dir/codegen:
 .PHONY : generated/CMakeFiles/ainf_mission_planner.dir/codegen
@@ -96,156 +110,184 @@ generated/CMakeFiles/ainf_mission_planner.dir/codegen:
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o: generated/ainf_mission_planner_autogen/mocs_compilation.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/mocs_compilation.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/mocs_compilation.cpp > CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/mocs_compilation.cpp > CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/mocs_compilation.cpp -o CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ainf_mission_planner_autogen/mocs_compilation.cpp -o CMakeFiles/ainf_mission_planner.dir/ainf_mission_planner_autogen/mocs_compilation.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o: /home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o -c /home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.o -c /home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/abstract_graphic_viewer/abstract_graphic_viewer.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: src/specificworker.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp > CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp > CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp -o CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/src/specificworker.cpp -o CMakeFiles/ainf_mission_planner.dir/__/src/specificworker.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o: /home/xeihtt/robocomp/classes/rapplication/rapplication.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o -c /home/xeihtt/robocomp/classes/rapplication/rapplication.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.o -c /home/xeihtt/robocomp/classes/rapplication/rapplication.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/rapplication/rapplication.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/rapplication/rapplication.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/rapplication/rapplication.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o: /home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o -c /home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.o -c /home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/sigwatch/sigwatch.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o: /home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o -c /home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.o -c /home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/grafcetStep/GRAFCETStep.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o: /home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o -c /home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o -c /home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp > CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp -o CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: generated/main.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/main.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/main.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/main.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/main.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/main.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp > CMakeFiles/ainf_mission_planner.dir/main.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp > CMakeFiles/ainf_mission_planner.dir/main.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/main.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp -o CMakeFiles/ainf_mission_planner.dir/main.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/main.cpp -o CMakeFiles/ainf_mission_planner.dir/main.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o: generated/genericworker.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp > CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp > CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp -o CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/genericworker.cpp -o CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.s
 
-generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
-generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o: generated/ImageSegmentation.cpp
-generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.cpp
+generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
+generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o: generated/OmniRobot.cpp
+generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/OmniRobot.cpp
 
-generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.cpp > CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.i
+generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.i"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/OmniRobot.cpp > CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.i
 
-generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.cpp -o CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.s
+generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.s"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/OmniRobot.cpp -o CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.s
+
+generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
+generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o: generated/GenericBase.cpp
+generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/GenericBase.cpp
+
+generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.i"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/GenericBase.cpp > CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.i
+
+generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.s"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/GenericBase.cpp -o CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.s
 
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o: generated/Navigator.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.cpp
 
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.i"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.cpp > CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.i
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.cpp > CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.i
 
 generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.s"
-	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/g++-13 $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.cpp -o CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.s
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/Navigator.cpp -o CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.s
+
+generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/flags.make
+generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o: generated/ImageSegmentation.cpp
+generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o -MF CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o.d -o CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o -c /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.cpp
+
+generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.i"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.cpp > CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.i
+
+generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.s"
+	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/ImageSegmentation.cpp -o CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.s
 
 # Object files for target ainf_mission_planner
 ainf_mission_planner_OBJECTS = \
@@ -258,8 +300,10 @@ ainf_mission_planner_OBJECTS = \
 "CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o" \
 "CMakeFiles/ainf_mission_planner.dir/main.cpp.o" \
 "CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o" \
-"CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o" \
-"CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o"
+"CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o" \
+"CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o" \
+"CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o" \
+"CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o"
 
 # External object files for target ainf_mission_planner
 ainf_mission_planner_EXTERNAL_OBJECTS =
@@ -273,8 +317,10 @@ bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/xei
 bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/home/xeihtt/robocomp/classes/ConfigLoader/ConfigLoader.cpp.o
 bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/main.cpp.o
 bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/genericworker.cpp.o
-bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o
+bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/OmniRobot.cpp.o
+bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/GenericBase.cpp.o
 bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/Navigator.cpp.o
+bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/ImageSegmentation.cpp.o
 bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/build.make
 bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/compiler_depend.ts
 bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libopencv_stitching.so.4.6.0
@@ -345,7 +391,7 @@ bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libGLX.so
 bin/ainf_mission_planner: /usr/lib/x86_64-linux-gnu/libOpenGL.so
 bin/ainf_mission_planner: generated/CMakeFiles/ainf_mission_planner.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable ../bin/ainf_mission_planner"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable ../bin/ainf_mission_planner"
 	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ainf_mission_planner.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -356,10 +402,14 @@ generated/CMakeFiles/ainf_mission_planner.dir/clean:
 	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated && $(CMAKE_COMMAND) -P CMakeFiles/ainf_mission_planner.dir/cmake_clean.cmake
 .PHONY : generated/CMakeFiles/ainf_mission_planner.dir/clean
 
+generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/GenericBase.cpp
+generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/GenericBase.h
 generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/ImageSegmentation.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/ImageSegmentation.h
 generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/Navigator.cpp
 generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/Navigator.h
+generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/OmniRobot.cpp
+generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/OmniRobot.h
 generated/CMakeFiles/ainf_mission_planner.dir/depend: generated/ainf_mission_planner_autogen/timestamp
 	cd /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated /home/xeihtt/Rob-Avanzada/RobAvanzadaG3/ainf_mission_planner/generated/CMakeFiles/ainf_mission_planner.dir/DependInfo.cmake "--color=$(COLOR)" ainf_mission_planner
 .PHONY : generated/CMakeFiles/ainf_mission_planner.dir/depend
